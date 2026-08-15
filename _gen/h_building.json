@@ -1,0 +1,3684 @@
+[
+ {
+  "slug": "why-breeder-first",
+  "title": "Why We Build the Breeder First",
+  "cat": "building-it-first",
+  "lede": "Kronos builds the breeder (Hyperion) before the burner because a compact D-T machine reaches useful output on fusion gain alone.",
+  "body": [
+   [
+    "h2",
+    "The sequencing decision"
+   ],
+   [
+    "p",
+    "Kronos develops two machines: a breeder (Hyperion), a compact D-T spherical tokamak, and a burner (Aegis / MetroVolt), a D-3He tandem-mirror generator. The breeder is built first. The reason is a difference in what each machine must demonstrate before it delivers value."
+   ],
+   [
+    "p",
+    "The breeder is an isotope and neutron foundry. Its product is material: a tritium class output near 4 kg/yr, a helium-3 coproduct near 1.97 kg/yr, and 14 MeV neutrons for irradiation services. To deliver those products the machine needs <b>fusion gain</b>, not net electrical output. A device with Q_sci of 3.424 producing 88.7 MW of fusion power generates the neutron flux that drives breeding and activation. That flux is the product."
+   ],
+   [
+    "h3",
+    "Gain-only is a lower bar than net electric"
+   ],
+   [
+    "p",
+    "Net electricity requires that recirculating power for magnets, heating, cryogenics, and balance-of-plant be smaller than gross electrical output. That is a harder threshold than scientific gain. The burner is designed toward net electric output via direct energy conversion, and its economics only close at fleet scale. Building it first would mean waiting on the harder demonstration before any value is delivered."
+   ],
+   [
+    "h3",
+    "Foundry logic"
+   ],
+   [
+    "p",
+    "The breeder is sized to a supply requirement, not to a megawatt target. It is deliberately compact. That keeps the first build tractable, retires physics and engineering risk on the smaller machine, and produces a marketable output stream from the neutron economy while the burner physics continue to mature. The breeder also supplies the tritium and, over time, the helium-3 that the D-3He burner will eventually consume."
+   ],
+   [
+    "p",
+    "This page describes a design and simulation study, not a built machine. Construction begins Q2 2027; first-of-a-kind first tritium is targeted near 2030."
+   ]
+  ],
+  "related": [
+   [
+    "isotope-foundry-not-power-plant",
+    "Foundry, Not Power Plant"
+   ],
+   [
+    "gain-only-requirement",
+    "The Gain-Only Requirement"
+   ],
+   [
+    "the-fleet-plan",
+    "The Fleet Plan"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "isotope-foundry-not-power-plant",
+  "title": "A Foundry, Not a Power Plant",
+  "cat": "building-it-first",
+  "lede": "Hyperion is sized to an isotope supply requirement rather than an electrical output target; its product is material, not megawatts.",
+  "body": [
+   [
+    "h2",
+    "Sized to supply, not to output"
+   ],
+   [
+    "p",
+    "Conventional fusion programs size a machine to a power rating and then ask whether the economics of selling that power close. Hyperion inverts the question. It is sized to the neutron flux needed to breed a target quantity of tritium and to activate materials for irradiation services. The output metric is kilograms per year and neutron-hours, not net megawatts."
+   ],
+   [
+    "ul",
+    [
+     "Tritium class output near 4 kg/yr",
+     "Helium-3 coproduct near 1.97 kg/yr",
+     "14 MeV neutron flux for materials irradiation and isotope production"
+    ]
+   ],
+   [
+    "h3",
+    "Why this changes the build"
+   ],
+   [
+    "p",
+    "Because the product is material, the machine only needs fusion gain (Q_sci 3.424, 88.7 MW fusion power) to be useful. It does not need to clear the net-electric threshold. That removes the largest single physics-and-engineering dependency from the first build and lets the program deliver value from the neutron economy while the burner matures separately."
+   ],
+   [
+    "h3",
+    "What a foundry requires"
+   ],
+   [
+    "p",
+    "A foundry is defined by throughput, availability, and reproducibility of its output, not by peak rating. The engineering priorities follow: a reliable tritium plant, a breeding blanket tuned across breeding ratios of 1.1, 1.5, and 1.8, robust neutron handling, and maintainability for high duty. These priorities shape the assembly sequence, the diagnostics, and the gate program more than any single power number does."
+   ],
+   [
+    "p",
+    "Hyperion is a design and simulation study today. The foundry framing sets the acceptance criteria the first-of-a-kind unit must meet: sustained gain, a closed and accountable fuel loop, and a product stream that reproduces from unit to unit."
+   ]
+  ],
+  "related": [
+   [
+    "why-breeder-first",
+    "Why the Breeder First"
+   ],
+   [
+    "neutron-budget-and-products",
+    "Neutron Budget and Products"
+   ],
+   [
+    "gain-only-requirement",
+    "The Gain-Only Requirement"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "gain-only-requirement",
+  "title": "The Gain-Only Requirement",
+  "cat": "building-it-first",
+  "lede": "Hyperion must reach fusion gain to deliver its products; it does not need to cross the harder net-electric threshold.",
+  "body": [
+   [
+    "h2",
+    "Two different thresholds"
+   ],
+   [
+    "p",
+    "Scientific gain (Q_sci) is the ratio of fusion power produced to heating power injected into the plasma. Engineering gain, or net electric, additionally requires that total plant electrical draw, magnets, cryoplant, heating, pumps, controls, be smaller than gross electrical generation. These are different bars, and the gap between them is large."
+   ],
+   [
+    "h3",
+    "What Hyperion targets"
+   ],
+   [
+    "p",
+    "Hyperion targets Q_sci of 3.424 with 88.7 MW of fusion power. At that operating point the 14 MeV neutron flux is sufficient to breed tritium and activate materials, which is the product. No conversion of fusion energy to net electricity is required for the foundry to function. The machine needs gain; it does not need net power."
+   ],
+   [
+    "h3",
+    "Why the distinction matters for building first"
+   ],
+   [
+    "p",
+    "Removing the net-electric requirement removes a chain of dependencies: high-efficiency conversion, minimized recirculating load, and the balance-of-plant scale that only pays off at large size. The breeder can therefore be compact and can be built and commissioned on a shorter path. The burner, by contrast, is designed toward net electric output through direct energy conversion, and its case closes only at fleet scale."
+   ],
+   [
+    "ul",
+    [
+     "Q_sci is a plasma-physics ratio; net electric is a whole-plant ratio",
+     "Foundry products depend on neutron flux, which follows from gain",
+     "No hardware net-gain claim is made before the first-of-a-kind unit"
+    ]
+   ],
+   [
+    "p",
+    "This is a design and simulation study. The gain-only framing is what makes a near-term first build credible, and it is stated honestly: gain is claimed as a design point, not as demonstrated hardware performance."
+   ]
+  ],
+  "related": [
+   [
+    "why-breeder-first",
+    "Why the Breeder First"
+   ],
+   [
+    "q-sci-3-424-basis",
+    "The Basis for Q_sci 3.424"
+   ],
+   [
+    "what-foak-does-not-prove",
+    "What FOAK Does Not Prove"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "construction-begins-q2-2027",
+  "title": "Construction Begins Q2 2027",
+  "cat": "building-it-first",
+  "lede": "Ground and long-lead procurement for the first-of-a-kind breeder are scheduled to begin in the second quarter of 2027.",
+  "body": [
+   [
+    "h2",
+    "The start of the build"
+   ],
+   [
+    "p",
+    "The program schedule places the start of first-of-a-kind (FOAK) construction in Q2 2027. This is the transition from a design and simulation study to a physical build: site preparation, long-lead procurement of the superconducting magnet materials, and the start of vessel and structural fabrication."
+   ],
+   [
+    "h3",
+    "What has to be true to start"
+   ],
+   [
+    "ul",
+    [
+     "A frozen design point: Q_sci 3.424, 88.7 MW, 9.86 MA plasma current, 16.84 T peak field",
+     "A licensing pathway under a byproduct-material framework in pre-application engagement",
+     "Committed magnet conductor supply and a qualified fabrication route",
+     "A site selected against neutron-handling, utility, and logistics criteria"
+    ]
+   ],
+   [
+    "h3",
+    "Long-lead items drive the date"
+   ],
+   [
+    "p",
+    "The pacing items are the high-field magnets and the vacuum vessel. REBCO conductor procurement, coil winding, and structural fabrication have lead times measured in many months, so procurement begins at or near the start of construction even though installation comes later in the sequence. The Q2 2027 date is set by when those long-lead commitments can be responsibly placed."
+   ],
+   [
+    "p",
+    "Construction beginning is not the same as operation. The build is planned as roughly a 3.5-year path to the first unit, with first tritium targeted near 2030. Until the machine is assembled, commissioned, and taken through its physics gates, all performance figures remain design and simulation values."
+   ]
+  ],
+  "related": [
+   [
+    "the-3-5-year-build",
+    "The 3.5-Year Build"
+   ],
+   [
+    "foak-first-tritium-2030",
+    "FOAK First Tritium ~2030"
+   ],
+   [
+    "assembly-sequence",
+    "Assembly Sequence"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "the-3-5-year-build",
+  "title": "The 3.5-Year Build to First Unit",
+  "cat": "building-it-first",
+  "lede": "From Q2 2027 groundbreaking to first tritium, the first-of-a-kind breeder is planned on a roughly three-and-a-half-year path.",
+  "body": [
+   [
+    "h2",
+    "Build duration"
+   ],
+   [
+    "p",
+    "The first-of-a-kind (FOAK) breeder is planned on a build of roughly 3.5 years, from construction start in Q2 2027 to first tritium near 2030. The duration reflects a compact spherical tokamak with a demanding but bounded set of components, not a large power station."
+   ],
+   [
+    "h3",
+    "Phasing"
+   ],
+   [
+    "ul",
+    [
+     "Site preparation and civil works, in parallel with long-lead magnet and vessel procurement",
+     "Component fabrication: magnets, vacuum vessel, blanket modules, divertor, cryoplant",
+     "Assembly and integration in sequence around the centerpost and vessel",
+     "Commissioning: vacuum, cryogenic, magnet energization, then plasma",
+     "Physics gates and first tritium"
+    ]
+   ],
+   [
+    "h3",
+    "Why 3.5 years is plausible for FOAK"
+   ],
+   [
+    "p",
+    "Compactness helps. A spherical tokamak concentrates the hardest engineering in the centerpost and central solenoid region, which shortens some structural spans and reduces total material relative to a large aspect-ratio device. The gain-only requirement removes balance-of-plant needed for net electric conversion. The schedule is nonetheless a first-of-a-kind estimate; later NOAK and BOAK units are planned to build faster as procurement and assembly mature."
+   ],
+   [
+    "h3",
+    "Honest status"
+   ],
+   [
+    "p",
+    "No unit is built yet. The 3.5-year figure is a plan, not an achievement, and it depends on magnet supply, licensing timing, and assembly execution proceeding as designed. The program states schedule risk openly and retires it through the gate program rather than assuming it away."
+   ]
+  ],
+  "related": [
+   [
+    "construction-begins-q2-2027",
+    "Construction Begins Q2 2027"
+   ],
+   [
+    "assembly-sequence",
+    "Assembly Sequence"
+   ],
+   [
+    "schedule-and-milestones",
+    "Schedule and Milestones"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "foak-first-tritium-2030",
+  "title": "FOAK First Tritium ~2030",
+  "cat": "building-it-first",
+  "lede": "The first-of-a-kind breeder targets its first bred tritium around 2030, the milestone that proves the foundry function end to end.",
+  "body": [
+   [
+    "h2",
+    "The defining milestone"
+   ],
+   [
+    "p",
+    "First tritium is the milestone that matters most for a breeder. It means the machine has produced fusion neutrons, those neutrons have bred tritium in the blanket, and the tritium plant has recovered and accounted for it. First tritium is targeted around 2030 for the first-of-a-kind (FOAK) unit."
+   ],
+   [
+    "h3",
+    "What first tritium demonstrates"
+   ],
+   [
+    "ul",
+    [
+     "Sustained D-T plasma at or near the design gain point",
+     "A neutron flux consistent with 88.7 MW-class fusion power",
+     "A breeding blanket that converts neutrons to tritium at a measured breeding ratio",
+     "A fuel loop that recovers, measures, and accounts for bred tritium"
+    ]
+   ],
+   [
+    "h3",
+    "Why it is the product proof, not a power proof"
+   ],
+   [
+    "p",
+    "First tritium proves the foundry, not net electricity. It shows the neutron economy works: neutrons are produced, captured, and converted to a saleable isotope stream. It does not claim net power, and none is claimed before FOAK. The distinction is deliberate and stated plainly throughout the program."
+   ],
+   [
+    "h3",
+    "Measurement and honesty"
+   ],
+   [
+    "p",
+    "First tritium will be reported against pre-registered predictions for neutron yield and breeding ratio, so the demonstrated value can be compared to the design point rather than presented on its own. The design point today, breeding ratio treated as a lever across 1.1, 1.5, and 1.8, and products near 4 kg/yr tritium class plus 1.97 kg/yr helium-3, is a simulation result until first tritium confirms it on hardware."
+   ]
+  ],
+  "related": [
+   [
+    "g3-fuel-loop-gate",
+    "G3: The Fuel Loop Gate"
+   ],
+   [
+    "tritium-plant-integration",
+    "Tritium Plant Integration"
+   ],
+   [
+    "foak-noak-boak-learning-curve",
+    "FOAK to NOAK to BOAK"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "foak-noak-boak-learning-curve",
+  "title": "FOAK to NOAK to BOAK",
+  "cat": "building-it-first",
+  "lede": "The breeder program is a sequence: first-of-a-kind proves the machine, then nth-of-a-kind and best-of-a-kind units standardize and improve it.",
+  "body": [
+   [
+    "h2",
+    "A three-step learning curve"
+   ],
+   [
+    "p",
+    "The breeder is built as a short series rather than a one-off. The first-of-a-kind (FOAK) unit proves the physics and the foundry function. Nth-of-a-kind (NOAK) units apply the lessons of the first build. Best-of-a-kind (BOAK) units standardize the design for repeatable manufacture."
+   ],
+   [
+    "h3",
+    "FOAK: prove it"
+   ],
+   [
+    "p",
+    "FOAK carries the physics risk. Its job is to reach gain, breed tritium, and validate the design point against pre-registered predictions. It is expected to be the slowest to build and the most heavily instrumented, because its purpose is measurement and risk retirement."
+   ],
+   [
+    "h3",
+    "NOAK: refine it"
+   ],
+   [
+    "p",
+    "NOAK units incorporate what FOAK teaches: assembly steps that took too long, components that underperformed, diagnostics that proved unnecessary or missing. NOAK is where build time and reliability improve while the design point stays essentially fixed."
+   ],
+   [
+    "h3",
+    "BOAK: standardize it"
+   ],
+   [
+    "p",
+    "BOAK is the settled design intended for repeatable fabrication and predictable output. At this stage the machine is a manufactured product with known lead times and known performance, suited to running as a foundry with high availability."
+   ],
+   [
+    "ul",
+    [
+     "FOAK retires physics and integration risk",
+     "NOAK retires build and operability risk",
+     "BOAK locks the standard for a small foundry fleet"
+    ]
+   ],
+   [
+    "p",
+    "The whole sequence remains a plan. FOAK is not yet built. The learning-curve framing describes how the program intends to move from a single demonstrated machine to a small, reproducible foundry fleet without overclaiming at any step."
+   ]
+  ],
+  "related": [
+   [
+    "foak-first-tritium-2030",
+    "FOAK First Tritium ~2030"
+   ],
+   [
+    "noak-improvements",
+    "NOAK Improvements"
+   ],
+   [
+    "boak-standardization",
+    "BOAK Standardization"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "gate-program-overview",
+  "title": "The Gate Program",
+  "cat": "building-it-first",
+  "lede": "Three physics gates, confinement, magnet, and fuel loop, structure how the breeder retires its largest risks before claiming its design point.",
+  "body": [
+   [
+    "h2",
+    "Why gates"
+   ],
+   [
+    "p",
+    "The breeder program organizes risk retirement into discrete gates. Each gate is a defined demonstration with a pre-registered prediction and a pass criterion. A gate is passed when measured hardware performance meets the prediction, not when a model says it should. This keeps claims tied to evidence."
+   ],
+   [
+    "h3",
+    "The three physics gates"
+   ],
+   [
+    "ul",
+    [
+     "G1 Confinement: the plasma holds energy long enough to reach the design gain point",
+     "G2 Magnet: the high-field magnet system reaches and holds 16.84 T peak field under load",
+     "G3 Fuel loop: neutrons breed tritium and the fuel cycle recovers and accounts for it"
+    ]
+   ],
+   [
+    "h3",
+    "How gates relate to the schedule"
+   ],
+   [
+    "p",
+    "The gates are sequenced with commissioning. Magnet energization (toward G2) precedes plasma; confinement (G1) is demonstrated once plasma operation begins; the fuel loop (G3) is proven at first tritium. Passing all three is what turns the first-of-a-kind unit from an assembled machine into a demonstrated foundry."
+   ],
+   [
+    "h3",
+    "Pre-registration"
+   ],
+   [
+    "p",
+    "Each gate has predictions registered before the test, covering the quantities the gate is meant to prove: energy confinement time, achieved field, neutron yield, and breeding ratio. Reporting measured against predicted, rather than reporting the measurement alone, is how the program distinguishes a genuine demonstration from a retrofit explanation."
+   ],
+   [
+    "p",
+    "The gates apply to a machine that is not yet built. They are the acceptance structure for the first build, and every design-point number cited elsewhere on this site remains a simulation value until the relevant gate is passed."
+   ]
+  ],
+  "related": [
+   [
+    "g1-confinement-gate",
+    "G1: Confinement"
+   ],
+   [
+    "g2-magnet-gate",
+    "G2: Magnet"
+   ],
+   [
+    "g3-fuel-loop-gate",
+    "G3: Fuel Loop"
+   ],
+   [
+    "pre-registered-predictions",
+    "Pre-Registered Predictions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "g1-confinement-gate",
+  "title": "G1: The Confinement Gate",
+  "cat": "building-it-first",
+  "lede": "The first gate proves the plasma confines energy well enough to reach the design gain point of Q_sci 3.424.",
+  "body": [
+   [
+    "h2",
+    "What G1 proves"
+   ],
+   [
+    "p",
+    "G1 is the confinement gate. It demonstrates that the plasma holds its thermal energy long enough, at the design current and field, to reach the target gain. Confinement is quantified by the energy confinement time and its scaling with plasma current, density, and heating power."
+   ],
+   [
+    "h3",
+    "The operating point"
+   ],
+   [
+    "p",
+    "The design point is Q_sci 3.424 at 88.7 MW fusion power, with 9.86 MA of plasma current in a negative-triangularity (delta -0.30) spherical configuration. G1 is passed when the plasma sustains the confinement required to hold that operating point long enough to produce the neutron flux the foundry needs."
+   ],
+   [
+    "h3",
+    "Why negative triangularity matters here"
+   ],
+   [
+    "p",
+    "The chosen delta of -0.30 is intended to manage edge behavior and heat exhaust while preserving core confinement. G1 tests whether the predicted confinement holds at the real triangularity and current, since edge and core physics interact in ways that simulation can only bound, not settle."
+   ],
+   [
+    "ul",
+    [
+     "Measured quantity: energy confinement time at design current and field",
+     "Pass criterion: confinement sufficient to reach the Q_sci 3.424 operating point",
+     "Registered prediction: confinement time and its uncertainty band, filed before the test"
+    ]
+   ],
+   [
+    "h3",
+    "Honest limits"
+   ],
+   [
+    "p",
+    "Confinement scaling is the least certain part of any tokamak design. G1 is placed first because it carries the most physics risk. Until G1 is passed on the built machine, Q_sci 3.424 is a design and simulation value, and the program says so."
+   ]
+  ],
+  "related": [
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ],
+   [
+    "q-sci-3-424-basis",
+    "The Basis for Q_sci 3.424"
+   ],
+   [
+    "negative-triangularity-choice",
+    "Negative Triangularity"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "g2-magnet-gate",
+  "title": "G2: The Magnet Gate",
+  "cat": "building-it-first",
+  "lede": "The second gate proves the high-field magnet system reaches and holds 16.84 T peak field with 8 T on axis under operational load.",
+  "body": [
+   [
+    "h2",
+    "What G2 proves"
+   ],
+   [
+    "p",
+    "G2 is the magnet gate. It demonstrates that the superconducting magnet system reaches the design fields, 16.84 T peak at the conductor with 8 T on axis, and holds them stably under the mechanical and thermal loads of operation. Field is what confines the plasma; without it there is no gain."
+   ],
+   [
+    "h3",
+    "The engineering challenge"
+   ],
+   [
+    "p",
+    "High field in a compact spherical tokamak concentrates enormous stress in the centerpost and toroidal-field structure. The magnet must carry current density high enough to produce 16.84 T while withstanding Lorentz forces and staying superconducting under quench-protected conditions. This is the hardest engineering test in the machine."
+   ],
+   [
+    "ul",
+    [
+     "Measured quantity: achieved peak field and on-axis field under load",
+     "Pass criterion: 16.84 T peak / 8 T on axis, held stably through an operational cycle",
+     "Registered prediction: field, conductor temperature margin, and quench behavior"
+    ]
+   ],
+   [
+    "h3",
+    "Sequence"
+   ],
+   [
+    "p",
+    "G2 is demonstrated during commissioning, before full plasma operation, because the field must be proven before the plasma that depends on it. Magnet energization, temperature-margin verification, and controlled quench testing are part of the gate. Only after the magnet holds design field is the machine cleared to pursue G1 confinement at the full operating point."
+   ],
+   [
+    "h3",
+    "Status"
+   ],
+   [
+    "p",
+    "The magnet is a design informed by REBCO high-temperature superconductor practice, but the specific coil set is not yet built. G2 is where conductor supply, winding quality, and structural design meet reality. The 16.84 T figure is a design target until the gate is passed."
+   ]
+  ],
+  "related": [
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ],
+   [
+    "peak-field-16-84-t",
+    "Peak Field 16.84 T"
+   ],
+   [
+    "rebco-magnet-supply",
+    "REBCO Magnet Supply"
+   ],
+   [
+    "centerpost-engineering",
+    "Centerpost Engineering"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "g3-fuel-loop-gate",
+  "title": "G3: The Fuel Loop Gate",
+  "cat": "building-it-first",
+  "lede": "The third gate proves neutrons breed tritium in the blanket and the fuel cycle recovers, measures, and accounts for it.",
+  "body": [
+   [
+    "h2",
+    "What G3 proves"
+   ],
+   [
+    "p",
+    "G3 is the fuel loop gate and coincides with first tritium. It demonstrates the full breeding chain: fusion neutrons enter the blanket, breed tritium in lithium-bearing material, and the tritium plant recovers, measures, and accounts for the product. G3 is the proof that Hyperion functions as a foundry."
+   ],
+   [
+    "h3",
+    "The breeding ratio lever"
+   ],
+   [
+    "p",
+    "Tritium breeding ratio (TBR) is treated as a design lever, studied across values of 1.1, 1.5, and 1.8. TBR above 1.0 means the blanket breeds more tritium than the plasma consumes, the condition for a self-sustaining and product-yielding fuel cycle. G3 measures the achieved TBR against the registered prediction for the installed blanket."
+   ],
+   [
+    "ul",
+    [
+     "Measured quantity: neutron yield, achieved TBR, and recovered tritium mass",
+     "Pass criterion: closed, accounted fuel loop with TBR consistent with the design lever",
+     "Registered prediction: neutron yield and TBR with uncertainty, filed before the test"
+    ]
+   ],
+   [
+    "h3",
+    "Accountability"
+   ],
+   [
+    "p",
+    "A breeder must account for every gram of tritium for both product and regulatory reasons. G3 therefore includes demonstrating the measurement and accountancy system, not just producing tritium. Recovery efficiency and inventory tracking are part of the pass criterion."
+   ],
+   [
+    "h3",
+    "Honest reconciliation"
+   ],
+   [
+    "p",
+    "There is an open reconciliation between a design-level TBR of 1.8 and the net breeding available in a real three-dimensional blanket with penetrations and structure. G3 is precisely where that reconciliation is settled by measurement. Until then, product figures near 4 kg/yr tritium class remain design values."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-breeding-ratio-lever",
+    "The TBR Lever"
+   ],
+   [
+    "blanket-and-breeding",
+    "Blanket and Breeding"
+   ],
+   [
+    "tritium-inventory-management",
+    "Tritium Inventory Management"
+   ],
+   [
+    "foak-first-tritium-2030",
+    "FOAK First Tritium"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "pre-registered-predictions",
+  "title": "Pre-Registered Predictions",
+  "cat": "building-it-first",
+  "lede": "Before each gate, the program files the numbers it expects to measure, so demonstrations are judged against commitments rather than hindsight.",
+  "body": [
+   [
+    "h2",
+    "Predict, then measure"
+   ],
+   [
+    "p",
+    "Pre-registration means writing down the predicted result of a test, with its uncertainty, before the test is run. The breeder program applies this discipline to every physics gate. The value is simple: a prediction filed in advance cannot be adjusted after the fact to match whatever the machine did."
+   ],
+   [
+    "h3",
+    "What gets registered"
+   ],
+   [
+    "ul",
+    [
+     "G1: energy confinement time and the resulting Q_sci at design current and field",
+     "G2: achieved peak field, conductor temperature margin, and quench behavior",
+     "G3: neutron yield, tritium breeding ratio, and recovered tritium mass"
+    ]
+   ],
+   [
+    "h3",
+    "Why it matters for credibility"
+   ],
+   [
+    "p",
+    "Fusion has a long history of results explained after the fact. Reporting measured-versus-predicted, with both numbers visible, lets outside reviewers see whether the design models actually predicted the machine, or only rationalized it. It also makes a miss informative: a confinement time below prediction tells the program exactly where the model was wrong."
+   ],
+   [
+    "h3",
+    "Handling misses honestly"
+   ],
+   [
+    "p",
+    "A pre-registered prediction that the machine fails to meet is not hidden. It is reported, and it feeds directly into the NOAK design revision. The program treats a documented miss on FOAK as the intended function of a first-of-a-kind unit: to find where reality departs from simulation while the stakes are contained."
+   ],
+   [
+    "p",
+    "All current numbers, Q_sci 3.424, 16.84 T, TBR across 1.1/1.5/1.8, are predictions in this sense. They are simulation-based design values, registered as the targets the built machine will be measured against."
+   ]
+  ],
+  "related": [
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ],
+   [
+    "what-each-gate-proves",
+    "What Each Gate Proves"
+   ],
+   [
+    "simulation-to-hardware-validation",
+    "Simulation to Hardware"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "what-each-gate-proves",
+  "title": "What Each Gate Proves",
+  "cat": "building-it-first",
+  "lede": "A compact map of the breeder gate program: the physics each gate settles, and the risk each one retires.",
+  "body": [
+   [
+    "h2",
+    "Gate by gate"
+   ],
+   [
+    "p",
+    "The three physics gates are not interchangeable. Each isolates one dominant uncertainty so it can be settled independently, in the order that the machine can demonstrate it."
+   ],
+   [
+    "matrix",
+    [
+     "Gate / Proves / Retires",
+     [
+      [
+       "G1 Confinement / Plasma holds energy to reach Q_sci 3.424 / Confinement-scaling risk"
+      ],
+      [
+       "G2 Magnet / 16.84 T peak, 8 T on axis, held under load / High-field magnet and structural risk"
+      ],
+      [
+       "G3 Fuel loop / Neutrons breed and are accounted as tritium / Breeding and fuel-cycle risk"
+      ]
+     ]
+    ]
+   ],
+   [
+    "h3",
+    "Reading the map"
+   ],
+   [
+    "p",
+    "G1 addresses whether the plasma physics deliver the design gain. G2 addresses whether the enabling magnet technology is real at the required field. G3 addresses whether the neutron economy closes into a product. Only with all three passed is the foundry demonstrated end to end."
+   ],
+   [
+    "h3",
+    "What the gates deliberately do not prove"
+   ],
+   [
+    "ul",
+    [
+     "Net electric output, which the breeder does not target",
+     "Fleet-scale reproducibility, which is NOAK and BOAK work",
+     "Burner physics, which are a separate machine and program"
+    ]
+   ],
+   [
+    "h3",
+    "Order is intentional"
+   ],
+   [
+    "p",
+    "Magnet before plasma, plasma before fuel loop. Each gate depends on the one before it: no field, no confinement; no confinement, no neutrons; no neutrons, no bred tritium. The sequence mirrors the physical dependencies of the machine and the commissioning order."
+   ],
+   [
+    "p",
+    "Every entry above is a target for a machine not yet built. The gates are how those targets become demonstrated results."
+   ]
+  ],
+  "related": [
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ],
+   [
+    "g1-confinement-gate",
+    "G1"
+   ],
+   [
+    "g2-magnet-gate",
+    "G2"
+   ],
+   [
+    "g3-fuel-loop-gate",
+    "G3"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "manufacturing-plan",
+  "title": "Manufacturing Plan",
+  "cat": "building-it-first",
+  "lede": "The breeder is designed for fabrication, with the hardest components, magnets and vessel, treated as long-lead manufactured items from the start.",
+  "body": [
+   [
+    "h2",
+    "Design for manufacture"
+   ],
+   [
+    "p",
+    "A machine intended to become a small foundry fleet must be manufacturable, not just buildable once. The breeder design separates components into standard fabricated assemblies so that FOAK experience transfers directly to NOAK and BOAK production."
+   ],
+   [
+    "h3",
+    "The pacing items"
+   ],
+   [
+    "ul",
+    [
+     "High-field magnets: REBCO conductor procurement, coil winding, and structural casing",
+     "Vacuum vessel: precision-fabricated, low-outgassing structure sized to the compact geometry",
+     "Breeding blanket modules: lithium-bearing assemblies designed for replacement",
+     "Centerpost: the mechanically and thermally loaded core of a spherical tokamak"
+    ]
+   ],
+   [
+    "h3",
+    "Long-lead first"
+   ],
+   [
+    "p",
+    "Magnet conductor and the vessel dominate the schedule, so their procurement begins at the start of construction in Q2 2027 even though installation is later. Treating them as long-lead items from day one is what makes the roughly 3.5-year FOAK build achievable."
+   ],
+   [
+    "h3",
+    "From one-off to repeatable"
+   ],
+   [
+    "p",
+    "FOAK components are expected to be partly bespoke. The manufacturing plan captures which steps were slow, which tolerances were hard to hold, and which parts should be standardized. NOAK converts those lessons into repeatable fabrication, and BOAK settles the standard so that a small number of near-identical machines can be produced with known lead times."
+   ],
+   [
+    "p",
+    "This plan describes intended fabrication for a machine not yet built. It contains no cost content; it is about sequence, lead time, and reproducibility."
+   ]
+  ],
+  "related": [
+   [
+    "supply-chain",
+    "Supply Chain"
+   ],
+   [
+    "rebco-magnet-supply",
+    "REBCO Magnet Supply"
+   ],
+   [
+    "boak-standardization",
+    "BOAK Standardization"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "supply-chain",
+  "title": "Supply Chain",
+  "cat": "building-it-first",
+  "lede": "The breeder depends on a small number of critical supply lines, high-field superconductor, lithium-bearing blanket materials, and tritium-handling systems.",
+  "body": [
+   [
+    "h2",
+    "Critical supply lines"
+   ],
+   [
+    "p",
+    "A compact D-T breeder concentrates its supply risk in a few materials and systems. Securing them is a precondition for the Q2 2027 construction start, because their lead times set the schedule."
+   ],
+   [
+    "ul",
+    [
+     "REBCO high-temperature superconductor for the high-field magnets",
+     "Lithium-bearing materials for the breeding blanket",
+     "Tritium-handling and accountancy systems for the fuel loop",
+     "Specialized vacuum, cryogenic, and neutron-shielding components"
+    ]
+   ],
+   [
+    "h3",
+    "Superconductor as the constraint"
+   ],
+   [
+    "p",
+    "REBCO conductor availability and qualification are the tightest constraint. The 16.84 T peak field depends on it, and global manufacturing capacity for high-quality tape is finite. The program treats conductor supply as a committed, qualified route before construction begins rather than an open procurement."
+   ],
+   [
+    "h3",
+    "Blanket materials"
+   ],
+   [
+    "p",
+    "Breeding performance depends on lithium isotopics and blanket geometry. The supply plan covers lithium-bearing material and the neutron multipliers and structure that set the achievable breeding ratio across the 1.1, 1.5, and 1.8 lever range."
+   ],
+   [
+    "h3",
+    "Tritium handling"
+   ],
+   [
+    "p",
+    "Tritium systems, recovery, storage, and accountancy, are specialized and regulated. They are procured and qualified in step with the licensing pathway so the fuel loop can be operated and accounted for at first tritium."
+   ],
+   [
+    "p",
+    "Supply-chain readiness is a build precondition, not an operational detail. This page describes intended sourcing for a machine not yet built and contains no pricing or cost content."
+   ]
+  ],
+  "related": [
+   [
+    "manufacturing-plan",
+    "Manufacturing Plan"
+   ],
+   [
+    "rebco-magnet-supply",
+    "REBCO Magnet Supply"
+   ],
+   [
+    "blanket-and-breeding",
+    "Blanket and Breeding"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "rebco-magnet-supply",
+  "title": "REBCO Magnet Supply",
+  "cat": "building-it-first",
+  "lede": "High-field operation at 16.84 T depends on REBCO high-temperature superconductor, the single most constrained item in the build.",
+  "body": [
+   [
+    "h2",
+    "Why REBCO"
+   ],
+   [
+    "p",
+    "Reaching 16.84 T peak field in a compact spherical tokamak requires high-temperature superconductor. REBCO (rare-earth barium copper oxide) tape carries the current density needed at high field and elevated temperature margin, which is why it anchors the magnet design and the schedule."
+   ],
+   [
+    "h3",
+    "The supply constraint"
+   ],
+   [
+    "p",
+    "REBCO tape is manufactured by a limited set of producers, and the quantity and quality needed for a full toroidal-field magnet set are substantial. Conductor procurement is therefore a long-lead commitment placed at the start of construction, and conductor qualification, verifying current-carrying performance and defect rates, is part of accepting the supply."
+   ],
+   [
+    "h3",
+    "From tape to magnet"
+   ],
+   [
+    "ul",
+    [
+     "Procure and qualify conductor tape against current-density and defect criteria",
+     "Wind and insulate coils to hold tolerance under high field",
+     "Assemble the structural casing that carries Lorentz loads",
+     "Integrate quench protection to keep the magnet within temperature margin"
+    ]
+   ],
+   [
+    "h3",
+    "Where it is proven"
+   ],
+   [
+    "p",
+    "The magnet is proven at gate G2: the coil set must reach and hold 16.84 T peak with 8 T on axis under operational load. REBCO supply quality feeds directly into whether G2 passes, which is why conductor qualification is treated as rigorously as the field test itself."
+   ],
+   [
+    "p",
+    "The magnet is a design informed by REBCO practice; the specific coil set is not yet built. Author reconciliation on some REBCO material details is tracked as an open item in the program's documentation."
+   ]
+  ],
+  "related": [
+   [
+    "g2-magnet-gate",
+    "G2: Magnet Gate"
+   ],
+   [
+    "peak-field-16-84-t",
+    "Peak Field 16.84 T"
+   ],
+   [
+    "centerpost-engineering",
+    "Centerpost Engineering"
+   ],
+   [
+    "supply-chain",
+    "Supply Chain"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "siting-considerations",
+  "title": "Siting the First Unit",
+  "cat": "building-it-first",
+  "lede": "The first-of-a-kind breeder is sited against neutron-handling, utility, logistics, and regulatory criteria rather than against a power-market location.",
+  "body": [
+   [
+    "h2",
+    "What a foundry site needs"
+   ],
+   [
+    "p",
+    "Because the breeder is a foundry, not a power plant, siting is driven by the needs of a neutron and isotope facility, not by proximity to an electricity market. The dominant criteria are radiological handling, utility supply for magnets and cryogenics, and logistics for heavy long-lead components."
+   ],
+   [
+    "ul",
+    [
+     "Radiological siting suitable for 14 MeV neutron work and tritium handling",
+     "Electrical supply adequate for magnet energization and cryoplant load",
+     "Cooling water and utilities for the cryogenic and vacuum systems",
+     "Transport access for the vessel, magnets, and heavy assemblies",
+     "A regulatory environment compatible with a byproduct-material framework"
+    ]
+   ],
+   [
+    "h3",
+    "Radiological priority"
+   ],
+   [
+    "p",
+    "Neutron shielding, activation management, and tritium containment set the site footprint and building design. The facility is designed around confining neutrons and accounting for tritium, which places the shielding and the tritium plant at the center of the layout."
+   ],
+   [
+    "h3",
+    "Logistics"
+   ],
+   [
+    "p",
+    "The vessel, centerpost, and magnet assemblies are large, heavy, and precision items. Site access for their transport and installation is a real constraint, and it interacts with the assembly sequence: components must arrive in the order they are installed."
+   ],
+   [
+    "p",
+    "No site build has begun; site preparation is part of the Q2 2027 construction start. Siting criteria here describe intended selection factors for a machine not yet built."
+   ]
+  ],
+  "related": [
+   [
+    "licensing-byproduct-material",
+    "Licensing Pathway"
+   ],
+   [
+    "assembly-sequence",
+    "Assembly Sequence"
+   ],
+   [
+    "neutron-shielding-plan",
+    "Neutron Shielding"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "licensing-byproduct-material",
+  "title": "Licensing Under a Byproduct-Material Framework",
+  "cat": "building-it-first",
+  "lede": "The breeder pursues licensing through a byproduct-material framework suited to a device that produces isotopes and neutrons rather than grid power.",
+  "body": [
+   [
+    "h2",
+    "Matching the framework to the machine"
+   ],
+   [
+    "p",
+    "Regulatory frameworks were built for the machines regulators knew. A fusion breeder that produces isotopes and neutrons, and handles tritium, fits more naturally under a byproduct-material framework than under a large fission-reactor licensing regime. The program pursues licensing on that basis."
+   ],
+   [
+    "h3",
+    "Why byproduct-material fits"
+   ],
+   [
+    "p",
+    "The hazards to be regulated are radioactive material handling, neutron activation, and tritium accountancy, precisely the domain of byproduct-material regulation. The machine does not present the accident spectrum of a fission core, and its product is material, which aligns the regulatory question with how the facility actually behaves."
+   ],
+   [
+    "ul",
+    [
+     "Tritium inventory control and accountancy",
+     "Neutron activation and shielding of the facility and components",
+     "Radioactive material handling, storage, and transport",
+     "Worker and public dose management around a compact source"
+    ]
+   ],
+   [
+    "h3",
+    "Pre-application engagement"
+   ],
+   [
+    "p",
+    "Rather than arriving with a finished application, the program engages regulators early through pre-application discussion, so the licensing basis is agreed as the design matures. This reduces the risk of late redesign and gives the regulator visibility into a machine type that is new to them."
+   ],
+   [
+    "h3",
+    "Honest status"
+   ],
+   [
+    "p",
+    "The licensing pathway is in engagement, not approval. It is a precondition being worked in parallel with the Q2 2027 construction start, and counsel review governs formal submissions. The framework choice is described here as the intended pathway for a machine not yet built or licensed."
+   ]
+  ],
+  "related": [
+   [
+    "nrc-preapplication-pathway",
+    "Pre-Application Pathway"
+   ],
+   [
+    "tritium-inventory-management",
+    "Tritium Inventory Management"
+   ],
+   [
+    "safety-case",
+    "The Safety Case"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "nrc-preapplication-pathway",
+  "title": "The Pre-Application Pathway",
+  "cat": "building-it-first",
+  "lede": "Early, structured engagement with the regulator establishes the licensing basis before a formal application, reducing late-stage design risk.",
+  "body": [
+   [
+    "h2",
+    "Engage early"
+   ],
+   [
+    "p",
+    "The program favors pre-application engagement: structured discussion with the regulator well before a formal license application. For a machine type the regulator has not licensed before, this establishes shared understanding of the hazards, the framework, and the evidence the application will need to contain."
+   ],
+   [
+    "h3",
+    "What pre-application settles"
+   ],
+   [
+    "ul",
+    [
+     "Which regulatory framework applies, a byproduct-material basis for this device",
+     "What the safety case must demonstrate for tritium, neutrons, and activation",
+     "What analyses and test evidence the eventual application will rely on",
+     "How the gate program's measurements support the licensing basis"
+    ]
+   ],
+   [
+    "h3",
+    "Why it reduces risk"
+   ],
+   [
+    "p",
+    "The costliest licensing outcome is discovering late that the regulator expects a different basis or additional evidence, forcing redesign after construction has advanced. Pre-application surfaces those expectations while the design is still adjustable, aligning the build with the licensing basis rather than reconciling them at the end."
+   ],
+   [
+    "h3",
+    "Relationship to the build"
+   ],
+   [
+    "p",
+    "Pre-application runs in parallel with detailed design and the start of construction in Q2 2027. The physics gates produce evidence that feeds the licensing basis: neutron and tritium accountancy from G3, in particular, are directly relevant to a byproduct-material safety case."
+   ],
+   [
+    "h3",
+    "Status"
+   ],
+   [
+    "p",
+    "This is engagement, not authorization. Formal submissions are governed by counsel review, and the pathway described here is the program's intended route for a machine not yet licensed."
+   ]
+  ],
+  "related": [
+   [
+    "licensing-byproduct-material",
+    "Byproduct-Material Framework"
+   ],
+   [
+    "safety-case",
+    "The Safety Case"
+   ],
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "assembly-sequence",
+  "title": "Assembly Sequence",
+  "cat": "building-it-first",
+  "lede": "The compact spherical tokamak is assembled from the centerpost outward, with the vessel, magnets, blanket, and diagnostics installed in dependency order.",
+  "body": [
+   [
+    "h2",
+    "Building from the core out"
+   ],
+   [
+    "p",
+    "A spherical tokamak concentrates its structure at the center, so assembly proceeds broadly from the centerpost and central column outward. The order is set by physical dependencies: each component must be installed before the ones that surround or connect to it."
+   ],
+   [
+    "h3",
+    "Broad sequence"
+   ],
+   [
+    "ul",
+    [
+     "Foundation and shielding structure at the selected site",
+     "Centerpost and central column installation",
+     "Toroidal-field magnet assembly and vacuum vessel integration",
+     "Breeding blanket modules and divertor installation",
+     "Cryogenic, vacuum, and power connections",
+     "Diagnostics and instrumentation fit-out"
+    ]
+   ],
+   [
+    "h3",
+    "Why order matters"
+   ],
+   [
+    "p",
+    "Once the vessel is closed and the magnets are in place, interior access is limited. Blanket modules, the divertor, and internal diagnostics are therefore installed before final closure. Getting the sequence wrong forces disassembly, which is why the assembly plan is fixed and rehearsed before the first component arrives."
+   ],
+   [
+    "h3",
+    "Interfaces with logistics"
+   ],
+   [
+    "p",
+    "Heavy components, the vessel, magnets, and centerpost, must arrive in installation order. This couples the assembly sequence to the supply chain and site logistics: a late long-lead item stalls everything downstream of it, which is why magnet and vessel procurement lead the schedule."
+   ],
+   [
+    "p",
+    "This describes the intended assembly of a machine not yet built. The sequence is a plan that the first-of-a-kind build will test and the manufacturing plan will refine for NOAK."
+   ]
+  ],
+  "related": [
+   [
+    "the-3-5-year-build",
+    "The 3.5-Year Build"
+   ],
+   [
+    "centerpost-engineering",
+    "Centerpost Engineering"
+   ],
+   [
+    "commissioning-plan",
+    "Commissioning Plan"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "commissioning-plan",
+  "title": "Commissioning Plan",
+  "cat": "building-it-first",
+  "lede": "Commissioning brings the assembled breeder to life system by system, vacuum, cryogenics, magnets, then plasma, before the physics gates.",
+  "body": [
+   [
+    "h2",
+    "From assembled to operating"
+   ],
+   [
+    "p",
+    "Commissioning is the staged bring-up of a fully assembled machine. Each subsystem is verified in isolation and then in combination, in an order that respects dependencies, before the machine is asked to make plasma or produce neutrons."
+   ],
+   [
+    "h3",
+    "Commissioning stages"
+   ],
+   [
+    "ul",
+    [
+     "Vacuum: pump down and leak-check the vessel to operating pressure",
+     "Cryogenics: cool the magnets to operating temperature and verify margin",
+     "Magnets: energize toward 16.84 T and verify field and quench protection (feeds G2)",
+     "Plasma: first plasma at low parameters, then build toward the design point (feeds G1)",
+     "Fuel loop: D-T operation, breeding, and tritium recovery (feeds G3)"
+    ]
+   ],
+   [
+    "h3",
+    "Commissioning gates versus physics gates"
+   ],
+   [
+    "p",
+    "Commissioning has its own acceptance checks, vacuum quality, cryogenic stability, magnet energization, that are engineering milestones. The physics gates (G1, G2, G3) sit on top of these: G2 is reached during magnet commissioning, G1 during plasma operation, and G3 at first tritium. Passing commissioning is necessary but not sufficient; the physics gates are the real demonstration."
+   ],
+   [
+    "h3",
+    "Caution and honesty"
+   ],
+   [
+    "p",
+    "Commissioning is where integration problems surface, subsystems that worked alone but interact badly together. The plan expects and instruments for this. Until commissioning is complete and the gates are passed, all performance figures remain design and simulation values for a machine not yet operated."
+   ]
+  ],
+  "related": [
+   [
+    "first-plasma",
+    "First Plasma"
+   ],
+   [
+    "commissioning-gates-vs-physics-gates",
+    "Commissioning vs Physics Gates"
+   ],
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "first-plasma",
+  "title": "First Plasma",
+  "cat": "building-it-first",
+  "lede": "First plasma is the moment the commissioned breeder confines its first ionized fuel, the start of the path to the confinement gate.",
+  "body": [
+   [
+    "h2",
+    "The first plasma milestone"
+   ],
+   [
+    "p",
+    "First plasma is achieved when the machine, with magnets energized and vessel under vacuum, forms and confines its first plasma. It is a low-parameter event, far below the design operating point, but it confirms that the core systems work together: field, vacuum, fueling, and control."
+   ],
+   [
+    "h3",
+    "What first plasma confirms"
+   ],
+   [
+    "ul",
+    [
+     "The magnet system produces a confining field the plasma responds to",
+     "Vacuum and fueling systems deliver and hold the plasma",
+     "Plasma control and diagnostics function on a real discharge",
+     "The machine is integrated well enough to operate"
+    ]
+   ],
+   [
+    "h3",
+    "What it does not confirm"
+   ],
+   [
+    "p",
+    "First plasma is not gain, not the design current of 9.86 MA, and not neutron production at scale. It is the beginning of a ramp: from first plasma the program builds current, field, and heating toward the Q_sci 3.424 operating point, which is where the confinement gate G1 is judged."
+   ],
+   [
+    "h3",
+    "From first plasma to the design point"
+   ],
+   [
+    "p",
+    "The path from first plasma to full performance is incremental and heavily instrumented, so that each step is compared to the pre-registered predictions for confinement and gain. Problems found here, control instabilities, unexpected losses, are exactly what a first-of-a-kind machine is built to find."
+   ],
+   [
+    "p",
+    "First plasma follows commissioning and precedes the confinement gate. It is a planned milestone for a machine not yet built; no plasma performance is claimed as demonstrated until it is measured on hardware."
+   ]
+  ],
+  "related": [
+   [
+    "commissioning-plan",
+    "Commissioning Plan"
+   ],
+   [
+    "g1-confinement-gate",
+    "G1: Confinement"
+   ],
+   [
+    "plasma-current-9-86-ma",
+    "Plasma Current 9.86 MA"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "first-tritium-milestone",
+  "title": "First Tritium as a Program Milestone",
+  "cat": "building-it-first",
+  "lede": "First tritium is the single milestone that converts the breeder from a physics demonstrator into a working foundry.",
+  "body": [
+   [
+    "h2",
+    "Why first tritium defines the program"
+   ],
+   [
+    "p",
+    "Every earlier milestone, first plasma, the confinement gate, the magnet gate, builds toward one result: bred, recovered, and accounted tritium. First tritium, targeted near 2030 for the first-of-a-kind unit, is where the machine first produces its actual product."
+   ],
+   [
+    "h3",
+    "The full chain in one event"
+   ],
+   [
+    "p",
+    "First tritium requires the entire foundry chain to work at once: sustained D-T plasma near the design gain, a neutron flux consistent with 88.7 MW-class fusion power, a blanket that breeds tritium at a measured ratio, and a fuel loop that recovers and accounts for it. It is the integration test of the whole concept."
+   ],
+   [
+    "ul",
+    [
+     "Confirms the neutron economy closes into a saleable isotope stream",
+     "Validates the breeding blanket at real, three-dimensional geometry",
+     "Demonstrates tritium accountancy for product and regulatory purposes",
+     "Establishes the baseline for the ~4 kg/yr tritium-class output figure"
+    ]
+   ],
+   [
+    "h3",
+    "Reported against prediction"
+   ],
+   [
+    "p",
+    "First tritium is reported measured-versus-predicted for neutron yield and breeding ratio, per the pre-registration discipline. This is where the open reconciliation between a design TBR of 1.8 and real three-dimensional net breeding is settled by data rather than argument."
+   ],
+   [
+    "p",
+    "First tritium is a target, not an achievement. It sits at the end of the roughly 3.5-year FOAK build. Until it is measured, the product figures on this site are design and simulation values."
+   ]
+  ],
+  "related": [
+   [
+    "foak-first-tritium-2030",
+    "FOAK First Tritium ~2030"
+   ],
+   [
+    "g3-fuel-loop-gate",
+    "G3: Fuel Loop"
+   ],
+   [
+    "tritium-breeding-ratio-lever",
+    "The TBR Lever"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "the-fleet-plan",
+  "title": "The Fleet Plan",
+  "cat": "building-it-first",
+  "lede": "The breeder plan is a small number of foundry units, not a large power fleet; scale is set by isotope demand, not by megawatts.",
+  "body": [
+   [
+    "h2",
+    "A small, deliberate fleet"
+   ],
+   [
+    "p",
+    "The breeder is not planned as a growing fleet of power stations. It is planned as a small number of foundry units, enough to meet an isotope and neutron supply requirement. The fleet is sized to demand for tritium, helium-3, and neutron services, not to an energy market."
+   ],
+   [
+    "h3",
+    "Why small"
+   ],
+   [
+    "p",
+    "Each unit produces a tritium-class output near 4 kg/yr and a helium-3 coproduct near 1.97 kg/yr. A few units cover a large fraction of realistic near-term demand for these materials. Building more than the supply requires would serve no purpose, because the product is material with a bounded market, not electricity with open demand."
+   ],
+   [
+    "ul",
+    [
+     "FOAK proves the machine and the foundry function",
+     "NOAK units apply build and operability lessons",
+     "BOAK standardizes the design for repeatable manufacture",
+     "The total fleet is set by isotope demand, not by capacity growth"
+    ]
+   ],
+   [
+    "h3",
+    "Relationship to the burner"
+   ],
+   [
+    "p",
+    "The breeder foundry also supplies fuel to the future burner (Aegis / MetroVolt): tritium now, and helium-3 over time. The breeder fleet and the burner fleet are different in character, the breeder a small foundry, the burner a larger energy fleet gated on separate physics and on lunar helium-3 supply, and they are planned separately."
+   ],
+   [
+    "p",
+    "The fleet plan describes intended deployment of a machine not yet built. It carries no capacity or cost projections, only the supply-driven logic for keeping the breeder fleet small."
+   ]
+  ],
+  "related": [
+   [
+    "foundry-not-power-fleet",
+    "Foundry, Not Power Fleet"
+   ],
+   [
+    "helium-3-coproduct",
+    "Helium-3 Coproduct"
+   ],
+   [
+    "foak-noak-boak-learning-curve",
+    "FOAK to NOAK to BOAK"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "foundry-not-power-fleet",
+  "title": "Foundry, Not Power Fleet",
+  "cat": "building-it-first",
+  "lede": "The breeder fleet is measured in isotope output and neutron-hours, not installed capacity; it is an industrial source, not a utility.",
+  "body": [
+   [
+    "h2",
+    "Two different kinds of fleet"
+   ],
+   [
+    "p",
+    "A power fleet grows to meet electricity demand and is measured in installed capacity. A foundry fleet exists to supply a material and is measured in output per year. The breeder is the second kind. Confusing the two leads to the wrong questions about scale and purpose."
+   ],
+   [
+    "h3",
+    "What the foundry supplies"
+   ],
+   [
+    "ul",
+    [
+     "Tritium, the bankable base product, near 4 kg/yr per unit class",
+     "Helium-3 coproduct, near 1.97 kg/yr per unit",
+     "14 MeV neutrons for materials irradiation and isotope production"
+    ]
+   ],
+   [
+    "h3",
+    "Why not scale to power"
+   ],
+   [
+    "p",
+    "The breeder needs only fusion gain, not net electricity, and its economics rest on materials rather than megawatts. Scaling it into a power fleet would demand the net-electric threshold it is deliberately designed to avoid, and would size the fleet to an energy market it was never meant to serve. The burner is the machine designed toward energy at fleet scale."
+   ],
+   [
+    "h3",
+    "Operating as a foundry"
+   ],
+   [
+    "p",
+    "Foundry operation prioritizes availability, reproducibility, and accountancy: keeping units running, producing consistent output unit to unit, and tracking every gram of tritium. These priorities shape maintenance design, diagnostics, and the fuel loop far more than any peak-power figure."
+   ],
+   [
+    "p",
+    "This describes intended operation of machines not yet built, and contains no economic figures. The distinction it draws, foundry versus power fleet, is the organizing idea behind why the breeder is built first and kept small."
+   ]
+  ],
+  "related": [
+   [
+    "the-fleet-plan",
+    "The Fleet Plan"
+   ],
+   [
+    "isotope-foundry-not-power-plant",
+    "Foundry, Not Power Plant"
+   ],
+   [
+    "neutron-budget-and-products",
+    "Neutron Budget and Products"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "risk-retirement-program",
+  "title": "Risk Retirement",
+  "cat": "building-it-first",
+  "lede": "The build is organized to retire the largest physics and engineering risks in a defined order, with the first-of-a-kind unit as the primary risk-retirement instrument.",
+  "body": [
+   [
+    "h2",
+    "Retiring risk in order"
+   ],
+   [
+    "p",
+    "Rather than assuming the design is correct, the program identifies its largest uncertainties and retires them in sequence. The first-of-a-kind (FOAK) unit is the main instrument for this: its purpose is to convert the biggest simulation-based assumptions into measured results."
+   ],
+   [
+    "h3",
+    "The dominant risks"
+   ],
+   [
+    "ul",
+    [
+     "Confinement scaling: will the plasma reach Q_sci 3.424? (retired at G1)",
+     "High-field magnets: is 16.84 T real at scale under load? (retired at G2)",
+     "Breeding: does the blanket net-breed tritium in real 3-D geometry? (retired at G3)",
+     "Integration: do the subsystems work together? (retired in commissioning)",
+     "Build execution: can the machine be built in ~3.5 years? (retired by FOAK itself)"
+    ]
+   ],
+   [
+    "h3",
+    "Why FOAK is the instrument"
+   ],
+   [
+    "p",
+    "Some risks cannot be retired by more simulation, they require the built machine. FOAK is heavily instrumented and reported against pre-registered predictions precisely so that each measured result closes an open question. A FOAK that finds problems has done its job."
+   ],
+   [
+    "h3",
+    "Open reconciliations"
+   ],
+   [
+    "p",
+    "The program tracks specific open items honestly, including the reconciliation between design-level and net three-dimensional tritium breeding ratio, and details of the magnet materials. These are named, not hidden, and are mapped to the gates that will settle them."
+   ],
+   [
+    "p",
+    "Risk retirement describes a machine not yet built. Its honesty is the point: the program states what is unproven and where each unknown gets resolved."
+   ]
+  ],
+  "related": [
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ],
+   [
+    "what-foak-does-not-prove",
+    "What FOAK Does Not Prove"
+   ],
+   [
+    "open-questions-and-reconciliations",
+    "Open Questions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "design-vs-built-status",
+  "title": "Design and Simulation, Not Yet Built",
+  "cat": "building-it-first",
+  "lede": "Every performance figure for the breeder is a design and simulation value today; no unit is built, and no hardware net-gain is claimed.",
+  "body": [
+   [
+    "h2",
+    "Where the program actually is"
+   ],
+   [
+    "p",
+    "It is important to state plainly: Hyperion is a design and simulation study. No unit is built. Construction of the first-of-a-kind machine is scheduled to begin in Q2 2027, with first tritium targeted near 2030. Everything before that is design, analysis, and simulation."
+   ],
+   [
+    "h3",
+    "What that means for the numbers"
+   ],
+   [
+    "ul",
+    [
+     "Q_sci 3.424 and 88.7 MW fusion power are design-point targets",
+     "16.84 T peak field and 9.86 MA plasma current are design values",
+     "TBR across 1.1/1.5/1.8 is a design lever, not a measured result",
+     "Products near 4 kg/yr tritium class and 1.97 kg/yr helium-3 are projected outputs"
+    ]
+   ],
+   [
+    "h3",
+    "No net-gain claim before FOAK"
+   ],
+   [
+    "p",
+    "The program makes no claim of hardware net gain, and in fact the breeder does not target net electricity at all, only fusion gain. Any figure describing performance is a prediction to be tested at the gates, reported measured-versus-predicted."
+   ],
+   [
+    "h3",
+    "Why say this so directly"
+   ],
+   [
+    "p",
+    "Fusion has been harmed by overclaiming. Stating design-versus-built status clearly, on every relevant page, is how the program keeps its credibility. The value of the work is real, a rigorous design and a concrete build plan, but it is design, and calling it anything else would be dishonest."
+   ],
+   [
+    "p",
+    "When the machine is built and the gates are passed, these values become results. Until then, they are the targets the build is organized to meet."
+   ]
+  ],
+  "related": [
+   [
+    "pre-registered-predictions",
+    "Pre-Registered Predictions"
+   ],
+   [
+    "what-foak-does-not-prove",
+    "What FOAK Does Not Prove"
+   ],
+   [
+    "simulation-to-hardware-validation",
+    "Simulation to Hardware"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "spherical-tokamak-choice",
+  "title": "Why a Spherical Tokamak",
+  "cat": "building-it-first",
+  "lede": "The breeder uses a spherical (low aspect ratio) tokamak because it reaches high plasma pressure at accessible field and stays compact.",
+  "body": [
+   [
+    "h2",
+    "The configuration choice"
+   ],
+   [
+    "p",
+    "Hyperion is a spherical tokamak: a tokamak with a low aspect ratio, where the plasma is more nearly spherical than the classic doughnut shape. This choice follows directly from the foundry mission of reaching gain in a compact machine."
+   ],
+   [
+    "h3",
+    "Why low aspect ratio helps"
+   ],
+   [
+    "ul",
+    [
+     "Higher plasma pressure (beta) for a given magnetic field, improving fusion output efficiency",
+     "Compact size, which shortens the build and concentrates the hard engineering",
+     "Strong plasma shaping, which supports the chosen negative triangularity"
+    ]
+   ],
+   [
+    "h3",
+    "The trade it accepts"
+   ],
+   [
+    "p",
+    "The spherical geometry concentrates stress and heat in a slender centerpost, which becomes the hardest engineering problem in the machine. The design accepts this trade because compactness and high beta serve the gain-only foundry mission better than a large, low-field conventional tokamak would."
+   ],
+   [
+    "h3",
+    "How it shapes the rest of the design"
+   ],
+   [
+    "p",
+    "The spherical choice drives the centerpost engineering, the high 16.84 T peak field, the 9.86 MA plasma current, and the negative triangularity of -0.30. These are not independent choices; they are a coherent set that follows from deciding to reach gain in a compact machine."
+   ],
+   [
+    "p",
+    "The configuration is a design decision for a machine not yet built. Its merits, high beta at accessible field, compactness, are the reasons the breeder can plausibly be the first machine Kronos builds."
+   ]
+  ],
+  "related": [
+   [
+    "compact-machine-rationale",
+    "The Compact-Machine Rationale"
+   ],
+   [
+    "centerpost-engineering",
+    "Centerpost Engineering"
+   ],
+   [
+    "negative-triangularity-choice",
+    "Negative Triangularity"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "compact-machine-rationale",
+  "title": "The Compact-Machine Rationale",
+  "cat": "building-it-first",
+  "lede": "A compact machine is chosen because a foundry is sized to supply, not to power, and small size shortens the build and concentrates risk.",
+  "body": [
+   [
+    "h2",
+    "Small on purpose"
+   ],
+   [
+    "p",
+    "Hyperion is deliberately compact. Since the mission is to supply a target quantity of isotopes and neutrons, not to generate a large amount of electricity, there is no reason to make the machine large. Compactness is an advantage for a foundry, not a compromise."
+   ],
+   [
+    "h3",
+    "What compactness buys"
+   ],
+   [
+    "ul",
+    [
+     "A shorter, roughly 3.5-year first-of-a-kind build",
+     "Less total material and fewer oversized components to procure",
+     "Concentrated engineering, most risk sits in the centerpost and magnets",
+     "A machine that can plausibly be built first, before the larger burner"
+    ]
+   ],
+   [
+    "h3",
+    "How it is achieved"
+   ],
+   [
+    "p",
+    "High field does the work that size would otherwise do. A peak field of 16.84 T, enabled by REBCO superconductor, lets a small spherical tokamak reach the confinement and pressure needed for gain. The spherical geometry raises achievable plasma pressure for that field. Together they make a compact machine capable of Q_sci 3.424."
+   ],
+   [
+    "h3",
+    "The cost of compactness"
+   ],
+   [
+    "p",
+    "Compactness raises engineering stress. The centerpost carries high field, high current, and neutron loading in a small volume. This is the price of a small machine, and it is why centerpost engineering and the magnet gate G2 are central to the program."
+   ],
+   [
+    "p",
+    "The rationale describes a design choice for a machine not yet built. Compactness is what makes building the breeder first a credible plan rather than an aspiration."
+   ]
+  ],
+  "related": [
+   [
+    "spherical-tokamak-choice",
+    "Why a Spherical Tokamak"
+   ],
+   [
+    "centerpost-engineering",
+    "Centerpost Engineering"
+   ],
+   [
+    "peak-field-16-84-t",
+    "Peak Field 16.84 T"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-breeding-ratio-lever",
+  "title": "The Breeding-Ratio Lever",
+  "cat": "building-it-first",
+  "lede": "Tritium breeding ratio is treated as a design lever studied across 1.1, 1.5, and 1.8, not as a single fixed number.",
+  "body": [
+   [
+    "h2",
+    "TBR as a lever"
+   ],
+   [
+    "p",
+    "Tritium breeding ratio (TBR) is the ratio of tritium bred in the blanket to tritium consumed by the plasma. The breeder treats TBR as a design lever, studied across 1.1, 1.5, and 1.8, rather than committing to a single value, because the achievable ratio depends on blanket design choices that trade against each other."
+   ],
+   [
+    "h3",
+    "What each value means"
+   ],
+   [
+    "ul",
+    [
+     "TBR 1.1: modest surplus, tighter blanket, less margin for penetrations",
+     "TBR 1.5: substantial surplus supporting product output and fuel self-sufficiency",
+     "TBR 1.8: high design-level surplus, most demanding blanket configuration"
+    ]
+   ],
+   [
+    "h3",
+    "Why not fix one number"
+   ],
+   [
+    "p",
+    "Real blankets have penetrations for heating, diagnostics, and maintenance, plus structure that absorbs neutrons. These reduce net breeding below the idealized figure. Studying a range makes the design honest about the gap between a one-dimensional design value and net three-dimensional performance, and lets the blanket be tuned to the product requirement."
+   ],
+   [
+    "h3",
+    "The open reconciliation"
+   ],
+   [
+    "p",
+    "There is a flagged reconciliation between a design-level TBR of 1.8 and the net breeding a real three-dimensional blanket delivers. The program does not paper over this. It is one of the specific items the fuel-loop gate G3 is designed to settle by measurement at first tritium."
+   ],
+   [
+    "p",
+    "TBR values here are design levers for a machine not yet built. The product figure near 4 kg/yr tritium class follows from the chosen point on this lever and remains a projection until G3."
+   ]
+  ],
+  "related": [
+   [
+    "g3-fuel-loop-gate",
+    "G3: Fuel Loop"
+   ],
+   [
+    "blanket-and-breeding",
+    "Blanket and Breeding"
+   ],
+   [
+    "open-questions-and-reconciliations",
+    "Open Questions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "neutron-budget-and-products",
+  "title": "Neutron Budget and Products",
+  "cat": "building-it-first",
+  "lede": "The breeder's 14 MeV neutrons are a budget: some breed tritium, some make helium-3, and some serve materials irradiation.",
+  "body": [
+   [
+    "h2",
+    "Neutrons as the product"
+   ],
+   [
+    "p",
+    "In a breeder, the fusion neutrons are the product, not a byproduct. Each D-T fusion produces a 14 MeV neutron, and the machine's output at 88.7 MW fusion power is fundamentally a neutron flux that is then allocated to different uses."
+   ],
+   [
+    "h3",
+    "How the budget is spent"
+   ],
+   [
+    "ul",
+    [
+     "Breeding: neutrons captured in the lithium-bearing blanket produce tritium (~4 kg/yr class)",
+     "Coproduction: pathways yield a helium-3 coproduct (~1.97 kg/yr)",
+     "Irradiation services: 14 MeV neutrons for materials testing and isotope production"
+    ]
+   ],
+   [
+    "h3",
+    "Why the budget framing matters"
+   ],
+   [
+    "p",
+    "A neutron used for one purpose is not available for another. Blanket coverage, penetrations, and multipliers all shift the budget. Framing output as a neutron budget makes the trade-offs explicit: raising breeding ratio, for example, may compete with neutron availability for irradiation services."
+   ],
+   [
+    "h3",
+    "Product accounting"
+   ],
+   [
+    "p",
+    "The tritium class output near 4 kg/yr is the bankable base product; helium-3 near 1.97 kg/yr is a strategically valuable coproduct; neutron-hours are a service. All three flow from the same 88.7 MW neutron source, which is why gain, not net power, is the requirement."
+   ],
+   [
+    "p",
+    "These are projected outputs for a machine not yet built. The actual budget is measured at the fuel-loop gate, where neutron yield and breeding ratio are reported against pre-registered predictions."
+   ]
+  ],
+  "related": [
+   [
+    "isotope-foundry-not-power-plant",
+    "Foundry, Not Power Plant"
+   ],
+   [
+    "helium-3-coproduct",
+    "Helium-3 Coproduct"
+   ],
+   [
+    "tritium-breeding-ratio-lever",
+    "The TBR Lever"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "helium-3-coproduct",
+  "title": "The Helium-3 Coproduct",
+  "cat": "building-it-first",
+  "lede": "The breeder yields a helium-3 coproduct near 1.97 kg/yr, a strategically valuable material that also feeds the future D-3He burner.",
+  "body": [
+   [
+    "h2",
+    "A valuable coproduct"
+   ],
+   [
+    "p",
+    "Alongside its tritium-class output, the breeder produces a helium-3 coproduct near 1.97 kg/yr. Helium-3 is scarce and strategically valuable, with uses that make it important beyond its quantity. It is a coproduct of the same neutron economy that breeds tritium."
+   ],
+   [
+    "h3",
+    "Where it comes from"
+   ],
+   [
+    "p",
+    "Helium-3 arises from the tritium pathway: tritium decays to helium-3, and the fuel cycle can recover it. This links the two products, tritium is the bankable base, and helium-3 accumulates from it, so the fuel loop is designed to recover and account for both."
+   ],
+   [
+    "h3",
+    "Why it matters strategically"
+   ],
+   [
+    "ul",
+    [
+     "Scarcity: terrestrial helium-3 supply is very limited",
+     "Strategic value distinct from revenue, its importance is not simply its mass",
+     "Fuel for the future burner: the D-3He burner (Aegis / MetroVolt) consumes helium-3"
+    ]
+   ],
+   [
+    "h3",
+    "The strategic link to the burner"
+   ],
+   [
+    "p",
+    "The breeder's helium-3 connects the two machines. The burner is a D-3He generator, and its fuel supply is a long-term constraint gated on lunar helium-3 availability. The breeder's coproduct is one terrestrial source in that picture, though the burner's fleet-scale needs are far larger. Helium-3's value here is framed as strategic, not as a revenue figure."
+   ],
+   [
+    "p",
+    "The 1.97 kg/yr figure is a design projection for a machine not yet built, recovered and confirmed only once the fuel loop operates."
+   ]
+  ],
+  "related": [
+   [
+    "neutron-budget-and-products",
+    "Neutron Budget and Products"
+   ],
+   [
+    "tritium-plant-integration",
+    "Tritium Plant Integration"
+   ],
+   [
+    "the-fleet-plan",
+    "The Fleet Plan"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "negative-triangularity-choice",
+  "title": "Negative Triangularity",
+  "cat": "building-it-first",
+  "lede": "The breeder plasma is shaped with negative triangularity of delta -0.30 to manage heat exhaust while preserving core confinement.",
+  "body": [
+   [
+    "h2",
+    "Shaping the plasma"
+   ],
+   [
+    "p",
+    "Triangularity describes the D-shape of the plasma cross-section. Negative triangularity turns the D outward, the reverse of the conventional inward shape. The breeder uses a negative triangularity of delta -0.30 as a canonical design choice."
+   ],
+   [
+    "h3",
+    "Why negative"
+   ],
+   [
+    "ul",
+    [
+     "Improved edge behavior, potentially avoiding certain edge instabilities",
+     "Favorable heat-exhaust characteristics for the divertor",
+     "Compatibility with the compact spherical geometry and its strong shaping capability"
+    ]
+   ],
+   [
+    "h3",
+    "The trade"
+   ],
+   [
+    "p",
+    "Negative triangularity is less conventional than positive, and its confinement and stability behavior at the design current and field is exactly what the confinement gate G1 must verify. The choice is made because its edge and exhaust benefits suit a compact high-field machine, but it places real demands on demonstrating core confinement at delta -0.30."
+   ],
+   [
+    "h3",
+    "How it interacts with the machine"
+   ],
+   [
+    "p",
+    "The shape does not stand alone. It is chosen together with the 9.86 MA plasma current, the 8 T on-axis field, and the compact spherical geometry so that core confinement and edge exhaust are balanced at the design gain point. The divertor design in particular is coupled to the triangularity, because the exhaust the divertor must handle depends on how the plasma edge is shaped."
+   ],
+   [
+    "h3",
+    "Consistency in representation"
+   ],
+   [
+    "p",
+    "The negative triangularity is canonical and must be represented consistently, the plasma D-shape opens outward. This matters in the machine's models and visualizations, where a triangularity of the wrong sign would misrepresent the design. The program tracks correct triangularity depiction as a documentation requirement, and its digital twin must show the outward-opening cross-section rather than omitting or reversing it."
+   ],
+   [
+    "p",
+    "The delta -0.30 shape is a design choice for a machine not yet built. Its confinement and stability performance is a prediction to be tested at the confinement gate G1, reported measured-versus-predicted."
+   ]
+  ],
+  "related": [
+   [
+    "g1-confinement-gate",
+    "G1: Confinement"
+   ],
+   [
+    "spherical-tokamak-choice",
+    "Why a Spherical Tokamak"
+   ],
+   [
+    "vacuum-vessel-and-divertor",
+    "Vessel and Divertor"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "centerpost-engineering",
+  "title": "Centerpost Engineering",
+  "cat": "building-it-first",
+  "lede": "The centerpost of the spherical tokamak carries the highest field, current, and neutron load in the machine, making it the hardest component.",
+  "body": [
+   [
+    "h2",
+    "The core of a spherical tokamak"
+   ],
+   [
+    "p",
+    "In a spherical tokamak the central column, the centerpost, is where the toroidal-field conductors pass through the middle of the machine. Because the geometry is compact, this column is slender and carries the most concentrated loads in the entire device: high field, high current, mechanical stress, and neutron flux together."
+   ],
+   [
+    "h3",
+    "What the centerpost must withstand"
+   ],
+   [
+    "ul",
+    [
+     "Magnetic field approaching the 16.84 T peak, with associated Lorentz stress",
+     "High current density in the toroidal-field conductors",
+     "Neutron loading, since it sits close to the plasma",
+     "Thermal loads from resistive and nuclear heating"
+    ]
+   ],
+   [
+    "h3",
+    "Why it is the pacing engineering problem"
+   ],
+   [
+    "p",
+    "Every advantage of the compact spherical design, high beta, small size, high field, converges as stress in the centerpost. If the centerpost cannot be built to carry these loads reliably, the whole configuration fails. This is why the magnet gate G2 and centerpost design are central to risk retirement."
+   ],
+   [
+    "h3",
+    "Design and materials"
+   ],
+   [
+    "p",
+    "The centerpost design draws on REBCO high-field magnet practice and structural analysis to carry Lorentz and thermal loads within material limits, with neutron shielding to protect the conductors over the machine's life. Its centerpost lifetime under neutron fluence is one of the flagged engineering questions the program tracks."
+   ],
+   [
+    "p",
+    "The centerpost is a design for a machine not yet built. It is the component the first-of-a-kind unit most needs to validate on hardware."
+   ]
+  ],
+  "related": [
+   [
+    "spherical-tokamak-choice",
+    "Why a Spherical Tokamak"
+   ],
+   [
+    "g2-magnet-gate",
+    "G2: Magnet Gate"
+   ],
+   [
+    "peak-field-16-84-t",
+    "Peak Field 16.84 T"
+   ],
+   [
+    "neutron-shielding-plan",
+    "Neutron Shielding"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "peak-field-16-84-t",
+  "title": "Peak Field 16.84 T",
+  "cat": "building-it-first",
+  "lede": "The magnet system is designed for 16.84 T peak field at the conductor with 8 T on axis, the field that makes a compact machine reach gain.",
+  "body": [
+   [
+    "h2",
+    "The design field"
+   ],
+   [
+    "p",
+    "The breeder's magnet system is designed for a peak field of 16.84 T at the conductor and 8 T on the plasma axis. Field is what confines the plasma and enables fusion; high field is what lets a compact machine reach the design gain of Q_sci 3.424."
+   ],
+   [
+    "h3",
+    "Peak versus on-axis"
+   ],
+   [
+    "p",
+    "The 16.84 T peak occurs at the conductor, where the field is strongest; the 8 T on-axis value is what the plasma experiences at its center. The gap reflects geometry: field falls off from the coils to the plasma. Both figures matter, the peak sets the engineering limit, the on-axis value sets the plasma physics."
+   ],
+   [
+    "h3",
+    "Why this field is demanding"
+   ],
+   [
+    "ul",
+    [
+     "16.84 T requires REBCO high-temperature superconductor at high current density",
+     "The field produces large Lorentz forces concentrated in the centerpost",
+     "Maintaining superconducting margin and quench protection at this field is hard"
+    ]
+   ],
+   [
+    "h3",
+    "Where it is proven"
+   ],
+   [
+    "p",
+    "The magnet gate G2 exists to prove exactly this: that the coil set reaches and holds 16.84 T peak with 8 T on axis under operational load. Achieving the field is a precondition for plasma operation and for the confinement gate that follows."
+   ],
+   [
+    "p",
+    "16.84 T is a design target for a machine not yet built. It rests on REBCO conductor supply and magnet fabrication meeting their qualification criteria, and it becomes a demonstrated value only when G2 is passed."
+   ]
+  ],
+  "related": [
+   [
+    "g2-magnet-gate",
+    "G2: Magnet Gate"
+   ],
+   [
+    "rebco-magnet-supply",
+    "REBCO Magnet Supply"
+   ],
+   [
+    "centerpost-engineering",
+    "Centerpost Engineering"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "plasma-current-9-86-ma",
+  "title": "Plasma Current 9.86 MA",
+  "cat": "building-it-first",
+  "lede": "The design plasma current of 9.86 MA sets the confinement and stability the breeder needs to reach its gain point.",
+  "body": [
+   [
+    "h2",
+    "Why current matters"
+   ],
+   [
+    "p",
+    "Plasma current is one of the primary levers on tokamak performance. It sets much of the confinement and helps hold the plasma stable. The breeder is designed for a plasma current of 9.86 MA, chosen together with the field and shape to reach Q_sci 3.424."
+   ],
+   [
+    "h3",
+    "Current, confinement, and gain"
+   ],
+   [
+    "p",
+    "Energy confinement in a tokamak scales strongly with plasma current, so 9.86 MA is a large part of why the compact machine can hold enough energy to reach gain. The confinement gate G1 tests whether the real machine, at 9.86 MA and full field, achieves the predicted confinement."
+   ],
+   [
+    "h3",
+    "The engineering it demands"
+   ],
+   [
+    "ul",
+    [
+     "A central solenoid and current-drive capability to establish and sustain 9.86 MA",
+     "Stability control to manage a high-current compact plasma",
+     "Structural design to handle the forces a large current implies"
+    ]
+   ],
+   [
+    "h3",
+    "Interaction with the other design points"
+   ],
+   [
+    "p",
+    "9.86 MA does not stand alone. It works with the 8 T on-axis field, the negative triangularity of -0.30, and the compact spherical geometry as one coherent operating point. Change one and the others must move. This is why the design point is quoted as a set, not as isolated numbers."
+   ],
+   [
+    "p",
+    "9.86 MA is a design value for a machine not yet built. First plasma will begin at far lower current, and the ramp to 9.86 MA is where confinement is measured against prediction at G1."
+   ]
+  ],
+  "related": [
+   [
+    "g1-confinement-gate",
+    "G1: Confinement"
+   ],
+   [
+    "first-plasma",
+    "First Plasma"
+   ],
+   [
+    "q-sci-3-424-basis",
+    "The Basis for Q_sci 3.424"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "q-sci-3-424-basis",
+  "title": "The Basis for Q_sci 3.424",
+  "cat": "building-it-first",
+  "lede": "The breeder's design gain of Q_sci 3.424 is the ratio of fusion power to plasma heating power that yields the neutron flux the foundry needs.",
+  "body": [
+   [
+    "h2",
+    "What Q_sci 3.424 means"
+   ],
+   [
+    "p",
+    "Q_sci is scientific gain: fusion power produced divided by heating power delivered to the plasma. The breeder's design point is Q_sci 3.424, meaning it produces roughly three and a half times the power injected to heat the plasma. This is the gain the foundry needs, and it is a plasma-physics ratio, not a whole-plant one."
+   ],
+   [
+    "h3",
+    "Why this value, not higher"
+   ],
+   [
+    "p",
+    "The breeder is sized to a supply requirement. Q_sci 3.424 at 88.7 MW fusion power produces the neutron flux needed to breed the target tritium class output and the helium-3 coproduct. A higher gain is not required for the foundry mission, and pursuing it would make the machine larger or harder without serving the product."
+   ],
+   [
+    "h3",
+    "How it is reached"
+   ],
+   [
+    "ul",
+    [
+     "8 T on-axis field from the high-field magnet system",
+     "9.86 MA plasma current for strong confinement",
+     "Negative triangularity of -0.30 for edge and exhaust behavior",
+     "Compact spherical geometry for high plasma pressure"
+    ]
+   ],
+   [
+    "h3",
+    "Gain, not net power"
+   ],
+   [
+    "p",
+    "Q_sci 3.424 is scientific gain. It is not net electricity and does not imply it, the breeder does not target net electric output. This distinction is central to the whole program: the foundry needs gain, and gain is a lower bar than the net-electric threshold."
+   ],
+   [
+    "p",
+    "Q_sci 3.424 is a design and simulation value for a machine not yet built. It is the headline quantity the confinement gate G1 is built to verify, reported measured-versus-predicted."
+   ]
+  ],
+  "related": [
+   [
+    "gain-only-requirement",
+    "The Gain-Only Requirement"
+   ],
+   [
+    "g1-confinement-gate",
+    "G1: Confinement"
+   ],
+   [
+    "fusion-power-88-7-mw",
+    "Fusion Power 88.7 MW"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "fusion-power-88-7-mw",
+  "title": "Fusion Power 88.7 MW",
+  "cat": "building-it-first",
+  "lede": "The breeder is designed to produce 88.7 MW of fusion power, the neutron source strength that drives its isotope and irradiation products.",
+  "body": [
+   [
+    "h2",
+    "The power figure and what it is for"
+   ],
+   [
+    "p",
+    "The breeder is designed for 88.7 MW of fusion power. In a foundry this figure matters as a measure of neutron source strength, not as an amount of electricity to sell. 88.7 MW of D-T fusion means a specific rate of 14 MeV neutron production, and that rate is what breeds tritium and serves irradiation."
+   ],
+   [
+    "h3",
+    "From megawatts to product"
+   ],
+   [
+    "p",
+    "Fusion power sets the neutron flux; the neutron flux, allocated across the neutron budget, sets the products: the tritium class output near 4 kg/yr, the helium-3 coproduct near 1.97 kg/yr, and neutron-hours for irradiation. 88.7 MW is chosen to supply these, not to reach a power rating."
+   ],
+   [
+    "h3",
+    "Not net electric"
+   ],
+   [
+    "ul",
+    [
+     "88.7 MW is fusion power, thermal in origin, not net electrical output",
+     "The breeder converts none of it to net grid power by design",
+     "The value delivered is the neutron flux and the material it produces"
+    ]
+   ],
+   [
+    "h3",
+    "Where it comes from"
+   ],
+   [
+    "p",
+    "88.7 MW at Q_sci 3.424 follows from the operating point: 8 T on axis, 9.86 MA plasma current, negative triangularity -0.30, in the compact spherical geometry. It is the fusion output of that specific design, not a target set independently."
+   ],
+   [
+    "p",
+    "88.7 MW is a design and simulation value for a machine not yet built. The corresponding neutron yield is what the fuel-loop gate measures against its pre-registered prediction."
+   ]
+  ],
+  "related": [
+   [
+    "q-sci-3-424-basis",
+    "The Basis for Q_sci 3.424"
+   ],
+   [
+    "neutron-budget-and-products",
+    "Neutron Budget and Products"
+   ],
+   [
+    "gain-only-requirement",
+    "The Gain-Only Requirement"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-plant-integration",
+  "title": "Tritium Plant Integration",
+  "cat": "building-it-first",
+  "lede": "The tritium plant recovers, purifies, stores, and accounts for bred tritium and its helium-3 coproduct, closing the fuel loop.",
+  "body": [
+   [
+    "h2",
+    "The plant that makes the foundry work"
+   ],
+   [
+    "p",
+    "A breeder is only as good as its tritium plant. The plant recovers tritium bred in the blanket, purifies it, returns fuel to the plasma, stores product, and accounts for every gram. It also recovers the helium-3 coproduct. Without an integrated plant, neutrons breed tritium that cannot be captured or sold."
+   ],
+   [
+    "h3",
+    "Plant functions"
+   ],
+   [
+    "ul",
+    [
+     "Recovery of tritium from the blanket and plasma exhaust",
+     "Isotope separation and purification of the fuel stream",
+     "Storage of tritium product and recovery of helium-3",
+     "Accountancy: measuring and tracking inventory for product and regulation"
+    ]
+   ],
+   [
+    "h3",
+    "Integration with the machine"
+   ],
+   [
+    "p",
+    "The plant is not a bolt-on. It couples to the blanket, the vacuum and pumping systems, and the fueling system, and its design interacts with the breeding ratio lever and the neutron budget. Integration is why the fuel loop is treated as a single gate, G3, rather than as separate plant and blanket tests."
+   ],
+   [
+    "h3",
+    "Accountancy and licensing"
+   ],
+   [
+    "p",
+    "Tritium accountancy is central both to running a foundry and to the byproduct-material licensing basis. The plant must demonstrate that it measures and controls inventory, which is part of the G3 pass criterion and part of the safety case."
+   ],
+   [
+    "p",
+    "The tritium plant is a design for a machine not yet built. Its performance, recovery efficiency and accountancy, is demonstrated at first tritium, where the closed and accounted fuel loop is the proof of the foundry."
+   ]
+  ],
+  "related": [
+   [
+    "g3-fuel-loop-gate",
+    "G3: Fuel Loop"
+   ],
+   [
+    "blanket-and-breeding",
+    "Blanket and Breeding"
+   ],
+   [
+    "tritium-inventory-management",
+    "Tritium Inventory Management"
+   ],
+   [
+    "helium-3-coproduct",
+    "Helium-3 Coproduct"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "blanket-and-breeding",
+  "title": "Blanket and Breeding",
+  "cat": "building-it-first",
+  "lede": "The breeding blanket surrounds the plasma, captures 14 MeV neutrons, and converts them to tritium in lithium-bearing material.",
+  "body": [
+   [
+    "h2",
+    "Where breeding happens"
+   ],
+   [
+    "p",
+    "The breeding blanket is the layer surrounding the plasma that captures fusion neutrons and breeds tritium. When a 14 MeV neutron is absorbed by lithium, it produces tritium and helium. The blanket is where the machine turns neutrons into product, and its design sets the achievable breeding ratio."
+   ],
+   [
+    "h3",
+    "Design variables"
+   ],
+   [
+    "ul",
+    [
+     "Lithium isotopics and lithium-bearing material choice",
+     "Neutron multipliers to increase available neutrons for breeding",
+     "Blanket thickness and coverage around the plasma",
+     "Penetrations for heating, diagnostics, and maintenance that reduce coverage"
+    ]
+   ],
+   [
+    "h3",
+    "The three-dimensional reality"
+   ],
+   [
+    "p",
+    "A one-dimensional calculation of breeding ratio is optimistic. Real blankets have penetrations and structure that absorb neutrons and reduce net breeding. This is why TBR is treated as a lever across 1.1, 1.5, and 1.8, and why the reconciliation between design-level and net three-dimensional breeding is a tracked open question."
+   ],
+   [
+    "h3",
+    "Maintainability"
+   ],
+   [
+    "p",
+    "Blanket modules experience neutron damage and must be replaceable. The blanket is designed as modules for remote maintenance, which interacts with the assembly sequence and the neutron budget, replaceability requires penetrations, and penetrations cost breeding."
+   ],
+   [
+    "p",
+    "The blanket is a design for a machine not yet built. Its net breeding performance is measured at the fuel-loop gate G3, at first tritium, against the pre-registered prediction for the installed configuration."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-breeding-ratio-lever",
+    "The TBR Lever"
+   ],
+   [
+    "g3-fuel-loop-gate",
+    "G3: Fuel Loop"
+   ],
+   [
+    "neutron-budget-and-products",
+    "Neutron Budget and Products"
+   ],
+   [
+    "remote-maintenance",
+    "Remote Maintenance"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "vacuum-vessel-and-divertor",
+  "title": "Vacuum Vessel and Divertor",
+  "cat": "building-it-first",
+  "lede": "The vacuum vessel holds the plasma environment and the divertor handles exhaust heat and particles, both shaped by the compact geometry.",
+  "body": [
+   [
+    "h2",
+    "Two structural essentials"
+   ],
+   [
+    "p",
+    "The vacuum vessel is the sealed chamber that maintains the high vacuum the plasma requires and forms the first structural boundary around it. The divertor is the region that receives plasma exhaust, heat and particles, and channels them away. Both are demanding in a compact, high-power machine."
+   ],
+   [
+    "h3",
+    "The vessel"
+   ],
+   [
+    "ul",
+    [
+     "Maintains operating vacuum with low outgassing",
+     "Forms a precision structure sized to the compact spherical geometry",
+     "Provides ports for heating, diagnostics, and maintenance access",
+     "Carries loads and interfaces with blanket and magnets"
+    ]
+   ],
+   [
+    "h3",
+    "The divertor"
+   ],
+   [
+    "p",
+    "Exhaust heat handling is one of the hardest problems in any tokamak. The divertor must accept concentrated heat flux without failing. The negative triangularity of -0.30 is chosen partly to improve exhaust behavior, so the divertor design and the plasma shape are linked decisions."
+   ],
+   [
+    "h3",
+    "Why the compact machine makes it harder"
+   ],
+   [
+    "p",
+    "Concentrating 88.7 MW of fusion power in a compact machine concentrates the exhaust load. Less surface area is available to spread the heat, which raises the demand on divertor materials and geometry. This is a genuine engineering challenge the design must meet, not assume away."
+   ],
+   [
+    "p",
+    "The vessel and divertor are designs for a machine not yet built. Their performance is verified during commissioning and operation; the vessel is one of the long-lead pacing items that drives the build schedule."
+   ]
+  ],
+  "related": [
+   [
+    "negative-triangularity-choice",
+    "Negative Triangularity"
+   ],
+   [
+    "assembly-sequence",
+    "Assembly Sequence"
+   ],
+   [
+    "manufacturing-plan",
+    "Manufacturing Plan"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "cryogenic-plant",
+  "title": "Cryogenic Plant",
+  "cat": "building-it-first",
+  "lede": "The cryogenic plant keeps the superconducting magnets at operating temperature, a precondition for reaching and holding 16.84 T.",
+  "body": [
+   [
+    "h2",
+    "Cold enough to be superconducting"
+   ],
+   [
+    "p",
+    "The high-field magnets are superconducting, which means they must be held at cryogenic temperature to carry current without resistance. The cryogenic plant provides and maintains that cold environment. If the magnets warm past their margin, they cannot hold 16.84 T and can quench."
+   ],
+   [
+    "h3",
+    "What the plant does"
+   ],
+   [
+    "ul",
+    [
+     "Cools the magnets from ambient to operating temperature during commissioning",
+     "Maintains temperature and temperature margin during operation",
+     "Removes heat loads, including nuclear heating from neutrons near the coils",
+     "Supports controlled recovery after any magnet quench"
+    ]
+   ],
+   [
+    "h3",
+    "Interaction with the magnet gate"
+   ],
+   [
+    "p",
+    "Cryogenic performance is part of magnet commissioning and the magnet gate G2. Verifying temperature margin, how far the conductor sits below its critical temperature, is essential, because margin is what protects the magnet against transient heat and neutron loads at full field."
+   ],
+   [
+    "h3",
+    "A pacing utility"
+   ],
+   [
+    "p",
+    "The cryoplant is a significant utility load and a commissioning-critical system: the magnets cannot be energized until they are cold and stable. Cooldown itself takes time and is an early commissioning stage. The plant's reliability directly affects machine availability, which matters for foundry operation."
+   ],
+   [
+    "p",
+    "The cryogenic plant is a design for a machine not yet built. Its performance is demonstrated during commissioning as a precondition for the magnet gate and all subsequent operation."
+   ]
+  ],
+  "related": [
+   [
+    "g2-magnet-gate",
+    "G2: Magnet Gate"
+   ],
+   [
+    "commissioning-plan",
+    "Commissioning Plan"
+   ],
+   [
+    "power-and-magnet-systems",
+    "Power and Magnet Systems"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "power-and-magnet-systems",
+  "title": "Power and Magnet Systems",
+  "cat": "building-it-first",
+  "lede": "Power systems energize and protect the magnets, drive plasma current, and supply heating, together forming the machine's electrical backbone.",
+  "body": [
+   [
+    "h2",
+    "The electrical backbone"
+   ],
+   [
+    "p",
+    "The breeder's power and magnet systems energize the superconducting coils, protect them against quench, drive the 9.86 MA plasma current, and supply plasma heating. This is the electrical backbone that turns supplied power into confining field and hot plasma."
+   ],
+   [
+    "h3",
+    "Main elements"
+   ],
+   [
+    "ul",
+    [
+     "Magnet power supplies to energize the toroidal and poloidal field coils",
+     "Quench protection to safely dissipate stored energy if a magnet loses superconductivity",
+     "Central solenoid and current drive to establish and sustain plasma current",
+     "Heating systems to bring the plasma to fusion conditions"
+    ]
+   ],
+   [
+    "h3",
+    "Quench protection"
+   ],
+   [
+    "p",
+    "A superconducting magnet at 16.84 T stores enormous energy. If part of the coil loses superconductivity (a quench), that energy must be removed safely and fast. Quench protection is therefore a central safety and design function, and demonstrating it is part of the magnet gate G2."
+   ],
+   [
+    "h3",
+    "Recirculating load"
+   ],
+   [
+    "p",
+    "These systems draw substantial power, magnets, current drive, and heating. In a foundry this is acceptable because the machine needs only gain, not net electricity; the recirculating load does not have to be beaten by generated power. This is precisely the threshold the breeder is designed to avoid needing to cross."
+   ],
+   [
+    "p",
+    "The power and magnet systems are designs for a machine not yet built. They are commissioned in stages, with magnet energization and quench protection verified before plasma operation."
+   ]
+  ],
+  "related": [
+   [
+    "g2-magnet-gate",
+    "G2: Magnet Gate"
+   ],
+   [
+    "plasma-current-9-86-ma",
+    "Plasma Current 9.86 MA"
+   ],
+   [
+    "gain-only-requirement",
+    "The Gain-Only Requirement"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "remote-maintenance",
+  "title": "Remote Maintenance",
+  "cat": "building-it-first",
+  "lede": "Neutron-activated components are serviced by remote handling, a design requirement that shapes the blanket, ports, and foundry availability.",
+  "body": [
+   [
+    "h2",
+    "Why remote handling"
+   ],
+   [
+    "p",
+    "After operation, components near the plasma are activated by neutrons and cannot be serviced by direct human contact. The breeder is designed for remote maintenance: replacing blanket modules, servicing the divertor, and inspecting internals with remote handling equipment through designed access."
+   ],
+   [
+    "h3",
+    "What it shapes"
+   ],
+   [
+    "ul",
+    [
+     "Blanket built as replaceable modules rather than a monolith",
+     "Access ports and handling paths designed into the vessel from the start",
+     "Component connections designed to be made and broken remotely",
+     "Maintenance sequences planned alongside the assembly sequence"
+    ]
+   ],
+   [
+    "h3",
+    "The availability link"
+   ],
+   [
+    "p",
+    "A foundry lives on availability, the fraction of time it produces product. Maintenance downtime directly reduces output. Designing for efficient remote maintenance is therefore a foundry requirement, not a convenience: faster module changeouts mean more neutron-hours and more product per year."
+   ],
+   [
+    "h3",
+    "The trade with breeding"
+   ],
+   [
+    "p",
+    "Remote maintenance requires access and penetrations, and penetrations reduce blanket coverage and net breeding. This is one of the real trades in the design: maintainability against breeding ratio. It is part of why TBR is treated as a lever rather than a single maximized number."
+   ],
+   [
+    "p",
+    "Remote maintenance is a design requirement for a machine not yet built. Its effectiveness is a major factor in the NOAK and BOAK goal of high, reproducible foundry availability."
+   ]
+  ],
+  "related": [
+   [
+    "blanket-and-breeding",
+    "Blanket and Breeding"
+   ],
+   [
+    "foundry-not-power-fleet",
+    "Foundry, Not Power Fleet"
+   ],
+   [
+    "noak-improvements",
+    "NOAK Improvements"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "safety-case",
+  "title": "The Safety Case",
+  "cat": "building-it-first",
+  "lede": "The breeder's safety case centers on tritium containment, neutron and activation management, and magnet energy, matched to a byproduct-material framework.",
+  "body": [
+   [
+    "h2",
+    "What must be made safe"
+   ],
+   [
+    "p",
+    "A fusion breeder's hazards are specific and bounded: radioactive tritium, neutron activation of materials, and the stored energy in high-field magnets. The safety case addresses these directly. It is not the accident spectrum of a fission core, which is why a byproduct-material framework fits the machine."
+   ],
+   [
+    "h3",
+    "The main hazards"
+   ],
+   [
+    "ul",
+    [
+     "Tritium: a radioactive gas requiring containment and accountancy",
+     "Neutron activation: components become radioactive and need shielding and handling",
+     "Magnet energy: stored energy managed through quench protection",
+     "Occupational and public dose around a compact neutron source"
+    ]
+   ],
+   [
+    "h3",
+    "How they are addressed"
+   ],
+   [
+    "p",
+    "Tritium is contained by multiple barriers and tracked by accountancy. Activation is managed by shielding, material choice, and remote maintenance. Magnet energy is handled by quench protection. Dose is managed by shielding and access control. Each hazard has a designed control, and the gates produce evidence, especially G3's tritium accountancy, that supports the case."
+   ],
+   [
+    "h3",
+    "Inherent characteristics"
+   ],
+   [
+    "p",
+    "A fusion plasma is not a chain reaction; it stops when fueling or heating stops, and it holds very little fuel at any instant. This gives the safety case favorable inherent characteristics, though tritium and activation still require rigorous control and are the focus of the licensing basis."
+   ],
+   [
+    "p",
+    "The safety case is developed for a machine not yet built or licensed, in pre-application engagement with the regulator, with formal submissions governed by counsel review."
+   ]
+  ],
+  "related": [
+   [
+    "licensing-byproduct-material",
+    "Byproduct-Material Framework"
+   ],
+   [
+    "tritium-inventory-management",
+    "Tritium Inventory Management"
+   ],
+   [
+    "neutron-shielding-plan",
+    "Neutron Shielding"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-inventory-management",
+  "title": "Tritium Inventory Management",
+  "cat": "building-it-first",
+  "lede": "Every gram of tritium is measured, tracked, and accounted for, a requirement for both foundry operation and the licensing basis.",
+  "body": [
+   [
+    "h2",
+    "Accounting for the product"
+   ],
+   [
+    "p",
+    "Tritium is both the breeder's product and a regulated radioactive material, so it must be measured and tracked continuously. Inventory management covers how much tritium exists, where it is in the plant, and how it moves, from breeding in the blanket to storage as product."
+   ],
+   [
+    "h3",
+    "Why it is doubly important"
+   ],
+   [
+    "ul",
+    [
+     "Product: the tritium class output near 4 kg/yr must be quantified to be sold",
+     "Regulation: the byproduct-material safety case requires demonstrated accountancy",
+     "Safety: containment depends on knowing inventory and detecting loss",
+     "Fuel cycle: the plasma is refueled from recovered tritium, so tracking closes the loop"
+    ]
+   ],
+   [
+    "h3",
+    "How it is done"
+   ],
+   [
+    "p",
+    "Inventory is measured across the plant, recovery, purification, storage, and fueling, so that the total is known and reconciled. Discrepancies signal either measurement error or loss, both of which matter. This accountancy is part of the fuel-loop gate G3, where the closed and accounted loop is the pass criterion."
+   ],
+   [
+    "h3",
+    "Helium-3 too"
+   ],
+   [
+    "p",
+    "Because tritium decays to helium-3, inventory management also tracks the helium-3 coproduct near 1.97 kg/yr. The two are accounted together as products of the same fuel cycle."
+   ],
+   [
+    "p",
+    "Tritium inventory management is a design and procedural requirement for a machine not yet built. Demonstrating it on hardware, at first tritium, is inseparable from proving the foundry function itself."
+   ]
+  ],
+  "related": [
+   [
+    "g3-fuel-loop-gate",
+    "G3: Fuel Loop"
+   ],
+   [
+    "tritium-plant-integration",
+    "Tritium Plant Integration"
+   ],
+   [
+    "safety-case",
+    "The Safety Case"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "neutron-shielding-plan",
+  "title": "Neutron Shielding",
+  "cat": "building-it-first",
+  "lede": "Shielding confines 14 MeV neutrons, protects the magnets and workers, and manages activation, shaping the facility layout.",
+  "body": [
+   [
+    "h2",
+    "Managing 14 MeV neutrons"
+   ],
+   [
+    "p",
+    "D-T fusion produces energetic 14 MeV neutrons. These neutrons are the product, but outside the blanket they are a hazard: they activate materials, damage the magnets, and pose a dose risk. Shielding is how the machine confines and manages them, and it drives much of the facility design."
+   ],
+   [
+    "h3",
+    "What shielding must do"
+   ],
+   [
+    "ul",
+    [
+     "Protect the superconducting magnets from neutron damage and heating",
+     "Reduce activation of surrounding structure and equipment",
+     "Limit worker and public dose around the facility",
+     "Preserve the neutron budget by directing neutrons to the blanket, not losing them"
+    ]
+   ],
+   [
+    "h3",
+    "Protecting the magnets"
+   ],
+   [
+    "p",
+    "The centerpost and coils sit close to the plasma in a compact machine, so shielding the magnets is critical to their lifetime. Neutron fluence on the conductors is a flagged engineering question, and shielding is the primary defense that keeps the magnets viable over the machine's operating life."
+   ],
+   [
+    "h3",
+    "Facility impact"
+   ],
+   [
+    "p",
+    "Shielding is heavy and voluminous, so it sets the building layout, the siting footprint, and the maintenance access design. It interacts with the assembly sequence, shielding structure is among the first things built, and with remote maintenance, since shielded components must still be accessible."
+   ],
+   [
+    "p",
+    "The shielding plan is a design for a machine not yet built. Its adequacy is verified through analysis and, ultimately, by measured dose and activation during commissioning and operation."
+   ]
+  ],
+  "related": [
+   [
+    "centerpost-engineering",
+    "Centerpost Engineering"
+   ],
+   [
+    "safety-case",
+    "The Safety Case"
+   ],
+   [
+    "siting-considerations",
+    "Siting the First Unit"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "instrumentation-and-diagnostics",
+  "title": "Instrumentation and Diagnostics",
+  "cat": "building-it-first",
+  "lede": "The first-of-a-kind unit is heavily instrumented so that every gate is measured against prediction and every anomaly is understood.",
+  "body": [
+   [
+    "h2",
+    "Measuring the machine"
+   ],
+   [
+    "p",
+    "A first-of-a-kind machine exists to be measured. Instrumentation and diagnostics let the program observe plasma behavior, magnet performance, neutron production, and tritium inventory in enough detail to compare hardware to prediction and to diagnose whatever the machine does that the design did not expect."
+   ],
+   [
+    "h3",
+    "What is measured"
+   ],
+   [
+    "ul",
+    [
+     "Plasma: current, density, temperature, confinement, and stability",
+     "Magnets: field, temperature margin, strain, and quench signals",
+     "Neutrons: yield and spectrum, tied to fusion power and breeding",
+     "Tritium: inventory and flows through the fuel loop"
+    ]
+   ],
+   [
+    "h3",
+    "Diagnostics and the gates"
+   ],
+   [
+    "p",
+    "Each physics gate depends on diagnostics: G1 on confinement measurement, G2 on field and margin measurement, G3 on neutron and tritium measurement. Without adequate diagnostics a gate cannot be judged, so diagnostic coverage is part of the gate design, not an afterthought."
+   ],
+   [
+    "h3",
+    "Why FOAK is over-instrumented"
+   ],
+   [
+    "p",
+    "FOAK carries more instrumentation than a production foundry unit would need, because its job is to learn. Some diagnostics will prove essential and carry forward to NOAK; others will prove unnecessary and be removed. Deciding which is one of FOAK's outputs to the manufacturing plan."
+   ],
+   [
+    "p",
+    "The diagnostic suite is a design for a machine not yet built. It is what turns the first build from a demonstration into a measured, reportable body of evidence against pre-registered predictions."
+   ]
+  ],
+  "related": [
+   [
+    "pre-registered-predictions",
+    "Pre-Registered Predictions"
+   ],
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ],
+   [
+    "simulation-to-hardware-validation",
+    "Simulation to Hardware"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "simulation-to-hardware-validation",
+  "title": "From Simulation to Hardware",
+  "cat": "building-it-first",
+  "lede": "The breeder's design is a body of simulation that the built machine will validate gate by gate, measured against pre-registered predictions.",
+  "body": [
+   [
+    "h2",
+    "What validation means here"
+   ],
+   [
+    "p",
+    "Today the breeder exists as simulation: plasma physics models, magnet and structural analysis, and neutronics for breeding. Validation is the process of comparing what these models predict to what the built machine actually does. The gate program is the structure of that comparison."
+   ],
+   [
+    "h3",
+    "The validation chain"
+   ],
+   [
+    "ul",
+    [
+     "Confinement models validated at G1 against measured energy confinement",
+     "Magnet and structural models validated at G2 against measured field and margin",
+     "Neutronics and breeding models validated at G3 against measured yield and TBR",
+     "Integrated behavior validated through commissioning"
+    ]
+   ],
+   [
+    "h3",
+    "Why simulation is not enough"
+   ],
+   [
+    "p",
+    "Simulation bounds behavior but cannot settle it, especially for confinement scaling and three-dimensional net breeding, where the gap between model and reality is a known risk. Only the hardware settles these. This is why the program does not present simulation results as achievements, and why it builds a first-of-a-kind unit at all."
+   ],
+   [
+    "h3",
+    "Reporting discipline"
+   ],
+   [
+    "p",
+    "Validation is reported measured-versus-predicted, using the pre-registered predictions. A model that predicted the machine well is validated; one that missed is corrected and feeds the NOAK design. Either outcome advances the program, which is why the discipline matters more than any single number matching."
+   ],
+   [
+    "p",
+    "All current figures are simulation-based design values for a machine not yet built. Validation converts them, one gate at a time, into demonstrated results."
+   ]
+  ],
+  "related": [
+   [
+    "pre-registered-predictions",
+    "Pre-Registered Predictions"
+   ],
+   [
+    "digital-twin-role",
+    "The Digital Twin"
+   ],
+   [
+    "design-vs-built-status",
+    "Design, Not Yet Built"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "digital-twin-role",
+  "title": "The Digital Twin",
+  "cat": "building-it-first",
+  "lede": "A digital twin mirrors the design and, in time, the built machine, linking simulation to measured behavior for design and validation.",
+  "body": [
+   [
+    "h2",
+    "A model of the machine"
+   ],
+   [
+    "p",
+    "A digital twin is a detailed computational model of the machine that runs alongside the physical program. In the design phase it embodies the frozen physics, Q_sci 3.424, 88.7 MW, 9.86 MA, 16.84 T, negative triangularity -0.30, so the design can be explored and interrogated. Once hardware exists, the twin is updated against measured behavior."
+   ],
+   [
+    "h3",
+    "What the twin is for"
+   ],
+   [
+    "ul",
+    [
+     "Represent the frozen design point consistently across the program",
+     "Explore operating scenarios and sensitivities before hardware exists",
+     "Compare predicted behavior to measured results at each gate",
+     "Carry lessons from FOAK forward into NOAK design"
+    ]
+   ],
+   [
+    "h3",
+    "Fidelity and honesty"
+   ],
+   [
+    "p",
+    "A digital twin is only as good as its physics and its correspondence to reality. During the design phase the twin is a simulation, not evidence of performance. Its representations, including plasma shape, must match the canonical design; for example the negative triangularity must be shown correctly as an outward-opening plasma, not omitted or reversed."
+   ],
+   [
+    "h3",
+    "Role in validation"
+   ],
+   [
+    "p",
+    "As gates are passed, measured data refines the twin, and the refined twin improves predictions for later units. This closes the loop between simulation and hardware described in the validation program, and it is where the twin earns its keep, by improving as the machine teaches it."
+   ],
+   [
+    "p",
+    "The digital twin models a machine not yet built. It is a design and analysis tool, and its outputs are design values until validated against hardware at the gates."
+   ]
+  ],
+  "related": [
+   [
+    "simulation-to-hardware-validation",
+    "Simulation to Hardware"
+   ],
+   [
+    "negative-triangularity-choice",
+    "Negative Triangularity"
+   ],
+   [
+    "pre-registered-predictions",
+    "Pre-Registered Predictions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "quality-assurance-program",
+  "title": "Quality Assurance",
+  "cat": "building-it-first",
+  "lede": "Quality assurance runs from conductor qualification through assembly and commissioning, so the built machine matches the design that was analyzed.",
+  "body": [
+   [
+    "h2",
+    "Building what was designed"
+   ],
+   [
+    "p",
+    "A design is only meaningful if the built machine matches it. Quality assurance is the discipline that keeps fabrication, assembly, and commissioning true to the analyzed design, so that when the machine is measured at the gates, it is the designed machine being tested and not an unintended variant."
+   ],
+   [
+    "h3",
+    "Where QA applies"
+   ],
+   [
+    "ul",
+    [
+     "Conductor: REBCO tape qualified against current-density and defect criteria",
+     "Fabrication: coils, vessel, and blanket built to tolerance",
+     "Assembly: components installed correctly and in sequence",
+     "Commissioning: subsystems verified before and during bring-up"
+    ]
+   ],
+   [
+    "h3",
+    "Why it matters for the gates"
+   ],
+   [
+    "p",
+    "If a magnet falls short of 16.84 T, QA records must show whether it was designed short, built short, or damaged, otherwise a gate miss cannot be diagnosed. QA makes the pre-registered comparison meaningful by ensuring deviations are traceable to a cause. It is the record that lets a miss teach something."
+   ],
+   [
+    "h3",
+    "Feeding the learning curve"
+   ],
+   [
+    "p",
+    "QA data from FOAK, which tolerances were hard to hold, which steps introduced defects, feeds directly into the manufacturing plan for NOAK and BOAK. Quality assurance is therefore both a control on the first build and an input to standardizing the later ones."
+   ],
+   [
+    "p",
+    "The QA program governs a machine not yet built. Its purpose is to ensure that the design and simulation values, once tested on hardware, are tested on the machine that was actually intended."
+   ]
+  ],
+  "related": [
+   [
+    "manufacturing-plan",
+    "Manufacturing Plan"
+   ],
+   [
+    "rebco-magnet-supply",
+    "REBCO Magnet Supply"
+   ],
+   [
+    "pre-registered-predictions",
+    "Pre-Registered Predictions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "commissioning-gates-vs-physics-gates",
+  "title": "Commissioning Gates vs Physics Gates",
+  "cat": "building-it-first",
+  "lede": "Commissioning milestones prove subsystems work; the physics gates prove the machine performs, and the two are kept distinct.",
+  "body": [
+   [
+    "h2",
+    "Two kinds of milestone"
+   ],
+   [
+    "p",
+    "It is easy to confuse getting a machine running with proving it performs. The program keeps them separate. Commissioning milestones confirm that subsystems function, vacuum, cryogenics, magnet energization, first plasma. The physics gates (G1, G2, G3) confirm that the machine meets its design point and breeds tritium."
+   ],
+   [
+    "h3",
+    "Commissioning milestones"
+   ],
+   [
+    "ul",
+    [
+     "Vessel reaches operating vacuum",
+     "Magnets reach operating temperature with margin",
+     "Magnets energize and hold field",
+     "First plasma is formed and controlled"
+    ]
+   ],
+   [
+    "h3",
+    "Physics gates"
+   ],
+   [
+    "ul",
+    [
+     "G1: confinement sufficient to reach Q_sci 3.424",
+     "G2: 16.84 T peak field held under load",
+     "G3: neutrons breed and are accounted as tritium"
+    ]
+   ],
+   [
+    "h3",
+    "Why the distinction is enforced"
+   ],
+   [
+    "p",
+    "A machine can pass commissioning, everything switches on, and still fall short at a physics gate, for instance if confinement is below prediction. Treating first plasma or magnet energization as if it were proof of performance would overclaim. The gates, reported against pre-registered predictions, are the real evidence; commissioning is the necessary precondition, not the demonstration itself."
+   ],
+   [
+    "h3",
+    "How they are sequenced together"
+   ],
+   [
+    "p",
+    "The two interleave in practice. Magnet energization is a commissioning milestone that also produces the evidence for the magnet gate G2. First plasma is a commissioning milestone that opens the ramp toward the confinement gate G1. First tritium is where fuel-loop commissioning and the fuel-loop gate G3 coincide. So each physics gate rides on a commissioning milestone, but the gate is judged on measured performance against prediction, while the commissioning milestone is judged only on the subsystem working."
+   ],
+   [
+    "p",
+    "Both apply to a machine not yet built. Keeping them distinct is part of how the program avoids the overclaiming that has damaged fusion, first plasma is a real milestone, but it is not gain, and it is not first tritium."
+   ]
+  ],
+  "related": [
+   [
+    "commissioning-plan",
+    "Commissioning Plan"
+   ],
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ],
+   [
+    "first-plasma",
+    "First Plasma"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "noak-improvements",
+  "title": "NOAK Improvements",
+  "cat": "building-it-first",
+  "lede": "Nth-of-a-kind units apply the build and operability lessons of the first machine while holding the physics design point fixed.",
+  "body": [
+   [
+    "h2",
+    "What NOAK changes"
+   ],
+   [
+    "p",
+    "The nth-of-a-kind (NOAK) units are where the program applies what the first machine taught. The physics design point, Q_sci 3.424, 88.7 MW, 16.84 T, 9.86 MA, stays essentially fixed once validated. What changes is how the machine is built and operated: faster, more reliably, and with less unnecessary instrumentation."
+   ],
+   [
+    "h3",
+    "Typical NOAK improvements"
+   ],
+   [
+    "ul",
+    [
+     "Shorter build than the roughly 3.5-year FOAK, from procurement and assembly lessons",
+     "Streamlined diagnostics, keeping what proved essential at FOAK",
+     "Improved remote-maintenance access to raise foundry availability",
+     "Manufacturing steps standardized where FOAK was bespoke"
+    ]
+   ],
+   [
+    "h3",
+    "Why the physics stays fixed"
+   ],
+   [
+    "p",
+    "Once FOAK validates the design point at the gates, changing the physics would reopen retired risk. NOAK deliberately holds the validated physics constant and concentrates improvement on build time and operability, which is where the largest, safest gains are available after the first unit."
+   ],
+   [
+    "h3",
+    "Retiring operability risk"
+   ],
+   [
+    "p",
+    "FOAK retires physics risk; NOAK retires operability risk, whether the machine can be built repeatably and run at high availability as a foundry. This is the second stage of the learning curve, between proving the machine and standardizing it."
+   ],
+   [
+    "p",
+    "NOAK improvements describe planned second-stage units for a machine not yet built. They are informed by FOAK measurement and quality-assurance data, and they are the bridge to BOAK standardization."
+   ]
+  ],
+  "related": [
+   [
+    "foak-noak-boak-learning-curve",
+    "FOAK to NOAK to BOAK"
+   ],
+   [
+    "boak-standardization",
+    "BOAK Standardization"
+   ],
+   [
+    "remote-maintenance",
+    "Remote Maintenance"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "boak-standardization",
+  "title": "BOAK Standardization",
+  "cat": "building-it-first",
+  "lede": "Best-of-a-kind units settle the design as a repeatable, manufactured product with known lead times and predictable foundry output.",
+  "body": [
+   [
+    "h2",
+    "The settled design"
+   ],
+   [
+    "p",
+    "Best-of-a-kind (BOAK) is the endpoint of the learning curve: the design settled into a repeatable, manufactured product. By this stage the physics is validated, the build is proven, and the machine can be produced with known lead times and predictable output, exactly what a foundry needs."
+   ],
+   [
+    "h3",
+    "What standardization means"
+   ],
+   [
+    "ul",
+    [
+     "A fixed, documented design suitable for repeatable fabrication",
+     "Known lead times for long-lead items like magnets and vessel",
+     "Predictable output: the tritium class and helium-3 coproduct per unit",
+     "High, reproducible availability from mature maintenance design"
+    ]
+   ],
+   [
+    "h3",
+    "Why standardize"
+   ],
+   [
+    "p",
+    "A small foundry fleet needs its units to be alike so that supply is predictable and operation is uniform. Standardization at BOAK turns a set of individually built machines into a product line, which is what makes a reliable isotope and neutron supply possible."
+   ],
+   [
+    "h3",
+    "The end of the risk program"
+   ],
+   [
+    "p",
+    "By BOAK, the major physics, engineering, and operability risks have been retired, at G1, G2, and G3 on FOAK, and through NOAK build and operation. BOAK is not about discovery; it is about consistency. This is the stage where the breeder is genuinely a foundry rather than an experiment."
+   ],
+   [
+    "p",
+    "BOAK describes the intended settled form of a machine not yet built. It is the goal the FOAK-to-NOAK-to-BOAK sequence is organized to reach, and the basis for keeping the breeder fleet small and supply-driven."
+   ]
+  ],
+  "related": [
+   [
+    "foak-noak-boak-learning-curve",
+    "FOAK to NOAK to BOAK"
+   ],
+   [
+    "noak-improvements",
+    "NOAK Improvements"
+   ],
+   [
+    "the-fleet-plan",
+    "The Fleet Plan"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "schedule-and-milestones",
+  "title": "Schedule and Milestones",
+  "cat": "building-it-first",
+  "lede": "A compact timeline from Q2 2027 construction start through first plasma, the physics gates, and first tritium near 2030.",
+  "body": [
+   [
+    "h2",
+    "The milestone chain"
+   ],
+   [
+    "p",
+    "The first-of-a-kind breeder follows a defined sequence of milestones, each dependent on the one before. The schedule below is a plan for a machine not yet built; it is stated as intent, with schedule risk retired by execution rather than assumed away."
+   ],
+   [
+    "matrix",
+    [
+     "Phase / Milestone",
+     [
+      [
+       "Q2 2027 / Construction begins; long-lead magnet and vessel procurement"
+      ],
+      [
+       "2027-2029 / Fabrication and assembly from the centerpost outward"
+      ],
+      [
+       "Commissioning / Vacuum, cryogenics, magnet energization (G2), first plasma"
+      ],
+      [
+       "Ramp / Build to design point; confinement gate (G1)"
+      ],
+      [
+       "~2030 / First tritium; fuel-loop gate (G3)"
+      ]
+     ]
+    ]
+   ],
+   [
+    "h3",
+    "Dependencies"
+   ],
+   [
+    "p",
+    "Long-lead procurement gates the whole schedule, which is why it begins at construction start. Commissioning cannot begin until assembly is complete; the physics gates cannot be judged until the relevant subsystems are commissioned; first tritium cannot happen until confinement and field are demonstrated. The chain is strict."
+   ],
+   [
+    "h3",
+    "After FOAK"
+   ],
+   [
+    "p",
+    "Beyond first tritium, the program moves to NOAK and BOAK units, which are planned to build faster than the roughly 3.5-year FOAK as procurement and assembly mature. The breeder fleet remains small, sized to isotope demand."
+   ],
+   [
+    "p",
+    "Every date here is a target for a machine not yet built. No hardware net-gain, and indeed no net electricity, is claimed at any milestone; the breeder's demonstration is gain and first tritium."
+   ]
+  ],
+  "related": [
+   [
+    "construction-begins-q2-2027",
+    "Construction Begins Q2 2027"
+   ],
+   [
+    "foak-first-tritium-2030",
+    "FOAK First Tritium ~2030"
+   ],
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "what-foak-does-not-prove",
+  "title": "What FOAK Does Not Prove",
+  "cat": "building-it-first",
+  "lede": "The first-of-a-kind unit proves gain and first tritium; it does not prove net electricity, fleet reproducibility, or burner physics.",
+  "body": [
+   [
+    "h2",
+    "Bounding the claim"
+   ],
+   [
+    "p",
+    "Being explicit about what a demonstration does not show is as important as stating what it does. The first-of-a-kind (FOAK) breeder is designed to prove fusion gain and the foundry function through first tritium. Several things it will not prove, and the program does not claim it will."
+   ],
+   [
+    "h3",
+    "What FOAK does not demonstrate"
+   ],
+   [
+    "ul",
+    [
+     "Net electricity: the breeder does not target net electric output at all",
+     "Fleet reproducibility: repeatable build and high availability are NOAK and BOAK work",
+     "Long-term component life: full-life neutron fluence on the centerpost accrues over years",
+     "Burner physics: the D-3He burner is a separate machine and program"
+    ]
+   ],
+   [
+    "h3",
+    "Why say this"
+   ],
+   [
+    "p",
+    "Overclaiming from a first demonstration is a recurring failure mode in fusion. A machine that reaches gain and breeds tritium is a genuine achievement, and it is enough for the foundry mission. Stretching it into claims about net power or fleet economics would be dishonest and is refused."
+   ],
+   [
+    "h3",
+    "What is proven, precisely"
+   ],
+   [
+    "p",
+    "FOAK proves that the design point, validated at G1, G2, and G3, produces neutrons, breeds tritium, and yields the product stream. That is the claim, bounded and reported against pre-registered predictions, no more and no less."
+   ],
+   [
+    "p",
+    "FOAK is a machine not yet built. This page states, in advance, the limits of what its eventual success will and will not establish."
+   ]
+  ],
+  "related": [
+   [
+    "risk-retirement-program",
+    "Risk Retirement"
+   ],
+   [
+    "gain-only-requirement",
+    "The Gain-Only Requirement"
+   ],
+   [
+    "open-questions-and-reconciliations",
+    "Open Questions"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "open-questions-and-reconciliations",
+  "title": "Open Questions and Reconciliations",
+  "cat": "building-it-first",
+  "lede": "The program tracks specific unresolved questions honestly, including net breeding ratio and centerpost lifetime, mapped to the gates that settle them.",
+  "body": [
+   [
+    "h2",
+    "Naming the unknowns"
+   ],
+   [
+    "p",
+    "A credible design states what it has not yet resolved. The breeder program tracks specific open questions and reconciliations rather than presenting the design as finished. Each is mapped to the gate, test, or analysis that will settle it."
+   ],
+   [
+    "h3",
+    "Tracked open items"
+   ],
+   [
+    "ul",
+    [
+     "Breeding ratio: design-level TBR of 1.8 versus net three-dimensional breeding in a real blanket, settled by measurement at G3",
+     "Centerpost lifetime: neutron fluence on the conductors over the machine's operating life",
+     "Magnet materials: some REBCO material and author-attribution details under reconciliation",
+     "Confinement scaling: whether the plasma reaches Q_sci 3.424 at delta -0.30, settled at G1"
+    ]
+   ],
+   [
+    "h3",
+    "How they are handled"
+   ],
+   [
+    "p",
+    "Open items are not hidden or smoothed over. They are documented, assigned to a gate or analysis, and reported against pre-registered predictions when tested. The tritium breeding reconciliation, in particular, is a headline example: the design uses TBR as a lever precisely because the net value is uncertain until G3."
+   ],
+   [
+    "h3",
+    "Why honesty here matters"
+   ],
+   [
+    "p",
+    "The value of the breeder program is a rigorous design and a concrete build plan, not a claim of finished physics. Stating open questions plainly is what separates a serious program from marketing. The gates exist to close these questions with data."
+   ],
+   [
+    "p",
+    "These questions concern a machine not yet built. Their resolution is the substance of what the first-of-a-kind unit and its gate program are designed to deliver."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-breeding-ratio-lever",
+    "The TBR Lever"
+   ],
+   [
+    "centerpost-engineering",
+    "Centerpost Engineering"
+   ],
+   [
+    "risk-retirement-program",
+    "Risk Retirement"
+   ],
+   [
+    "gate-program-overview",
+    "The Gate Program"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ }
+]

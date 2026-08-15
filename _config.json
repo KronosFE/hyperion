@@ -1,0 +1,36 @@
+{
+  "route": "hyperion",
+  "title": "Hyperion — The Breeder",
+  "short": "Hyperion",
+  "kicker": "HYPERION · THE BREEDER",
+  "headline": "The machine that makes the fuel.",
+  "tagline": "Hyperion is a compact D–T spherical-tokamak breeder — the isotope foundry Kronos builds first, producing the tritium, helium-3, and 14 MeV neutrons a fusion economy needs. Open, on the record.",
+  "hero_clip": "breeder-hero-spherical-tokamak.mp4",
+  "cats": {
+    "the-machine": [
+      "The Machine",
+      "The spherical-tokamak design — magnets, center stack, blanket, vessel, and heating."
+    ],
+    "what-it-makes": [
+      "What It Makes",
+      "Tritium, helium-3, and 14 MeV neutrons — the strategic products, and materials qualification."
+    ],
+    "the-physics": [
+      "The Physics",
+      "Fusion gain, tritium breeding ratio, negative triangularity, and the honest gates."
+    ],
+    "building-it-first": [
+      "Building It First",
+      "Construction from Q2 2027 — the gates, the FOAK→NOAK→BOAK path, and the engineering."
+    ],
+    "materials-components": [
+      "Materials & Components",
+      "REBCO magnets, the hafnium-carbide first wall, shielding, and cryogenics."
+    ],
+    "validation-open-science": [
+      "Validation & Open Science",
+      "The 81-analysis reproducible record, benchmarks, and what remains to prove."
+    ]
+  },
+  "hero_blueprint": "breeder"
+}

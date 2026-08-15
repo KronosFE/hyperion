@@ -1,0 +1,2976 @@
+[
+ {
+  "slug": "reproducible-analysis-record",
+  "title": "The Reproducible Analysis Record",
+  "cat": "validation-open-science",
+  "lede": "Every physics claim about the breeder (Hyperion) traces to one of 81 versioned analyses that regenerate from source, so a reader can reproduce the number, not just read it.",
+  "body": [
+   [
+    "h2",
+    "One record, 81 analyses"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) is a compact D-T spherical tokamak studied in simulation. Its design point is not a slide deck of round numbers; it is a set of <b>81 analyses</b> that each take fixed inputs, run defined code, and emit a defined output. The headline figures — scientific gain Q_sci of 3.424, fusion power of 88.7 MW, plasma current of 9.86 MA, peak field of 16.84 T with 8 T on-axis — are outputs of those analyses, not assertions layered on top of them."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"analysis record\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">fixed inputs</text><text x=\"82\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">(frozen)</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">versioned code</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">defined output</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">published number</text></svg>"
+   ],
+   [
+    "h3",
+    "What 'reproducible' means here"
+   ],
+   [
+    "p",
+    "An analysis is reproducible when a third party, given the inputs and the code, obtains the same output within a stated tolerance. Each of the 81 carries its inputs, the exact code revision, a random seed where stochastic, and an expected output. The record is regenerated end-to-end rather than hand-edited, so a changed input propagates to every figure that depends on it and cannot silently disagree with the text."
+   ],
+   [
+    "h3",
+    "Why it is structured this way"
+   ],
+   [
+    "p",
+    "A fusion design claim is only as good as the ability of someone else to check it. Publishing prose without the underlying computation asks the reader to trust the author. Publishing the computation asks the reader to trust arithmetic they can rerun. Kronos chose the second posture across the whole breeder program, and the same discipline governs the open honest gates: the tritium-breeding-ratio reconciliation and the center-post lifetime are recorded as open items, not smoothed over."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "version-control-of-the-record",
+    "Versioning the Record"
+   ],
+   [
+    "independent-reproduction-guide",
+    "How to Reproduce It"
+   ],
+   [
+    "the-verify-check",
+    "The Automated verify() Firewall"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "what-simulated-vs-demonstrated",
+  "title": "What Is Simulated vs What Is Demonstrated",
+  "cat": "validation-open-science",
+  "lede": "Hyperion is entirely a design-and-simulation study today; nothing here is hardware-demonstrated, and the record labels every claim with which of those two it is.",
+  "body": [
+   [
+    "h2",
+    "A hard line between the two"
+   ],
+   [
+    "p",
+    "There is a category difference between a number that came out of a code and a number that came out of a machine. The breeder (Hyperion) program is, at this date, on the simulated side of that line for every quantity. The value of stating this plainly is that it tells a reader exactly how much weight each figure can bear."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 278\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Status of the breeder claims\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Status of the breeder claims</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">Q_sci 3.424 / 88.7 MW</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">plasma current 9.86 MA</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">peak field 16.84 T</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"182\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">tritium ~4 kg/yr class</text><rect x=\"20\" y=\"187\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"187\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"198\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"226\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">first tritium (hardware)</text><rect x=\"20\" y=\"231\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"231\" width=\"0\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"242\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">targeted ~2030</text></svg>"
+   ],
+   [
+    "h3",
+    "Simulated"
+   ],
+   [
+    "p",
+    "Everything: the equilibrium and its negative triangularity of delta -0.30, the confinement and gain estimate, the neutron budget, the breeding blanket behavior, and the product yields near 4 kg/yr tritium class plus 1.97 kg/yr helium-3. These are computed from models with stated assumptions and stated uncertainties."
+   ],
+   [
+    "h3",
+    "Demonstrated"
+   ],
+   [
+    "p",
+    "Nothing, in the sense of full-system fusion hardware. Individual technologies (REBCO conductor, vacuum systems) exist in industry, but the integrated breeder has not been built. First-of-a-kind first tritium near 2030 is the first hardware event that will move specific claims from the left column to the right. Until then, the honest reading of every headline number is: this is what the model says the machine should do."
+   ],
+   [
+    "p",
+    "The line is not permanent. It is a ledger that FOAK begins to move, entry by entry, as measurement replaces prediction. The purpose of drawing it sharply now is so that later movement is legible: when a quantity crosses from simulated to demonstrated, the record can say exactly which one and on what evidence, instead of a vague overall claim of progress."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "design-and-simulation-stage-disclaimer",
+    "Design-and-Simulation Stage"
+   ],
+   [
+    "what-foak-first-tritium-will-test",
+    "What FOAK Will Test"
+   ],
+   [
+    "what-foak-does-not-prove",
+    "What FOAK Will Not Prove"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "the-honest-gates-overview",
+  "title": "The Honest Gates, Stated Plainly",
+  "cat": "validation-open-science",
+  "lede": "The breeder record names the open physics questions it has not closed — chiefly the tritium-breeding-ratio reconciliation and the center-post lifetime — rather than presenting a finished machine.",
+  "body": [
+   [
+    "h2",
+    "Naming the gates builds trust"
+   ],
+   [
+    "p",
+    "A design study that reports only its successes is not a validation record; it is advertising. The breeder (Hyperion) program states its open gates as findings of equal standing to its results. Three are load-bearing for the breeder specifically."
+   ],
+   [
+    "ul",
+    [
+     "Local-vs-net tritium breeding ratio: at the target TBR of 1.8, the reconciliation between an idealized local breeding figure and a realistic net figure (blanket coverage, penetrations, losses) is <b>open</b>.",
+     "Tritium self-sufficiency: not yet proven. The machine must breed more tritium than it burns plus decay and process losses, and that closure is a design target, not a demonstrated fact.",
+     "Center-post lifetime: the compact spherical-tokamak center stack sits in a hard neutron field; a limited-lifetime note (order 0.01 full-power-years for the most exposed element) is recorded as an engineering constraint, not waved away."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Open breeder gates\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Open breeder gates</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">TBR local-vs-net @ 1.8</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"242\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">open reconciliation</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">tritium self-sufficiency</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"176\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">not yet proven</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">center-post lifetime</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"132\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">~0.01 fpy note</text></svg>"
+   ],
+   [
+    "h3",
+    "Gates are physics, not price"
+   ],
+   [
+    "p",
+    "These are stated as physics and engineering facts. None is translated into an economic quantity anywhere in the record. A gate is a thing the machine must be shown to do, and the honest position is that it has not yet been shown."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-breeding-ratio-open-question",
+    "The TBR Open Question"
+   ],
+   [
+    "local-vs-net-tbr-reconciliation",
+    "Local vs Net TBR"
+   ],
+   [
+    "centerpost-lifetime-gate",
+    "The Center-Post Lifetime Gate"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "published-papers-and-dois",
+  "title": "The Published Papers and Their DOIs",
+  "cat": "validation-open-science",
+  "lede": "The breeder analysis is deposited publicly on Zenodo with citable DOIs, so the record has a permanent address independent of any Kronos-controlled website.",
+  "body": [
+   [
+    "h2",
+    "Permanent, citable, external"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) design-and-simulation record is deposited on Zenodo, an open repository operated by CERN. A Zenodo deposit has a persistent DOI, a fixed content hash, and a public landing page that does not depend on Kronos infrastructure. If this website disappeared, the record would remain."
+   ],
+   [
+    "ul",
+    [
+     "Breeder deposit (v1): DOI <b>10.5281/zenodo.21746157</b>.",
+     "Breeder deposit (v2, corrected): DOI <b>10.5281/zenodo.21795620</b>.",
+     "A version-independent concept DOI resolves to the latest version so a citation never goes stale."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"publication path\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">author analysis</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">deposit to Zenodo</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">DOI minted</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">anyone cites &</text><text x=\"517\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">fetches</text></svg>"
+   ],
+   [
+    "h3",
+    "What a DOI does and does not guarantee"
+   ],
+   [
+    "p",
+    "A DOI guarantees that a specific set of files is permanently retrievable and unambiguously named. It does not, by itself, guarantee peer review or correctness. Those are separate processes. The DOI is the anchor that lets peer review, reproduction, and correction all point at exactly the same bytes."
+   ],
+   [
+    "p",
+    "Depositing externally also removes a conflict of interest from the record's permanence. A claim hosted only on a company site can be edited or withdrawn by that company; a Zenodo deposit cannot be altered without leaving a public version record. For a program asking to be taken on the strength of its openness, putting the primary record beyond its own reach is the point, not a technicality."
+   ],
+   [
+    "h3",
+    "How to use them"
+   ],
+   [
+    "p",
+    "Cite the version DOI when a claim depends on a specific number, so the reference is unambiguous even after later corrections. Cite the concept DOI when referring to the breeder work in general. See <a href=./how-to-cite-hyperion.html>How to Cite Hyperion</a> for exact formats."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "zenodo-deposit-structure",
+    "Inside the Zenodo Deposit"
+   ],
+   [
+    "version-control-of-the-record",
+    "Versioning the Record"
+   ],
+   [
+    "how-to-cite-hyperion",
+    "How to Cite Hyperion"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "zenodo-deposit-structure",
+  "title": "Inside the Zenodo Deposit",
+  "cat": "validation-open-science",
+  "lede": "The breeder deposit is not a single PDF; it bundles the paper, the analysis inputs, the code revision, and the checksums needed to verify and rerun it.",
+  "body": [
+   [
+    "h2",
+    "What is in the archive"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) Zenodo deposit is organized so that reading and reproducing are both possible from the same download. A reader who only wants the argument reads the manuscript; a reader who wants to check a number opens the corresponding analysis."
+   ],
+   [
+    "ul",
+    [
+     "The manuscript, describing the design point, methods, results, and the open gates.",
+     "Frozen inputs for each of the 81 analyses, with units and provenance.",
+     "The code revision (or a pinned reference to it) that turns inputs into outputs.",
+     "Expected outputs and tolerances, so a rerun can be judged pass or fail.",
+     "Checksums for every file, so a download can be verified byte-for-byte."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"deposit contents\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"68\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">manuscript</text><line x1=\"119\" y1=\"95\" x2=\"133\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M133 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"136\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"184\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">frozen inputs</text><line x1=\"235\" y1=\"95\" x2=\"249\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M249 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"252\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"300\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">pinned code</text><line x1=\"351\" y1=\"95\" x2=\"365\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M365 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"368\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"416\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">expected</text><text x=\"416\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">outputs</text><line x1=\"467\" y1=\"95\" x2=\"481\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M481 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"484\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"532\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">checksums</text></svg>"
+   ],
+   [
+    "h3",
+    "Manifest and checksums"
+   ],
+   [
+    "p",
+    "Each deposit carries a manifest listing every file and its hash. A reader computes the hashes locally and compares; a mismatch means the download is corrupt or altered. This is the mechanism that makes <a href=./two-tier-reproduction.html>two-tier reproduction</a> possible: a Tier-1 byte-exact check and a Tier-2 within-tolerance check."
+   ],
+   [
+    "h3",
+    "No economics in the deposit"
+   ],
+   [
+    "p",
+    "The breeder deposit is a physics and engineering record. It contains no prices, no financial projections, and no cost figures. Product quantities are stated in mass and neutron terms only."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "published-papers-and-dois",
+    "Papers and DOIs"
+   ],
+   [
+    "two-tier-reproduction",
+    "Two-Tier Reproduction"
+   ],
+   [
+    "data-availability-statement",
+    "Data Availability"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "version-control-of-the-record",
+  "title": "Versioning the Record",
+  "cat": "validation-open-science",
+  "lede": "The breeder record moved from v1 to a corrected v2 in the open; both DOIs remain resolvable, so the correction is visible rather than hidden.",
+  "body": [
+   [
+    "h2",
+    "Corrections are versions, not edits"
+   ],
+   [
+    "p",
+    "When the breeder (Hyperion) analysis was corrected, the fix was published as a new Zenodo version with its own DOI (10.5281/zenodo.21795620) rather than by overwriting the first (10.5281/zenodo.21746157). Both versions stay online. Anyone who cited v1 can still retrieve exactly what they cited, and anyone comparing the two can see precisely what changed."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"version history\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">v1 deposited</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">issue found</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">v2 corrected</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">both remain</text><text x=\"517\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">online</text></svg>"
+   ],
+   [
+    "h3",
+    "Why not just edit"
+   ],
+   [
+    "p",
+    "Silently editing a published record breaks reproducibility: a reader who reran v1 last month and a reader who fetches it today would get different files under the same reference. Immutable versions with a linear history make the record trustworthy across time. The concept DOI always points at the newest version for readers who want current numbers."
+   ],
+   [
+    "p",
+    "This discipline has a cost worth naming: the record accumulates versions rather than presenting a single clean document, and a casual reader must choose which to cite. The program accepts that trade because the alternative — a tidy record that silently changed — is exactly the failure that destroys trust in a design study. A visible correction history is a feature of the record, not clutter to be swept away."
+   ],
+   [
+    "h3",
+    "What a version bump records"
+   ],
+   [
+    "ul",
+    [
+     "The reason for the new version, in plain language.",
+     "Which analyses and which figures changed.",
+     "Whether any headline number moved, and by how much.",
+     "A pointer from the old version to the new."
+    ]
+   ],
+   [
+    "p",
+    "This mirrors the <a href=./errata-and-corrections-policy.html>errata and corrections policy</a>: nothing is removed without a trace, and no correction is presented as if the original were never published."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "published-papers-and-dois",
+    "Papers and DOIs"
+   ],
+   [
+    "errata-and-corrections-policy",
+    "Errata & Corrections"
+   ],
+   [
+    "zenodo-deposit-structure",
+    "Inside the Deposit"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "benchmarks-against-tokamak-databases",
+  "title": "Benchmarking Against Tokamak Databases",
+  "cat": "validation-open-science",
+  "lede": "The breeder design point is checked against established empirical tokamak scalings and databases, so its numbers sit inside a body of measured experience rather than standing alone.",
+  "body": [
+   [
+    "h2",
+    "Anchoring a design in measured data"
+   ],
+   [
+    "p",
+    "A fusion model can be internally consistent and still disagree with reality. The guard against that is benchmarking: comparing the breeder (Hyperion) design point to empirical scalings derived from decades of tokamak operation. Where the design lands inside the validated range, confidence rises; where it lands at or beyond an edge, the record says so."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 278\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Benchmark families\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Benchmark families</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">energy confinement scaling</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"308\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">IPB98(y,2)</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">normalized beta limit</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"286\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">Troyon</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">density limit</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"264\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">Greenwald</text><text x=\"20\" y=\"182\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">bootstrap current fraction</text><rect x=\"20\" y=\"187\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"187\" width=\"264\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"198\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">neoclassical</text><text x=\"20\" y=\"226\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">ST-specific database</text><rect x=\"20\" y=\"231\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"231\" width=\"242\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"242\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">NSTX / MAST class</text></svg>"
+   ],
+   [
+    "h3",
+    "The benchmark families"
+   ],
+   [
+    "p",
+    "The design is compared against the ITER-basis energy-confinement scaling, the Troyon normalized-beta limit, the Greenwald density limit, neoclassical bootstrap-current estimates, and the spherical-tokamak-specific record from machines in the NSTX and MAST class. Each comparison is one or more of the 81 analyses, with the reference law and its stated range of validity cited."
+   ],
+   [
+    "h3",
+    "Honest use of extrapolation"
+   ],
+   [
+    "p",
+    "A compact spherical tokamak at aspect ratio 2.5 and R0 1.2 m sits at the edge of where some conventional scalings were fitted. The record does not pretend a scaling law validated at conventional aspect ratio transfers unchanged to low aspect ratio; it flags such extrapolations as assumptions to be tested at FOAK."
+   ],
+   [
+    "p",
+    "Benchmarking is a triangulation, not a single verdict. Confinement, beta, density, and bootstrap current each constrain the design from a different direction, and a point that sits comfortably inside all of them at once is far better supported than one that clears each limit in isolation. The value of the exercise is in the joint picture, which is why the benchmark analyses are read together rather than one at a time."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "h-mode-confinement-scaling-benchmark",
+    "Confinement Scaling"
+   ],
+   [
+    "spherical-tokamak-database",
+    "The ST Database"
+   ],
+   [
+    "beta-limit-benchmark",
+    "The Beta Limit"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "h-mode-confinement-scaling-benchmark",
+  "title": "The Confinement Scaling Benchmark",
+  "cat": "validation-open-science",
+  "lede": "Hyperion's energy-confinement estimate is compared to the ITER-basis H-mode scaling, with an explicit note that low aspect ratio pushes the fit beyond much of its source data.",
+  "body": [
+   [
+    "h2",
+    "Energy confinement is the crux"
+   ],
+   [
+    "p",
+    "The scientific gain of the breeder (Hyperion), Q_sci 3.424, rests on how well the plasma retains energy — the energy confinement time. The community's standard empirical reference is the ITER-basis H-mode scaling, commonly written IPB98(y,2), fitted to a multi-machine database. The breeder analysis compares its predicted confinement time to that scaling as one of the 81 analyses."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Illustrative form of the ITER-basis H-mode scaling (IPB98(y,2))\n# tau_E ~ 0.0562 * Ip^0.93 * B^0.15 * P^-0.69 * n^0.41\n#              * M^0.19 * R^1.97 * eps^0.58 * kappa^0.78\n# Ip[MA], B[T], P[MW], n[1e19 m^-3], R[m], eps=a/R, kappa=elongation\n# The breeder benchmark evaluates this at the design point and\n# compares tau_E to the transport-model prediction used for Q_sci."
+    ]
+   ],
+   [
+    "h3",
+    "Where the design sits"
+   ],
+   [
+    "p",
+    "At plasma current 9.86 MA and 8 T on-axis, the design point is evaluated against the scaling. The comparison is reported as a ratio of predicted to scaling-implied confinement, with the confidence interval of the scaling propagated through."
+   ],
+   [
+    "h3",
+    "The aspect-ratio caveat, stated"
+   ],
+   [
+    "p",
+    "IPB98(y,2) was fitted largely at conventional aspect ratio. The breeder runs at A 2.5, low aspect ratio, where spherical tokamaks are known to differ. The record therefore treats the conventional scaling as a cross-check, not as ground truth, and weights the <a href=./spherical-tokamak-database.html>ST-specific database</a> more heavily for confinement inference."
+   ],
+   [
+    "p",
+    "This is where the confinement prediction is most exposed, and the record says so directly. A scaling extrapolated beyond its fitted aspect ratio can be optimistic or pessimistic, and only measurement resolves which. The breeder therefore pre-registers a confinement prediction with an explicit falsifier so the extrapolation is put to a decisive test at FOAK rather than defended by argument."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "benchmarks-against-tokamak-databases",
+    "Benchmarks Overview"
+   ],
+   [
+    "spherical-tokamak-database",
+    "The ST Database"
+   ],
+   [
+    "transport-model-validation",
+    "Transport Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "spherical-tokamak-database",
+  "title": "Benchmarking Against the Spherical-Tokamak Database",
+  "cat": "validation-open-science",
+  "lede": "Because Hyperion is a low-aspect-ratio machine, its confinement and stability estimates are weighted against the NSTX/MAST-class record, not only conventional-tokamak scalings.",
+  "body": [
+   [
+    "h2",
+    "The right comparison class"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) is a spherical tokamak: aspect ratio A 2.5, major radius R0 1.2 m, strong elongation, and negative triangularity delta -0.30. Its natural comparison class is the family of spherical tokamaks — machines in the NSTX and MAST lineage — whose operating record differs from conventional tokamaks in confinement, stability, and current drive."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 500 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Spherical tokamak cross section\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><g fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"><line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"280\" stroke=\"#3a4656\" stroke-dasharray=\"4 4\"/><rect x=\"188\" y=\"30\" width=\"24\" height=\"240\" fill=\"#2c3745\" stroke=\"#D4AD5C\"/><path d=\"M212 150 C 300 40, 470 70, 470 150 C 470 230, 300 260, 212 150 Z\" stroke=\"#D4AD5C\" stroke-width=\"2.5\"/><path d=\"M235 150 C 300 80, 430 100, 430 150 C 430 200, 300 220, 235 150 Z\" stroke=\"#7d8794\" stroke-width=\"1.2\"/></g><text x=\"200\" y=\"16\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">R0 = 1.2 m  ·  A = 2.5</text><text x=\"150\" y=\"150\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" transform=\"rotate(-90 150 150)\">center stack</text><text x=\"470\" y=\"285\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">&#948; = -0.30</text></svg>"
+   ],
+   [
+    "h3",
+    "What the ST record informs"
+   ],
+   [
+    "ul",
+    [
+     "Confinement at low aspect ratio, where the field-line geometry and high beta change transport.",
+     "Stability limits, since spherical tokamaks access high normalized beta.",
+     "The high bootstrap-current fraction that low aspect ratio favors.",
+     "The behavior of a strongly shaped, negative-triangularity edge."
+    ]
+   ],
+   [
+    "h3",
+    "Limits of the analogy"
+   ],
+   [
+    "p",
+    "Existing spherical tokamaks are pulsed research devices, not steady D-T breeders, and none has operated with the breeder's high-temperature-superconducting field or its blanket. The database constrains the plasma physics; it says little about integrated breeding or center-post survival. The record is explicit that the ST benchmark bounds the plasma claims and not the engineering gates."
+   ],
+   [
+    "p",
+    "The comparison is also asymmetric in maturity: several spherical tokamaks have logged extensive campaigns, so the plasma-physics inference rests on real operating hours, while the breeding and center-post questions have no operating analogue at all. The record keeps those two confidence levels separate rather than letting the well-supported plasma benchmark lend borrowed credibility to the unsupported engineering gates."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "h-mode-confinement-scaling-benchmark",
+    "Confinement Scaling"
+   ],
+   [
+    "negative-triangularity-open-note",
+    "Negative Triangularity"
+   ],
+   [
+    "bootstrap-current-benchmark",
+    "Bootstrap Current"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "beta-limit-benchmark",
+  "title": "The Beta-Limit Benchmark",
+  "cat": "validation-open-science",
+  "lede": "The breeder's normalized pressure is checked against the Troyon beta limit, the empirical ceiling on how much plasma pressure a given field and current can hold.",
+  "body": [
+   [
+    "h2",
+    "How much pressure the field can hold"
+   ],
+   [
+    "p",
+    "Fusion power scales steeply with plasma pressure, so a design is tempted toward high beta — the ratio of plasma pressure to magnetic pressure. The empirical ceiling is the Troyon limit, expressed through normalized beta, beta_N. Exceeding it invites large-scale instability. The breeder (Hyperion) design point is checked against this limit as part of the 81-analysis record."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Troyon normalized-beta limit\n# beta[%] <= beta_N * Ip[MA] / (a[m] * B[T])\n# beta_N ~ 2.8-4 (conventional); STs access higher values.\n# Design inputs: Ip = 9.86 MA, B_axis = 8 T, low aspect ratio.\n# The benchmark reports the design beta_N and its margin to the limit."
+    ]
+   ],
+   [
+    "h3",
+    "Spherical tokamaks change the number"
+   ],
+   [
+    "p",
+    "Low-aspect-ratio machines are known to reach higher beta_N than conventional tokamaks, so the breeder benchmark uses the ST-appropriate range rather than the textbook conventional value. The reported quantity is the design's beta_N together with the margin between it and the applicable limit."
+   ],
+   [
+    "h3",
+    "What a margin means"
+   ],
+   [
+    "p",
+    "A comfortable margin means the design is not relying on operating at the ragged edge of a stability boundary; a thin margin is flagged as a risk to retire at FOAK. The record states the margin rather than asserting the design is 'stable', because stability is a boundary the machine must be shown to respect, not a property claimed by fiat."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "benchmarks-against-tokamak-databases",
+    "Benchmarks Overview"
+   ],
+   [
+    "greenwald-density-benchmark",
+    "Density Limit"
+   ],
+   [
+    "spherical-tokamak-database",
+    "The ST Database"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "greenwald-density-benchmark",
+  "title": "The Density-Limit Benchmark",
+  "cat": "validation-open-science",
+  "lede": "The breeder's operating density is compared to the Greenwald limit, an empirical density ceiling above which tokamaks tend to disrupt.",
+  "body": [
+   [
+    "h2",
+    "An empirical density ceiling"
+   ],
+   [
+    "p",
+    "Tokamaks show an empirical maximum line-averaged density, above which the plasma tends to disrupt. The standard reference is the Greenwald density limit, which rises with plasma current and falls with plasma size. Fusion power benefits from high density, so a design must sit at a defensible fraction of this limit, not beyond it."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Greenwald density limit\n# n_GW[1e20 m^-3] = Ip[MA] / (pi * a[m]^2)\n# Operating at a fraction f_GW = n / n_GW, typically <= ~1.\n# Design input: Ip = 9.86 MA. The benchmark reports f_GW for the\n# design density and flags any point approaching unity."
+    ]
+   ],
+   [
+    "h3",
+    "The current advantage"
+   ],
+   [
+    "p",
+    "Because the Greenwald limit rises with plasma current, the breeder's 9.86 MA supports a higher absolute density before the limit bites. The benchmark reports the Greenwald fraction f_GW at the design point; a value comfortably below one indicates headroom, while a value near one is recorded as an operating risk."
+   ],
+   [
+    "h3",
+    "Coupled, not isolated"
+   ],
+   [
+    "p",
+    "Density, confinement, and beta are not independent knobs. The record evaluates them together so that a design point does not satisfy each limit in isolation while violating a joint operating boundary. Cross-checking the coupled constraints is part of the <a href=./sensitivity-analysis-record.html>sensitivity analysis</a>."
+   ],
+   [
+    "p",
+    "The Greenwald limit is empirical, not a hard law of nature, and some machines exceed it under particular conditions. The breeder record does not lean on such exceptions: it targets a defensible fraction below one and treats any operating point that would rely on beating the empirical limit as a risk to retire at FOAK rather than a capability to assume in design."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "beta-limit-benchmark",
+    "Beta Limit"
+   ],
+   [
+    "bootstrap-current-benchmark",
+    "Bootstrap Current"
+   ],
+   [
+    "sensitivity-analysis-record",
+    "Sensitivity Analysis"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "bootstrap-current-benchmark",
+  "title": "The Bootstrap-Current Benchmark",
+  "cat": "validation-open-science",
+  "lede": "The self-generated bootstrap current is estimated with neoclassical theory and cross-checked against the spherical-tokamak record, because low aspect ratio favors a high bootstrap fraction.",
+  "body": [
+   [
+    "h2",
+    "Current the plasma drives itself"
+   ],
+   [
+    "p",
+    "Part of a tokamak's plasma current arises from the plasma's own pressure gradient — the bootstrap current. A high bootstrap fraction reduces the external current drive a steady machine must supply. Low-aspect-ratio spherical tokamaks favor a high bootstrap fraction, which is one reason the breeder (Hyperion) adopts the spherical geometry."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 146\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Current sources (schematic)\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Current sources (schematic)</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">bootstrap (self-driven)</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"272\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">neoclassical estimate</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">external drive + inductive</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"167\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">balance</text></svg>"
+   ],
+   [
+    "h3",
+    "Method and cross-check"
+   ],
+   [
+    "p",
+    "The bootstrap fraction is computed from neoclassical theory using the design pressure and current profiles, then compared to the fractions observed in NSTX/MAST-class experiments at similar aspect ratio. Agreement between theory and the ST database raises confidence; a discrepancy is flagged for FOAK measurement."
+   ],
+   [
+    "h3",
+    "Why it matters for the gates"
+   ],
+   [
+    "p",
+    "The bootstrap fraction feeds directly into whether the plasma current of 9.86 MA can be sustained without excessive recirculating power, which in turn affects the whole gain picture. The record reports the fraction with its uncertainty rather than assuming an optimistic value, and treats confirmation of the profile as a FOAK objective."
+   ],
+   [
+    "p",
+    "An optimistic bootstrap assumption is a common way a steady-state design flatters itself: overstate the self-driven fraction and the external current-drive burden shrinks on paper. The breeder analysis guards against this by carrying the neoclassical estimate with its interval and by refusing to credit a bootstrap fraction the ST database does not support at the design profiles."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "spherical-tokamak-database",
+    "The ST Database"
+   ],
+   [
+    "beta-limit-benchmark",
+    "Beta Limit"
+   ],
+   [
+    "plasma-current-9-86-ma",
+    "Plasma Current 9.86 MA"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "neutron-yield-benchmark",
+  "title": "The Neutron-Yield Benchmark",
+  "cat": "validation-open-science",
+  "lede": "The 14 MeV neutron source rate implied by 88.7 MW of D-T fusion power is cross-checked against first-principles reaction kinematics before any breeding or activation is computed.",
+  "body": [
+   [
+    "h2",
+    "From fusion power to neutron rate"
+   ],
+   [
+    "p",
+    "The breeder's products — tritium, helium-3, and materials irradiation — all flow from one quantity: the rate of 14.1 MeV neutrons the plasma emits. That rate is fixed by the fusion power once the reaction is specified, so it is the first thing to benchmark. Each D-T reaction releases 17.6 MeV, of which 14.1 MeV is carried by the neutron."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Neutron source rate from D-T fusion power\nE_dt_MeV = 17.6          # energy per D-T reaction\nE_n_MeV  = 14.1          # carried by the neutron\nP_fus_MW = 88.7          # frozen design fusion power\nMeV_to_J = 1.602e-13\nreactions_per_s = (P_fus_MW*1e6) / (E_dt_MeV*MeV_to_J)\nneutrons_per_s  = reactions_per_s   # one 14.1 MeV n per reaction\n# ~3.1e19 neutrons/s -> feeds the breeding and activation analyses"
+    ]
+   ],
+   [
+    "h3",
+    "Why benchmark the obvious"
+   ],
+   [
+    "p",
+    "The neutron rate looks like a trivial division, and that is exactly why it is worth pinning: every downstream product number multiplies it, so an error here would propagate everywhere. Benchmarking the source rate against reaction kinematics isolates a single, checkable step from the more model-dependent breeding and activation estimates that follow."
+   ],
+   [
+    "h3",
+    "What it does not yet include"
+   ],
+   [
+    "p",
+    "The source rate is the ceiling, not the yield. How many of those neutrons breed tritium depends on blanket coverage and the tritium breeding ratio, which is where the <a href=./local-vs-net-tbr-reconciliation.html>local-vs-net reconciliation</a> enters. The neutron-yield benchmark deliberately stops at the source term."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "neutronics-model-validation",
+    "Neutronics Validation"
+   ],
+   [
+    "tritium-breeding-ratio-open-question",
+    "TBR Open Question"
+   ],
+   [
+    "falsifiable-prediction-neutron-spectrum",
+    "Neutron-Spectrum Prediction"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-breeding-ratio-open-question",
+  "title": "The Tritium Breeding Ratio Open Question",
+  "cat": "validation-open-science",
+  "lede": "The breeder treats the tritium breeding ratio as a design lever across 1.1, 1.5, and 1.8; whether the 1.8 target survives realistic blanket geometry is an open reconciliation.",
+  "body": [
+   [
+    "h2",
+    "A lever, studied at three values"
+   ],
+   [
+    "p",
+    "The tritium breeding ratio (TBR) is the number of tritium atoms bred per tritium atom burned. A D-T machine that consumes its own fuel must breed at least as much as it burns plus losses, so TBR above one is necessary for self-sufficiency. The breeder (Hyperion) record does not assert a single TBR; it studies the machine as a lever across <b>1.1, 1.5, and 1.8</b>."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"TBR lever, as studied\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">TBR lever, as studied</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">TBR = 1.1 (thin margin)</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"242\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">lever point</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">TBR = 1.5 (mid)</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"330\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">lever point</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">TBR = 1.8 (target)</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"396\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">reconciliation open</text></svg>"
+   ],
+   [
+    "h3",
+    "Why 1.8 is a target, not a claim"
+   ],
+   [
+    "p",
+    "A local TBR computed for an idealized, fully surrounding blanket is optimistic. A real machine has ports, heating penetrations, diagnostic lines, and structural gaps that no breeding blanket covers, plus process losses in the fuel cycle. The gap between the idealized local figure and the net figure a real machine achieves is the <a href=./local-vs-net-tbr-reconciliation.html>open reconciliation</a>. At the 1.8 target it is stated as unresolved."
+   ],
+   [
+    "h3",
+    "What closing it requires"
+   ],
+   [
+    "p",
+    "Closing the question means a neutronics model with realistic geometry, validated against the <a href=./neutronics-model-validation.html>neutronics benchmarks</a>, that reproduces a net TBR meeting the target. Until that model exists and FOAK measurements confirm it, tritium self-sufficiency remains a design target rather than a demonstrated property."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "local-vs-net-tbr-reconciliation",
+    "Local vs Net TBR"
+   ],
+   [
+    "tritium-self-sufficiency-not-proven",
+    "Self-Sufficiency Not Proven"
+   ],
+   [
+    "tritium-breeding-ratio-lever",
+    "The TBR Lever (design)"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "local-vs-net-tbr-reconciliation",
+  "title": "Local vs Net Tritium Breeding Ratio",
+  "cat": "validation-open-science",
+  "lede": "An idealized local breeding ratio overstates what a real blanket delivers; the breeder record keeps the local-vs-net gap open at the 1.8 target rather than reporting a single number.",
+  "body": [
+   [
+    "h2",
+    "Two different quantities"
+   ],
+   [
+    "p",
+    "'Tritium breeding ratio' names two things that are easy to conflate. The <b>local</b> TBR is what a patch of ideal blanket breeds per incident neutron, extrapolated as if the whole plasma were wrapped in that patch. The <b>net</b> TBR is what the actual machine breeds once real geometry, coverage, and losses are counted. The net figure is always lower."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"local to net\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"68\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">ideal local</text><text x=\"68\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">TBR</text><line x1=\"119\" y1=\"95\" x2=\"133\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M133 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"136\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"184\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">subtract port</text><text x=\"184\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">coverage</text><line x1=\"235\" y1=\"95\" x2=\"249\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M249 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"252\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"300\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">subtract</text><text x=\"300\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">penetrations</text><line x1=\"351\" y1=\"95\" x2=\"365\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M365 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"368\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"416\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">subtract</text><text x=\"416\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">losses</text><line x1=\"467\" y1=\"95\" x2=\"481\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M481 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"484\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"532\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">net TBR</text></svg>"
+   ],
+   [
+    "h3",
+    "What eats the margin"
+   ],
+   [
+    "ul",
+    [
+     "Ports and access openings that carry no breeding material.",
+     "Heating and current-drive penetrations through the blanket.",
+     "Diagnostic and maintenance channels.",
+     "Structural and coolant volume that displaces breeder.",
+     "Fuel-cycle process losses between breeding and reuse."
+    ]
+   ],
+   [
+    "h3",
+    "Status at the 1.8 target"
+   ],
+   [
+    "p",
+    "For the target TBR of 1.8, the reconciliation between local and net is recorded as <b>open</b>. The record does not claim the net figure reaches 1.8; it states that whether it does is unresolved and depends on a realistic-geometry neutronics analysis still being matured. This is one of the breeder's named honest gates and appears in the <a href=./contradictions-register.html>contradictions register</a>."
+   ],
+   [
+    "p",
+    "The practical consequence is that no single TBR number should be quoted as 'the' breeding ratio of the machine. A local figure describes an idealized blanket; a net figure describes the machine; and at the 1.8 target the second is not yet established. Reporting the lever across 1.1, 1.5, and 1.8 is the honest way to hold that uncertainty open until a realistic-geometry analysis and FOAK accounting close it."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "tritium-breeding-ratio-open-question",
+    "TBR Open Question"
+   ],
+   [
+    "tritium-self-sufficiency-not-proven",
+    "Self-Sufficiency Not Proven"
+   ],
+   [
+    "contradictions-register",
+    "Contradictions Register"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "tritium-self-sufficiency-not-proven",
+  "title": "Tritium Self-Sufficiency Is Not Yet Proven",
+  "cat": "validation-open-science",
+  "lede": "A D-T machine must breed more tritium than it consumes; for the breeder this closure is a design target the record explicitly labels as unproven.",
+  "body": [
+   [
+    "h2",
+    "The closure condition"
+   ],
+   [
+    "p",
+    "Tritium does not exist in useful natural quantity and decays with a 12.3-year half-life. A D-T fusion machine must therefore breed its own. Self-sufficiency is the condition that tritium bred, over a period, exceeds tritium burned plus tritium lost to decay and to processing. The breeder (Hyperion) is designed toward this closure; it has not demonstrated it."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Tritium balance (schematic closure condition)\n# bred >= burned + decay_losses + process_losses + startup_holdup\n# net_TBR = bred / burned  must exceed 1 with margin for the losses.\n# Status: target net TBR toward 1.8; local-vs-net gap OPEN;\n#         closure is a DESIGN TARGET, not a demonstrated result."
+    ]
+   ],
+   [
+    "h3",
+    "Why it is honest to flag this"
+   ],
+   [
+    "p",
+    "Every D-T fusion concept faces this problem, and a program that does not name it is hiding its hardest fuel-cycle question. The breeder record states plainly that self-sufficiency is unproven, that it depends on resolving the <a href=./local-vs-net-tbr-reconciliation.html>local-vs-net TBR</a>, and that a startup tritium inventory and fuel-cycle losses must be counted in the balance, not assumed away."
+   ],
+   [
+    "h3",
+    "What would prove it"
+   ],
+   [
+    "p",
+    "Proof requires a validated net-TBR analysis at realistic geometry followed by FOAK operation measuring the actual tritium accounting. Until both exist, the correct statement is that the machine is designed to be self-sufficient, and whether it is remains to be shown."
+   ],
+   [
+    "p",
+    "Startup is a distinct part of the problem that is easy to overlook. A breeder cannot breed before it operates, so a first inventory of tritium must come from elsewhere to begin, and the fuel cycle must then overtake burn and losses to become self-supporting. The record counts this startup holdup in the balance rather than presenting self-sufficiency as a property the machine possesses from the first shot."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "local-vs-net-tbr-reconciliation",
+    "Local vs Net TBR"
+   ],
+   [
+    "tritium-breeding-ratio-open-question",
+    "TBR Open Question"
+   ],
+   [
+    "what-foak-first-tritium-will-test",
+    "What FOAK Will Test"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "centerpost-lifetime-gate",
+  "title": "The Center-Post Lifetime Gate",
+  "cat": "validation-open-science",
+  "lede": "A compact spherical tokamak puts its center stack in the harshest neutron field; the breeder record carries a limited-lifetime note (order 0.01 full-power-years) as a stated engineering constraint.",
+  "body": [
+   [
+    "h2",
+    "The price of being compact"
+   ],
+   [
+    "p",
+    "The spherical geometry that gives the breeder (Hyperion) its high-beta, high-bootstrap advantages also forces the center stack into a small radius, close to the plasma, in an intense 14 MeV neutron flux. Neutron damage accumulates in the center-post conductor and structure, and that sets a replacement interval. The record states this as an engineering gate, not a solved problem."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 500 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Spherical tokamak cross section\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><g fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"><line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"280\" stroke=\"#3a4656\" stroke-dasharray=\"4 4\"/><rect x=\"188\" y=\"30\" width=\"24\" height=\"240\" fill=\"#2c3745\" stroke=\"#D4AD5C\"/><path d=\"M212 150 C 300 40, 470 70, 470 150 C 470 230, 300 260, 212 150 Z\" stroke=\"#D4AD5C\" stroke-width=\"2.5\"/><path d=\"M235 150 C 300 80, 430 100, 430 150 C 430 200, 300 220, 235 150 Z\" stroke=\"#7d8794\" stroke-width=\"1.2\"/></g><text x=\"200\" y=\"16\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">R0 = 1.2 m  ·  A = 2.5</text><text x=\"150\" y=\"150\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" transform=\"rotate(-90 150 150)\">center stack</text><text x=\"470\" y=\"285\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">&#948; = -0.30</text></svg>"
+   ],
+   [
+    "h3",
+    "The lifetime note"
+   ],
+   [
+    "p",
+    "For the most exposed center-stack element, the record carries a limited-lifetime note on the order of <b>0.01 full-power-years</b>. That figure is a design-and-simulation estimate of accumulated damage, and it drives the machine toward planned center-post replacement as a routine maintenance operation rather than a catastrophic failure mode."
+   ],
+   [
+    "h3",
+    "Design responses, honestly bounded"
+   ],
+   [
+    "ul",
+    [
+     "Shielding budget between plasma and center stack, traded against compactness.",
+     "A center stack engineered for scheduled replacement, not permanence.",
+     "Material choices evaluated for neutron tolerance.",
+     "The lifetime treated as a quantity to measure at FOAK, since damage models carry real uncertainty."
+    ]
+   ],
+   [
+    "p",
+    "The honest reading: compactness is a deliberate trade, and its cost is a center stack with a finite, uncertain life that the machine must be designed to swap. See <a href=./what-foak-first-tritium-will-test.html>what FOAK will test</a>."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "the-honest-gates-overview",
+    "The Honest Gates"
+   ],
+   [
+    "what-foak-does-not-prove",
+    "What FOAK Will Not Prove"
+   ],
+   [
+    "contradictions-register",
+    "Contradictions Register"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "negative-triangularity-open-note",
+  "title": "Negative Triangularity: What Is and Is Not Settled",
+  "cat": "validation-open-science",
+  "lede": "The breeder adopts negative triangularity (delta -0.30) for edge and exhaust reasons; the record separates the well-motivated choice from the parts that FOAK must still confirm.",
+  "body": [
+   [
+    "h2",
+    "A deliberate, unusual shape"
+   ],
+   [
+    "p",
+    "Most tokamaks run positive triangularity, a D-shaped cross section with the corners pointing toward the center column. The breeder (Hyperion) runs <b>negative triangularity</b>, delta -0.30 — the D bows outward. The motivation is edge and exhaust behavior: negative triangularity is associated with a benign edge that avoids certain large edge instabilities."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 500 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Spherical tokamak cross section\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><g fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"><line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"280\" stroke=\"#3a4656\" stroke-dasharray=\"4 4\"/><rect x=\"188\" y=\"30\" width=\"24\" height=\"240\" fill=\"#2c3745\" stroke=\"#D4AD5C\"/><path d=\"M212 150 C 300 40, 470 70, 470 150 C 470 230, 300 260, 212 150 Z\" stroke=\"#D4AD5C\" stroke-width=\"2.5\"/><path d=\"M235 150 C 300 80, 430 100, 430 150 C 430 200, 300 220, 235 150 Z\" stroke=\"#7d8794\" stroke-width=\"1.2\"/></g><text x=\"200\" y=\"16\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">R0 = 1.2 m  ·  A = 2.5</text><text x=\"150\" y=\"150\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" transform=\"rotate(-90 150 150)\">center stack</text><text x=\"470\" y=\"285\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">&#948; = -0.30</text></svg>"
+   ],
+   [
+    "h3",
+    "What is well-motivated"
+   ],
+   [
+    "p",
+    "The choice draws on experiments at conventional aspect ratio that observed favorable edge behavior with negative triangularity. The breeder record cites that basis and includes the shape in its equilibrium and stability analyses among the 81."
+   ],
+   [
+    "h3",
+    "What is not yet settled"
+   ],
+   [
+    "ul",
+    [
+     "Negative triangularity at low aspect ratio (A 2.5) is far less explored than at conventional aspect ratio.",
+     "The interaction of the outward-bowed edge with the breeder's exhaust and divertor loading.",
+     "Confinement at negative triangularity in this regime, where the ST database is thin.",
+     "Whether the equilibrium is as controllable in hardware as in simulation."
+    ]
+   ],
+   [
+    "p",
+    "The record's position is that the shape is a reasoned design choice with a real experimental basis, and that its behavior in this specific low-aspect-ratio, D-T breeding context is a simulation result to be confirmed, not an established fact."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "spherical-tokamak-database",
+    "The ST Database"
+   ],
+   [
+    "negative-triangularity-choice",
+    "Negative Triangularity (design)"
+   ],
+   [
+    "equilibrium-reconstruction-validation",
+    "Equilibrium Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "pre-registered-predictions-overview",
+  "title": "Pre-Registered, Falsifiable Predictions",
+  "cat": "validation-open-science",
+  "lede": "Before FOAK operates, the breeder record commits in writing to specific measurable outcomes and the values that would refute the design, so success cannot be redefined after the fact.",
+  "body": [
+   [
+    "h2",
+    "Committing before the measurement"
+   ],
+   [
+    "p",
+    "A prediction registered after data is collected can always be shaped to fit. The breeder (Hyperion) program instead pre-registers predictions: it states, before first-of-a-kind operation, what the machine should measure and — crucially — what result would count as a failure. The commitments live in the versioned, DOI-stamped record, so their date is fixed."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"pre-registration\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"68\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">state</text><text x=\"68\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">prediction</text><line x1=\"119\" y1=\"95\" x2=\"133\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M133 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"136\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"184\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">fix refuting</text><text x=\"184\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">value</text><line x1=\"235\" y1=\"95\" x2=\"249\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M249 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"252\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"300\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">publish (DOI,</text><text x=\"300\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">dated)</text><line x1=\"351\" y1=\"95\" x2=\"365\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M365 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"368\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"416\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">FOAK measures</text><line x1=\"467\" y1=\"95\" x2=\"481\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M481 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"484\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"532\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">compare</text><text x=\"532\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">honestly</text></svg>"
+   ],
+   [
+    "h3",
+    "Each prediction carries a falsifier"
+   ],
+   [
+    "p",
+    "A prediction without a falsifier is not a test. For every pre-registered claim, the record names the observation that would refute it. If the machine confines worse than a stated threshold, breeds below a stated net ratio, or emits a neutron spectrum outside a stated band, the design is wrong in a specific, admitted way."
+   ],
+   [
+    "ul",
+    [
+     "Confinement: a predicted confinement time and the value below which the gain case fails.",
+     "Breeding: a predicted net TBR band and the value below which self-sufficiency is refuted.",
+     "Neutron spectrum: a predicted 14 MeV peak and tolerance.",
+     "Magnet field: a predicted peak field and the tolerance on 16.84 T."
+    ]
+   ],
+   [
+    "p",
+    "These are detailed on their own pages. The point of the overview is the discipline: the falsifiers are published before the data exists."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "falsifiable-prediction-confinement",
+    "Confinement Prediction"
+   ],
+   [
+    "falsifiable-prediction-breeding",
+    "Breeding Prediction"
+   ],
+   [
+    "falsifiable-prediction-neutron-spectrum",
+    "Neutron-Spectrum Prediction"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "falsifiable-prediction-confinement",
+  "title": "Pre-Registered Prediction: Confinement",
+  "cat": "validation-open-science",
+  "lede": "The breeder commits to a confinement-time prediction and states the threshold below which the Q_sci 3.424 gain case is refuted.",
+  "body": [
+   [
+    "h2",
+    "The prediction"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) gain figure, Q_sci 3.424 at 88.7 MW of fusion power, depends on the energy confinement time. The record pre-registers a predicted confinement time at the design point, derived from the transport model and cross-checked against the <a href=./spherical-tokamak-database.html>ST database</a> and the <a href=./h-mode-confinement-scaling-benchmark.html>ITER-basis scaling</a>."
+   ],
+   [
+    "h3",
+    "The falsifier"
+   ],
+   [
+    "p",
+    "The commitment includes an explicit threshold: a measured confinement time below a stated fraction of the prediction refutes the gain case as designed. If FOAK confines that poorly, Q_sci 3.424 is not reachable at the design inputs, and the record will say the prediction failed rather than re-fitting the model to the disappointing number."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Pre-registered confinement test (schematic)\ntau_pred = TAU_E_DESIGN          # published before FOAK, DOI-stamped\ntau_fail = 0.?? * tau_pred       # stated refuting threshold\ndef verdict(tau_meas):\n    if tau_meas >= tau_pred:   return 'confirmed'\n    if tau_meas <  tau_fail:   return 'REFUTED: gain case fails'\n    return 'partial: design margin eroded, re-examine'"
+    ]
+   ],
+   [
+    "h3",
+    "Why state a losing condition"
+   ],
+   [
+    "p",
+    "Naming the value that would prove the design wrong is what makes the confirming case meaningful. A prediction that no possible measurement could break carries no information. The confinement falsifier converts FOAK from a demonstration into a genuine test."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "pre-registered-predictions-overview",
+    "Pre-Registration Overview"
+   ],
+   [
+    "q-sci-3-424-basis",
+    "Q_sci 3.424 Basis"
+   ],
+   [
+    "transport-model-validation",
+    "Transport Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "falsifiable-prediction-breeding",
+  "title": "Pre-Registered Prediction: Tritium Breeding",
+  "cat": "validation-open-science",
+  "lede": "The breeder commits to a net-TBR band measurable at FOAK and names the value below which tritium self-sufficiency is refuted.",
+  "body": [
+   [
+    "h2",
+    "The prediction"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) studies TBR as a lever at 1.1, 1.5, and 1.8, with the local-vs-net gap open at the 1.8 target. The pre-registered prediction is a <b>net</b> TBR band that FOAK tritium accounting should measure, stated together with the realistic-geometry assumptions behind it."
+   ],
+   [
+    "h3",
+    "The falsifier"
+   ],
+   [
+    "p",
+    "The falsifier is a measured net TBR below the value required for self-sufficiency given the fuel-cycle losses. If FOAK breeds below that line, the record will report that tritium self-sufficiency at the design is refuted — not that the target was 'nearly' met. Because self-sufficiency is <a href=./tritium-self-sufficiency-not-proven.html>already flagged as unproven</a>, this prediction is where that gate is put to the test."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Pre-registered net-TBR test (schematic)\nTBR_needed = 1.0 + losses_fraction   # closure with margin\ndef verdict(tbr_net_meas):\n    if tbr_net_meas >= TBR_needed: return 'self-sufficiency supported'\n    return 'REFUTED: net breeding below closure'"
+    ]
+   ],
+   [
+    "h3",
+    "Honest about what FOAK can measure"
+   ],
+   [
+    "p",
+    "FOAK first tritium near 2030 begins the accounting; a defensible net-TBR measurement requires integrated operation over time, not a single shot. The prediction therefore specifies the operating interval over which the tritium balance is to be judged, so the falsifier is testable and not evaded by short runs."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "pre-registered-predictions-overview",
+    "Pre-Registration Overview"
+   ],
+   [
+    "tritium-self-sufficiency-not-proven",
+    "Self-Sufficiency Not Proven"
+   ],
+   [
+    "local-vs-net-tbr-reconciliation",
+    "Local vs Net TBR"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "falsifiable-prediction-neutron-spectrum",
+  "title": "Pre-Registered Prediction: Neutron Spectrum",
+  "cat": "validation-open-science",
+  "lede": "The breeder predicts a 14.1 MeV D-T neutron peak with a stated tolerance, giving a sharp, early test of whether the plasma burns as modeled.",
+  "body": [
+   [
+    "h2",
+    "The prediction"
+   ],
+   [
+    "p",
+    "D-T fusion emits a characteristic neutron at 14.1 MeV. The breeder (Hyperion) pre-registers the predicted neutron energy spectrum at representative detector locations: a dominant 14.1 MeV peak, its expected broadening from plasma temperature, and the softened tail from neutrons scattered in the blanket and structure."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Predicted spectrum features\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Predicted spectrum features</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">14.1 MeV D-T peak</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"418\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">primary</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">thermal broadening</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">temperature-set</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">scattered / down-shifted tail</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"176\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">geometry-set</text></svg>"
+   ],
+   [
+    "h3",
+    "The falsifier"
+   ],
+   [
+    "p",
+    "A measured peak displaced from 14.1 MeV beyond the stated tolerance, or a peak-to-tail ratio outside the predicted band, refutes the neutronics model as configured. Because the whole product chain multiplies the <a href=./neutron-yield-benchmark.html>neutron source rate</a>, an early spectrum measurement is a low-cost, high-information check that the plasma and blanket behave as simulated."
+   ],
+   [
+    "h3",
+    "Why the spectrum first"
+   ],
+   [
+    "p",
+    "The neutron spectrum can be measured early and does not require long integrated operation. It tests the reaction identity, the plasma temperature, and the surrounding geometry at once, and it validates the model that the harder breeding measurement depends on. It is among the first predictions FOAK can decisively confirm or break."
+   ],
+   [
+    "p",
+    "Because it is early and cheap, the spectrum test also functions as a tripwire: a spectrum that disagrees with prediction signals that something upstream — the reaction mix, the temperature, or the geometry model — is wrong before the program has committed to the far more expensive breeding campaign. Catching a foundational error at the spectrum stage is far preferable to discovering it only in the tritium accounting."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "pre-registered-predictions-overview",
+    "Pre-Registration Overview"
+   ],
+   [
+    "neutron-yield-benchmark",
+    "Neutron-Yield Benchmark"
+   ],
+   [
+    "neutronics-model-validation",
+    "Neutronics Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "falsifiable-prediction-magnet-field",
+  "title": "Pre-Registered Prediction: Magnet Field",
+  "cat": "validation-open-science",
+  "lede": "The breeder predicts a peak field of 16.84 T with 8 T on-axis and states the tolerance a magnetic measurement must meet, testing the magnet design directly.",
+  "body": [
+   [
+    "h2",
+    "The prediction"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) relies on high-temperature-superconducting magnets to produce a peak field of <b>16.84 T</b> at the conductor and <b>8 T on-axis</b> at the plasma. These fields are prerequisites for the plasma current of 9.86 MA and the confinement behind Q_sci 3.424. The record pre-registers the predicted field values and profile."
+   ],
+   [
+    "h3",
+    "The falsifier"
+   ],
+   [
+    "p",
+    "A measured on-axis field below 8 T beyond tolerance, or a peak conductor field that cannot reach 16.84 T without exceeding the magnet's stress or quench limits, refutes the magnet operating point as designed. This is a comparatively direct test: the field is measurable with standard magnetic diagnostics early in commissioning, before plasma operation."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Pre-registered field test (schematic)\nB_axis_pred = 8.0     # T on-axis\nB_peak_pred = 16.84   # T at conductor\ndef verdict(B_axis, B_peak, tol=0.05):\n    ok = (abs(B_axis-B_axis_pred) <= tol*B_axis_pred and\n          B_peak <= B_peak_pred*(1+tol))\n    return 'field confirmed' if ok else 'REFUTED: magnet point'"
+    ]
+   ],
+   [
+    "h3",
+    "An early, clean test"
+   ],
+   [
+    "p",
+    "Because magnet fields can be verified before first plasma, this prediction is among the earliest to resolve. Confirming it de-risks a large block of downstream physics that assumes the design field; failing it forces a redesign before plasma operation rather than after."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "pre-registered-predictions-overview",
+    "Pre-Registration Overview"
+   ],
+   [
+    "peak-field-16-84-t",
+    "Peak Field 16.84 T"
+   ],
+   [
+    "what-foak-first-tritium-will-test",
+    "What FOAK Will Test"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "independent-reproduction-guide",
+  "title": "How to Independently Reproduce the Record",
+  "cat": "validation-open-science",
+  "lede": "Anyone can fetch the breeder deposit, verify the files, rebuild the environment, and rerun the 81 analyses; this page is the entry point to doing so.",
+  "body": [
+   [
+    "h2",
+    "Reproduction in five steps"
+   ],
+   [
+    "p",
+    "Independent reproduction is the point of the whole record. A third party does not need Kronos to check the breeder (Hyperion) numbers; the deposit contains what is required. The path is deliberately short."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"reproduction steps\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"68\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">fetch DOI</text><line x1=\"119\" y1=\"95\" x2=\"133\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M133 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"136\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"184\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">verify</text><text x=\"184\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">checksums</text><line x1=\"235\" y1=\"95\" x2=\"249\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M249 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"252\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"300\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">rebuild env</text><line x1=\"351\" y1=\"95\" x2=\"365\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M365 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"368\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"416\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">rerun</text><text x=\"416\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">analyses</text><line x1=\"467\" y1=\"95\" x2=\"481\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M481 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"484\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"532\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">compare to</text><text x=\"532\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">expected</text></svg>"
+   ],
+   [
+    "ul",
+    [
+     "Fetch the deposit from Zenodo (DOI 10.5281/zenodo.21795620 for the current version).",
+     "Verify every file against the published checksums.",
+     "Rebuild the pinned computational environment.",
+     "Rerun the analyses of interest from their frozen inputs.",
+     "Compare outputs to the published expected values within tolerance."
+    ]
+   ],
+   [
+    "h3",
+    "Two acceptable outcomes"
+   ],
+   [
+    "p",
+    "A reproduction that matches confirms the arithmetic. A reproduction that <b>fails to match</b> is equally valuable: it points at either a mistake in the record or a difference in environment, both of which the record wants surfaced. Discrepancies should be reported so they can be entered in the <a href=./errata-and-corrections-policy.html>corrections process</a>."
+   ],
+   [
+    "h3",
+    "Scope of reproduction"
+   ],
+   [
+    "p",
+    "Reproduction checks that the computation is faithful — that the published numbers follow from the inputs and code. It does not, and cannot, validate against a machine that has not been built. Confirming the model against hardware is a separate step that begins at FOAK. See <a href=./verification-vs-validation.html>verification vs validation</a>."
+   ],
+   [
+    "p",
+    "Reproduction is also the cheapest external audit a program can offer. It requires no site visit, no privileged access, and no cooperation from Kronos beyond the deposit already published. A skeptic with a laptop and the DOI can check the arithmetic that underlies the headline claims, which is a deliberately low bar to clear on purpose: the harder the record is to check, the less its openness is worth."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "reproduction-environment",
+    "Reproduction Environment"
+   ],
+   [
+    "two-tier-reproduction",
+    "Two-Tier Reproduction"
+   ],
+   [
+    "verification-vs-validation",
+    "Verification vs Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "reproduction-environment",
+  "title": "The Reproduction Environment",
+  "cat": "validation-open-science",
+  "lede": "The breeder analyses pin their software environment — interpreter, libraries, and versions — so a rerun is not silently changed by whatever a reproducer happens to have installed.",
+  "body": [
+   [
+    "h2",
+    "Pinning what the code runs on"
+   ],
+   [
+    "p",
+    "A number can change because the code changed, or because the environment underneath it changed — a different library version, a different floating-point path, a different platform. To make reproduction meaningful, the breeder (Hyperion) analyses pin the environment as tightly as the code."
+   ],
+   [
+    "ul",
+    [
+     "The interpreter version is fixed.",
+     "Every library dependency is pinned to an exact version.",
+     "Random seeds are recorded for any stochastic step.",
+     "A container or lockfile captures the whole environment for one-command rebuild."
+    ]
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Environment is captured, not assumed\n# - lockfile pins exact dependency versions\n# - container image freezes interpreter + libs + OS libs\n# - each analysis records the seed it used\n# Reproduce with the pinned environment, not your local one."
+    ]
+   ],
+   [
+    "h3",
+    "Why byte-exactness is hard"
+   ],
+   [
+    "p",
+    "Even with pinned versions, different CPUs and math libraries can produce tiny floating-point differences. That is why reproduction is defined at two tiers: a Tier-1 byte-exact match where the environment is identical, and a Tier-2 within-tolerance match where it is not. Both are legitimate; the record states which tier a given analysis is expected to meet."
+   ],
+   [
+    "h3",
+    "Longevity"
+   ],
+   [
+    "p",
+    "Pinned environments age: libraries are deprecated, platforms move on. The container approach mitigates this by freezing the whole stack, and the versioned deposit means an old environment specification remains retrievable alongside the numbers it produced."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "independent-reproduction-guide",
+    "Reproduction Guide"
+   ],
+   [
+    "two-tier-reproduction",
+    "Two-Tier Reproduction"
+   ],
+   [
+    "code-availability-and-licensing",
+    "Code Availability"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "two-tier-reproduction",
+  "title": "Two-Tier Reproduction: Byte-Exact and Within-Tolerance",
+  "cat": "validation-open-science",
+  "lede": "The breeder record accepts two levels of reproduction — a byte-for-byte match in an identical environment, and a numerically-close match across platforms — and states which each analysis targets.",
+  "body": [
+   [
+    "h2",
+    "Two honest definitions of 'same'"
+   ],
+   [
+    "p",
+    "'I reproduced it' can mean two different things, and conflating them causes needless disputes. The breeder (Hyperion) record defines both explicitly so a reproducer knows which bar to clear."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"two tiers\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">identical env</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Tier-1 byte-exact</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">different env</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Tier-2 within</text><text x=\"517\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">tolerance</text></svg>"
+   ],
+   [
+    "h3",
+    "Tier 1 — byte-exact"
+   ],
+   [
+    "p",
+    "In the pinned container, on a compatible platform, an output file should match the published file bit for bit; its checksum should be identical. This is the strongest form of reproduction and is expected for deterministic analyses run in the reference environment."
+   ],
+   [
+    "h3",
+    "Tier 2 — within tolerance"
+   ],
+   [
+    "p",
+    "On a different platform or math library, floating-point results can differ in the last digits. Tier 2 accepts a match within a stated numerical tolerance rather than bit-for-bit. The tolerance is published per analysis, so 'close enough' is a defined number, not a judgment call."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "def reproduces(observed, expected, tol=None):\n    if tol is None:               # Tier 1: byte / exact\n        return checksum(observed) == checksum(expected)\n    return abs(observed-expected) <= tol*abs(expected)  # Tier 2"
+    ]
+   ],
+   [
+    "p",
+    "A Tier-2 pass with a Tier-1 failure is normal across platforms and does not indicate an error. A Tier-2 failure does, and is a reportable discrepancy."
+   ],
+   [
+    "p",
+    "Separating the tiers prevents a common and pointless argument. Without the distinction, a reproducer on different hardware sees last-digit differences, concludes the record is wrong, and reports a non-existent error; or an author dismisses a genuine discrepancy as mere floating-point noise. Publishing a per-analysis tolerance settles which reading is correct before the dispute starts, because 'close enough' is a number in the deposit rather than a matter of opinion."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "reproduction-environment",
+    "Reproduction Environment"
+   ],
+   [
+    "independent-reproduction-guide",
+    "Reproduction Guide"
+   ],
+   [
+    "uncertainty-quantification-method",
+    "Uncertainty Quantification"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "code-availability-and-licensing",
+  "title": "Code Availability and Licensing",
+  "cat": "validation-open-science",
+  "lede": "The analysis code needed to reproduce the breeder numbers is available under an open license; this page states what is released and under what terms.",
+  "body": [
+   [
+    "h2",
+    "Released so it can be checked"
+   ],
+   [
+    "p",
+    "Reproduction is impossible without the code that turns inputs into outputs. The breeder (Hyperion) analysis code is released under an open license so a third party can read it, run it, and audit it. The license terms are stated in the deposit and repository so there is no ambiguity about permitted use."
+   ],
+   [
+    "ul",
+    [
+     "The analysis and post-processing code that produces the published figures.",
+     "The frozen input files each analysis consumes.",
+     "The environment specification (lockfile and/or container).",
+     "The expected outputs and per-analysis tolerances."
+    ]
+   ],
+   [
+    "h3",
+    "Open license, stated plainly"
+   ],
+   [
+    "p",
+    "Code is released under a permissive open-source license so it can be reused and independently verified; the exact license text ships with the repository. Releasing the code is a validation choice, not a courtesy: a claim whose computation is hidden cannot be checked, and an unverifiable claim carries little weight."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"code use\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">fetch code</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">read & audit</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">rerun</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">confirm or report</text></svg>"
+   ],
+   [
+    "h3",
+    "What is not in scope"
+   ],
+   [
+    "p",
+    "Availability covers what is needed to reproduce the published analyses. It is not a claim that the code is a finished engineering toolchain, and it contains no economic model — the breeder record has none. Data provenance is described separately in the <a href=./data-availability-statement.html>data availability statement</a>."
+   ],
+   [
+    "p",
+    "Release also fixes attribution and reuse terms so a downstream user knows what is permitted without asking. A reviewer who finds a defect in the code can point at the exact line, and a correction flows back through the same versioned deposit that carries the numbers. Open code is therefore not only a transparency gesture but the practical substrate on which reproduction, peer review, and correction all operate."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "data-availability-statement",
+    "Data Availability"
+   ],
+   [
+    "reproduction-environment",
+    "Reproduction Environment"
+   ],
+   [
+    "open-science-principles",
+    "Open-Science Principles"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "data-availability-statement",
+  "title": "Data Availability Statement",
+  "cat": "validation-open-science",
+  "lede": "The inputs, intermediate data, and outputs behind the breeder numbers are deposited or pointed to, and their provenance is stated; nothing load-bearing is withheld.",
+  "body": [
+   [
+    "h2",
+    "Where the data lives"
+   ],
+   [
+    "p",
+    "A validation record must say where its data comes from and where a reader can get it. For the breeder (Hyperion), the frozen inputs, the analysis outputs, and the checksums that bind them are deposited on Zenodo with the manuscript. External reference data — such as the empirical scalings used for benchmarking — is cited to its original source."
+   ],
+   [
+    "ul",
+    [
+     "Design inputs and frozen parameters: in the deposit.",
+     "Analysis outputs and figures: in the deposit, with checksums.",
+     "Empirical scalings (IPB98(y,2), Troyon, Greenwald): cited to the literature.",
+     "Spherical-tokamak comparison data: cited to the originating experiments."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"data provenance\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">frozen inputs</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">analysis outputs</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">checksums</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">cited external</text><text x=\"517\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">data</text></svg>"
+   ],
+   [
+    "h3",
+    "Provenance over convenience"
+   ],
+   [
+    "p",
+    "Every quantity is traceable to either a frozen input in the deposit or a cited external source. Where a value is assumed rather than derived, it is labeled as an assumption. This lets a reviewer separate what the breeder analysis computed from what it took on faith from prior work."
+   ],
+   [
+    "h3",
+    "What the data is not"
+   ],
+   [
+    "p",
+    "The data is simulation input and output, not measurement from a breeder machine — none exists yet. The statement is careful to describe every dataset as design-and-simulation data. Hardware data will enter the record only after FOAK, and will be deposited under the same terms."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "code-availability-and-licensing",
+    "Code Availability"
+   ],
+   [
+    "zenodo-deposit-structure",
+    "Inside the Deposit"
+   ],
+   [
+    "what-simulated-vs-demonstrated",
+    "Simulated vs Demonstrated"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "uncertainty-quantification-method",
+  "title": "How Uncertainty Is Quantified",
+  "cat": "validation-open-science",
+  "lede": "Breeder results are reported with uncertainties, not as point values; this page describes how input uncertainty is propagated to every headline number.",
+  "body": [
+   [
+    "h2",
+    "A number without an uncertainty is incomplete"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) headline figures — Q_sci 3.424, 88.7 MW, and the product yields — are the central estimates of distributions, not exact truths. Each rests on inputs that carry uncertainty: confinement scaling coefficients, profile assumptions, cross-sections, and geometry. Uncertainty quantification (UQ) propagates those input uncertainties through the analyses to bracket the outputs."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Monte-Carlo style propagation (schematic)\nimport numpy as np\ndef propagate(model, priors, N=10000):\n    samples = [model(**draw(priors)) for _ in range(N)]\n    return np.mean(samples), np.percentile(samples,[5,95])\n# Reported: central value + a stated confidence interval,\n# not a bare point estimate."
+    ]
+   ],
+   [
+    "h3",
+    "What is propagated"
+   ],
+   [
+    "ul",
+    [
+     "Scaling-law coefficient uncertainty from the empirical fits.",
+     "Profile and boundary assumptions varied across plausible ranges.",
+     "Nuclear-data uncertainty in the neutronics and breeding analyses.",
+     "Geometry tolerances where they affect coverage."
+    ]
+   ],
+   [
+    "h3",
+    "Honest intervals"
+   ],
+   [
+    "p",
+    "Where an interval is wide, the record says so rather than quoting only the optimistic edge. The TBR lever at 1.1, 1.5, and 1.8 is itself a UQ posture: the record spans the range instead of committing to a single breeding number, because the underlying uncertainty is real. Sensitivity — which inputs drive the spread — is covered in the <a href=./sensitivity-analysis-record.html>sensitivity analysis</a>."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "sensitivity-analysis-record",
+    "Sensitivity Analysis"
+   ],
+   [
+    "two-tier-reproduction",
+    "Two-Tier Reproduction"
+   ],
+   [
+    "surrogate-model-validation",
+    "Surrogate Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "sensitivity-analysis-record",
+  "title": "The Sensitivity Analysis",
+  "cat": "validation-open-science",
+  "lede": "The breeder record identifies which inputs the headline results are most sensitive to, so scrutiny and future measurement focus where they matter.",
+  "body": [
+   [
+    "h2",
+    "Not all inputs matter equally"
+   ],
+   [
+    "p",
+    "Uncertainty quantification tells you how wide an output is; sensitivity analysis tells you why. The breeder (Hyperion) record ranks inputs by how strongly they move the headline results, so a reviewer knows which assumptions are load-bearing and which are cosmetic."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 234\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Illustrative sensitivity ranking\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Illustrative sensitivity ranking</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">energy confinement time</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"396\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">drives Q_sci</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">net blanket coverage</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"352\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">drives net TBR</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">nuclear-data / cross-sections</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"242\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">drives breeding, activation</text><text x=\"20\" y=\"182\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">current / pressure profiles</text><rect x=\"20\" y=\"187\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"187\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"198\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">drives bootstrap, stability</text></svg>"
+   ],
+   [
+    "h3",
+    "What the ranking is used for"
+   ],
+   [
+    "ul",
+    [
+     "Prioritizing FOAK diagnostics toward the highest-impact quantities.",
+     "Focusing benchmarking effort on the models that matter most.",
+     "Making the open gates legible: the TBR gate is a high-sensitivity item, which is why it is flagged.",
+     "Guarding against false precision on quantities that barely move the answer."
+    ]
+   ],
+   [
+    "h3",
+    "Coupling matters"
+   ],
+   [
+    "p",
+    "Sensitivities are not independent. Confinement, density, and beta interact, so the analysis examines joint variations, not one-at-a-time perturbations alone. This is how the record avoids a design that satisfies each limit separately while failing a coupled constraint — a failure mode described in the <a href=./greenwald-density-benchmark.html>density benchmark</a>."
+   ],
+   [
+    "p",
+    "The ranking is also revisited as the models mature: an input that looks minor today can rise if a coupled interaction is discovered, so the sensitivity analysis is regenerated with the rest of the record rather than fixed once. The current ordering is a snapshot, and the top items — confinement and net blanket coverage — are exactly the two the honest gates already flag."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "uncertainty-quantification-method",
+    "Uncertainty Quantification"
+   ],
+   [
+    "greenwald-density-benchmark",
+    "Density Limit"
+   ],
+   [
+    "local-vs-net-tbr-reconciliation",
+    "Local vs Net TBR"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "verification-vs-validation",
+  "title": "Verification vs Validation",
+  "cat": "validation-open-science",
+  "lede": "Verification asks whether the code solves the equations right; validation asks whether the equations describe the machine. The breeder is verified in places and awaits hardware validation everywhere.",
+  "body": [
+   [
+    "h2",
+    "Two different questions"
+   ],
+   [
+    "p",
+    "'V and V' names two distinct checks that are easy to blur. <b>Verification</b>: does the code correctly solve the mathematical model it claims to? <b>Validation</b>: does that model correctly describe physical reality? The breeder (Hyperion) record keeps them separate because the honest status differs sharply between them."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"V and V\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">math model</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">VERIFICATION:</text><text x=\"227\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">solved right?</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">VALIDATION: right</text><text x=\"372\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">model?</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">reality</text></svg>"
+   ],
+   [
+    "h3",
+    "Verification: partly done, and doable now"
+   ],
+   [
+    "p",
+    "Verification does not need a machine. It uses techniques like the method of manufactured solutions, convergence studies, and conservation checks. The breeder record includes such checks for its solvers and reports them as one of the things reproduction can confirm today."
+   ],
+   [
+    "h3",
+    "Validation: awaits FOAK"
+   ],
+   [
+    "p",
+    "Validation requires comparing model output to measurement from the actual system. Because the breeder is not built, its models are <b>not yet validated against hardware</b>. Benchmarking against other machines' data provides partial, indirect validation for shared physics, but the specific integrated breeder design is validated only when FOAK measures it near 2030."
+   ],
+   [
+    "p",
+    "The clean statement: verification is in progress and reproducible; validation is pending, and no page claims otherwise. See <a href=./solver-verification-mms.html>solver verification</a>."
+   ],
+   [
+    "p",
+    "The words are worth guarding because the field routinely blurs them. A press statement that a code is 'validated' when it has only been verified overstates what is known by a wide margin, and a reader cannot recover the difference from the word alone. The breeder record uses 'validated' only for a comparison against hardware, which means today it uses the word for nothing, and says so."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "solver-verification-mms",
+    "Solver Verification (MMS)"
+   ],
+   [
+    "what-simulated-vs-demonstrated",
+    "Simulated vs Demonstrated"
+   ],
+   [
+    "what-foak-first-tritium-will-test",
+    "What FOAK Will Test"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "the-verify-check",
+  "title": "The Automated verify() Firewall",
+  "cat": "validation-open-science",
+  "lede": "An automated check regenerates the breeder pages from the frozen record and refuses to publish if any number, DOI, or claim disagrees with canon.",
+  "body": [
+   [
+    "h2",
+    "Machines enforce consistency, not memory"
+   ],
+   [
+    "p",
+    "A large public record drifts if humans retype numbers. The breeder (Hyperion) site is generated from the frozen record and passes an automated verify() check before publishing. If a page states a fusion power other than 88.7 MW, a gain other than 3.424, or a DOI that does not resolve, the check fails and the build stops."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "def verify(pages, canon):\n    for p in pages:\n        assert canon['q_sci'] in text(p) or 'q_sci' not in topic(p)\n        assert no_economics(p)          # no prices, cost, or rate figures\n        assert dois_resolve(p)          # 21746157 / 21795620\n        assert gates_not_softened(p)    # honest gates intact\n    return 'CLEAN'"
+    ]
+   ],
+   [
+    "h3",
+    "What it guards"
+   ],
+   [
+    "ul",
+    [
+     "Frozen canon numbers: Q_sci 3.424, 88.7 MW, 9.86 MA, 16.84 T / 8 T on-axis, delta -0.30.",
+     "The DOIs (10.5281/zenodo.21746157 and 10.5281/zenodo.21795620).",
+     "The economics firewall: no prices, costs, or valuations anywhere.",
+     "The honest gates: the TBR reconciliation and center-post note are not silently removed."
+    ]
+   ],
+   [
+    "h3",
+    "Why this is a validation tool"
+   ],
+   [
+    "p",
+    "Consistency is a precondition for reproducibility. If the public text and the underlying record disagree, a reproducer cannot know which to trust. The verify() firewall makes the two agree by construction, so the number a reader sees is the number the analysis produced."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "reproducible-analysis-record",
+    "The Analysis Record"
+   ],
+   [
+    "contradictions-register",
+    "Contradictions Register"
+   ],
+   [
+    "open-science-principles",
+    "Open-Science Principles"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "solver-verification-mms",
+  "title": "Solver Verification by Manufactured Solutions",
+  "cat": "validation-open-science",
+  "lede": "The breeder's numerical solvers are verified with the method of manufactured solutions and convergence studies — checks that need no machine and can be reproduced today.",
+  "body": [
+   [
+    "h2",
+    "Checking the solver against known answers"
+   ],
+   [
+    "p",
+    "Before trusting a solver on a problem with no known answer, you check it on problems that do. The method of manufactured solutions (MMS) constructs an exact solution by design, inserts the matching source term into the equations, and confirms the solver recovers it at the expected order of accuracy. The breeder (Hyperion) code applies MMS to its core solvers."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Method of manufactured solutions (schematic)\n# 1. Pick an exact u*(x): e.g. u* = sin(pi x)\n# 2. Insert into operator L: compute forcing f = L[u*]\n# 3. Solve L[u]=f numerically -> u_h\n# 4. error = ||u_h - u*||; refine grid; check order p:\n#    error ~ C * h^p  (p should match the scheme's design order)"
+    ]
+   ],
+   [
+    "h3",
+    "Convergence and conservation"
+   ],
+   [
+    "ul",
+    [
+     "Convergence: refining the grid should shrink error at the scheme's design order; a wrong order signals a bug.",
+     "Conservation: quantities that should be conserved (particles, energy) must not drift.",
+     "Limiting cases: the solver must reproduce known analytic limits."
+    ]
+   ],
+   [
+    "h3",
+    "Verification is not validation"
+   ],
+   [
+    "p",
+    "Passing MMS means the code solves its equations correctly. It says nothing about whether those equations describe a real breeder plasma — that is <a href=./verification-vs-validation.html>validation</a>, which awaits FOAK. But verification is a real, reproducible result available now, and it is part of what an independent reproducer can confirm from the deposit."
+   ],
+   [
+    "p",
+    "The two also fail independently. A perfectly verified code can encode a wrong physical model and confidently produce wrong answers; a sound model can be undone by a coding error a verification suite would catch. Because the breeder is verified in places but validated nowhere in hardware, the honest present-tense status is that the arithmetic can be trusted to the extent it has been verified, and the physics awaits the machine."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "verification-vs-validation",
+    "Verification vs Validation"
+   ],
+   [
+    "equilibrium-reconstruction-validation",
+    "Equilibrium Validation"
+   ],
+   [
+    "independent-reproduction-guide",
+    "Reproduction Guide"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "equilibrium-reconstruction-validation",
+  "title": "Validating the Equilibrium Reconstruction",
+  "cat": "validation-open-science",
+  "lede": "The breeder's magnetic equilibrium — its negative-triangularity shape at 9.86 MA — is solved and cross-checked, with the caveat that low-aspect-ratio validation data is limited.",
+  "body": [
+   [
+    "h2",
+    "Getting the shape right"
+   ],
+   [
+    "p",
+    "Everything downstream depends on the plasma's magnetic equilibrium: the shape, the current distribution, and the field. The breeder (Hyperion) equilibrium is a strongly shaped, negative-triangularity (delta -0.30) configuration at 9.86 MA and 8 T on-axis. The reconstruction is solved by a Grad-Shafranov solver and checked for self-consistency."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 500 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Spherical tokamak cross section\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><g fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"><line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"280\" stroke=\"#3a4656\" stroke-dasharray=\"4 4\"/><rect x=\"188\" y=\"30\" width=\"24\" height=\"240\" fill=\"#2c3745\" stroke=\"#D4AD5C\"/><path d=\"M212 150 C 300 40, 470 70, 470 150 C 470 230, 300 260, 212 150 Z\" stroke=\"#D4AD5C\" stroke-width=\"2.5\"/><path d=\"M235 150 C 300 80, 430 100, 430 150 C 430 200, 300 220, 235 150 Z\" stroke=\"#7d8794\" stroke-width=\"1.2\"/></g><text x=\"200\" y=\"16\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">R0 = 1.2 m  ·  A = 2.5</text><text x=\"150\" y=\"150\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" transform=\"rotate(-90 150 150)\">center stack</text><text x=\"470\" y=\"285\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">&#948; = -0.30</text></svg>"
+   ],
+   [
+    "h3",
+    "How it is checked"
+   ],
+   [
+    "ul",
+    [
+     "Force balance: the solution satisfies the Grad-Shafranov equation to tolerance.",
+     "Solver verification via MMS and convergence, as above.",
+     "Cross-comparison against an independent equilibrium code where possible.",
+     "Consistency with the prescribed current and pressure profiles."
+    ]
+   ],
+   [
+    "h3",
+    "The honest caveat"
+   ],
+   [
+    "p",
+    "Solving an equilibrium correctly is verification; confirming it matches a real plasma is validation. Negative triangularity at low aspect ratio is thinly represented in existing data, so the equilibrium's fidelity to a real breeder plasma is a FOAK-era question. The field prediction that the equilibrium implies is <a href=./falsifiable-prediction-magnet-field.html>pre-registered</a> so it can be tested directly."
+   ],
+   [
+    "p",
+    "A subtle risk with strongly shaped equilibria is that a solver can converge to a mathematically valid solution that a real control system cannot hold. The record therefore treats controllability of the negative-triangularity shape as a separate question from existence of the equilibrium, and defers the controllability claim to FOAK rather than inferring it from a converged solve."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "negative-triangularity-open-note",
+    "Negative Triangularity"
+   ],
+   [
+    "solver-verification-mms",
+    "Solver Verification"
+   ],
+   [
+    "falsifiable-prediction-magnet-field",
+    "Magnet-Field Prediction"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "transport-model-validation",
+  "title": "Validating the Transport Model",
+  "cat": "validation-open-science",
+  "lede": "The transport model behind the breeder's confinement and gain is the least certain link; the record benchmarks it against other machines and pre-registers its FOAK test.",
+  "body": [
+   [
+    "h2",
+    "The softest link in the chain"
+   ],
+   [
+    "p",
+    "Turbulent transport sets the energy confinement time, and confinement sets the gain. Transport is also the hardest fusion physics to predict from first principles, so it is the breeder (Hyperion) model most in need of validation. The record treats it accordingly: it does not overstate confidence in the confinement prediction behind Q_sci 3.424."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 234\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Confidence by model\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Confidence by model</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">neutron kinematics</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"404\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">well-founded</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">magnet field / equilibrium</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"330\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">verifiable now</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">neutronics / breeding</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"264\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">nuclear-data bound</text><text x=\"20\" y=\"182\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">turbulent transport</text><rect x=\"20\" y=\"187\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"187\" width=\"198\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"198\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">softest link</text></svg>"
+   ],
+   [
+    "h3",
+    "How it is checked"
+   ],
+   [
+    "ul",
+    [
+     "Benchmarking predicted confinement against IPB98(y,2) and the ST database.",
+     "Comparison of the transport model against experimental confinement where geometry overlaps.",
+     "Propagating transport-model uncertainty into the reported gain interval.",
+     "A pre-registered confinement prediction with a stated falsifier."
+    ]
+   ],
+   [
+    "h3",
+    "Why honesty here matters most"
+   ],
+   [
+    "p",
+    "If any single model is going to be surprised by hardware, transport is the candidate. Stating that plainly — and pre-registering the <a href=./falsifiable-prediction-confinement.html>confinement falsifier</a> — is more credible than presenting the confinement number as settled. FOAK is the arbiter."
+   ],
+   [
+    "p",
+    "It is worth being precise about what a transport disagreement would and would not overturn. A confinement shortfall would erode or break the Q_sci 3.424 case, but it would not touch the neutron kinematics or the measured field; those rest on firmer ground. Isolating the soft link keeps a possible surprise contained to the claims that actually depend on it, rather than casting doubt across the whole record."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "falsifiable-prediction-confinement",
+    "Confinement Prediction"
+   ],
+   [
+    "h-mode-confinement-scaling-benchmark",
+    "Confinement Scaling"
+   ],
+   [
+    "surrogate-model-validation",
+    "Surrogate Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "neutronics-model-validation",
+  "title": "Validating the Neutronics Model",
+  "cat": "validation-open-science",
+  "lede": "The neutron transport and activation model underpins every product number; its accuracy is bounded by nuclear-data uncertainty, which the record propagates rather than ignores.",
+  "body": [
+   [
+    "h2",
+    "From neutrons to products"
+   ],
+   [
+    "p",
+    "Once the 14.1 MeV source rate is fixed, a neutronics model determines how those neutrons breed tritium, produce helium-3, activate materials, and deposit heat. The breeder (Hyperion) product figures — near 4 kg/yr tritium class and 1.97 kg/yr helium-3 — are outputs of this model, so its validation is central."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"neutronics chain\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">14.1 MeV source</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">transport in</text><text x=\"227\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">blanket</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"79\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">reactions</text><text x=\"372\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">(breeding,</text><text x=\"372\" y=\"109\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">activation)</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">product &</text><text x=\"517\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">activation totals</text></svg>"
+   ],
+   [
+    "h3",
+    "How it is validated"
+   ],
+   [
+    "ul",
+    [
+     "Benchmark cases against published integral neutronics experiments for shared materials.",
+     "Cross-section libraries cited to their evaluated nuclear-data source.",
+     "Propagation of nuclear-data uncertainty into product-yield intervals.",
+     "Consistency checks between deposited energy and the fusion power balance."
+    ]
+   ],
+   [
+    "h3",
+    "The nuclear-data floor"
+   ],
+   [
+    "p",
+    "Neutronics accuracy is bounded below by the uncertainty in evaluated cross-sections, which is real and not reducible by better geometry alone. The record reports product yields with intervals that include this floor. The step where model geometry matters most — realistic blanket coverage — feeds directly into the <a href=./local-vs-net-tbr-reconciliation.html>local-vs-net TBR</a> gate, which is why that gate is open."
+   ],
+   [
+    "p",
+    "The neutronics model therefore sits at the junction of two different uncertainty types: an irreducible nuclear-data floor that better geometry cannot remove, and a geometry-and-coverage uncertainty that a more faithful model can reduce. The record keeps them distinct so a reader knows which part of a product-yield interval could tighten with more work and which part is set by the state of evaluated nuclear data."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "neutron-yield-benchmark",
+    "Neutron-Yield Benchmark"
+   ],
+   [
+    "local-vs-net-tbr-reconciliation",
+    "Local vs Net TBR"
+   ],
+   [
+    "falsifiable-prediction-neutron-spectrum",
+    "Neutron-Spectrum Prediction"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "surrogate-model-validation",
+  "title": "Validating the Surrogate Models",
+  "cat": "validation-open-science",
+  "lede": "Fast surrogate models stand in for expensive simulations during design exploration; the record validates each surrogate against the full model it replaces and states its error.",
+  "body": [
+   [
+    "h2",
+    "Fast stand-ins, honestly bounded"
+   ],
+   [
+    "p",
+    "Exploring a design space requires thousands of evaluations, which the full physics codes cannot supply quickly. Surrogate models — fast approximations trained on full-model runs — fill that gap for the breeder (Hyperion). A surrogate is only trustworthy inside the region it was trained on and to the accuracy it was validated at, and the record states both."
+   ],
+   [
+    "code",
+    [
+     "python",
+     "# Surrogate validation (schematic)\n# 1. Train surrogate s(x) on full-model samples {x_i, f(x_i)}\n# 2. Hold out test points not used in training\n# 3. Report error: max & RMS |s(x)-f(x)| on held-out set\n# 4. Record the valid input domain; refuse extrapolation beyond it"
+    ]
+   ],
+   [
+    "h3",
+    "Rules the record enforces"
+   ],
+   [
+    "ul",
+    [
+     "Held-out test error, not training error, defines a surrogate's accuracy.",
+     "The valid input domain is stated; extrapolation is flagged, not silent.",
+     "Headline results are confirmed on the full model, not left to the surrogate.",
+     "Surrogate uncertainty is included in the reported intervals."
+    ]
+   ],
+   [
+    "h3",
+    "Where surrogates stop"
+   ],
+   [
+    "p",
+    "Surrogates accelerate exploration; they do not certify results. Every quantity that appears in the record's headline claims is checked against the full model it approximates. A surrogate that disagrees with its parent model outside tolerance is a bug to fix, and its domain of validity is part of the <a href=./uncertainty-quantification-method.html>uncertainty budget</a>."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "uncertainty-quantification-method",
+    "Uncertainty Quantification"
+   ],
+   [
+    "transport-model-validation",
+    "Transport Validation"
+   ],
+   [
+    "digital-twin-as-validation-instrument",
+    "Digital Twin as Instrument"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "what-foak-first-tritium-will-test",
+  "title": "What FOAK First Tritium Will Test",
+  "cat": "validation-open-science",
+  "lede": "First-of-a-kind first tritium near 2030 is the first hardware evidence for the breeder; this page lists exactly which simulated claims it can begin to validate.",
+  "body": [
+   [
+    "h2",
+    "The first move from simulation to measurement"
+   ],
+   [
+    "p",
+    "FOAK first tritium, targeted near 2030, is the moment the breeder (Hyperion) record gains its first hardware data. It does not validate everything at once. The honest accounting names which pre-registered predictions FOAK can begin to test and in what order."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"FOAK sequence\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"68\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">magnet field</text><line x1=\"119\" y1=\"95\" x2=\"133\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M133 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"136\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"184\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">first plasma</text><line x1=\"235\" y1=\"95\" x2=\"249\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M249 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"252\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"300\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">neutron</text><text x=\"300\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">spectrum</text><line x1=\"351\" y1=\"95\" x2=\"365\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M365 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"368\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"416\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">first tritium</text><line x1=\"467\" y1=\"95\" x2=\"481\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M481 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"484\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"532\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">integrated</text><text x=\"532\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">breeding</text></svg>"
+   ],
+   [
+    "ul",
+    [
+     "Magnet field: measurable before plasma; tests the 16.84 T / 8 T on-axis prediction directly.",
+     "Plasma current and equilibrium: tests whether 9.86 MA and the negative-triangularity shape hold in hardware.",
+     "Neutron spectrum: an early, sharp test of the 14.1 MeV D-T signature.",
+     "Confinement: tests the transport model behind Q_sci 3.424 against the pre-registered falsifier.",
+     "First tritium: confirms the breeding chain functions, beginning the tritium accounting."
+    ]
+   ],
+   [
+    "h3",
+    "Order matters"
+   ],
+   [
+    "p",
+    "Field and spectrum resolve early and cheaply; confinement and breeding require integrated operation. Sequencing the tests from cheapest-and-earliest to hardest means a design flaw in a foundational assumption is caught before the program depends on it."
+   ],
+   [
+    "h3",
+    "What 'test' means here"
+   ],
+   [
+    "p",
+    "FOAK begins validation; it does not complete it. A single machine's first tritium is evidence, not proof of fleet behavior. The limits are set out in <a href=./what-foak-does-not-prove.html>what FOAK will not prove</a>."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "what-foak-does-not-prove",
+    "What FOAK Will Not Prove"
+   ],
+   [
+    "pre-registered-predictions-overview",
+    "Pre-Registration Overview"
+   ],
+   [
+    "verification-vs-validation",
+    "Verification vs Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "what-foak-does-not-prove",
+  "title": "What FOAK First Tritium Will Not Prove",
+  "cat": "validation-open-science",
+  "lede": "First-of-a-kind first tritium is a milestone, not a finish line; it will not prove net-TBR self-sufficiency, long-run center-post survival, or fleet-scale performance.",
+  "body": [
+   [
+    "h2",
+    "Guarding against over-reading a milestone"
+   ],
+   [
+    "p",
+    "When FOAK breeds its first tritium near 2030, it will be tempting to treat the whole design as validated. The breeder (Hyperion) record marks the boundaries in advance so the milestone is not over-read."
+   ],
+   [
+    "ul",
+    [
+     "Not net self-sufficiency: first tritium shows the chain works, not that net breeding exceeds burn plus losses over time. Net TBR requires sustained accounting.",
+     "Not the local-vs-net TBR closure at 1.8: that reconciliation remains open until a realistic-geometry measurement resolves it.",
+     "Not center-post longevity: the ~0.01 fpy lifetime note is about accumulated damage over full-power-years, which early operation cannot reach.",
+     "Not fleet performance: one FOAK machine says little about NOAK and BOAK learning, which follow.",
+     "Not net electric power: the breeder is a foundry; no net-gain claim is made before or at FOAK."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 234\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"After FOAK first tritium\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">After FOAK first tritium</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">breeding chain functions</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"264\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">begins to be shown</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">net self-sufficiency</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"110\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">still open</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">center-post lifetime</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"88\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">needs full-power-years</text><text x=\"20\" y=\"182\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">fleet-scale performance</text><rect x=\"20\" y=\"187\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"187\" width=\"66\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"198\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">NOAK/BOAK later</text></svg>"
+   ],
+   [
+    "h3",
+    "Why say this out loud"
+   ],
+   [
+    "p",
+    "Programs lose credibility by letting a real milestone be reported as more than it is. Stating the limits before the event means the eventual claims match what was promised. The honest gates remain gates until the specific measurement that closes each one is made."
+   ],
+   [
+    "p",
+    "There is a positive reason to draw these limits so firmly. A milestone that is reported for exactly what it is can be believed the next time; a milestone inflated into more than it showed spends credibility the program will need later. By fixing in advance what first tritium does and does not settle, the record makes its eventual FOAK claims easy to check against what was promised here."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "what-foak-first-tritium-will-test",
+    "What FOAK Will Test"
+   ],
+   [
+    "the-honest-gates-overview",
+    "The Honest Gates"
+   ],
+   [
+    "centerpost-lifetime-gate",
+    "Center-Post Lifetime"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "design-and-simulation-stage-disclaimer",
+  "title": "The Design-and-Simulation Stage, In Writing",
+  "cat": "validation-open-science",
+  "lede": "Every breeder claim on this microsite is a design-and-simulation result; this page is the standing disclaimer the whole record inherits.",
+  "body": [
+   [
+    "h2",
+    "One clear statement, applied everywhere"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) is not built. Every number, figure, and diagram in this record is the output of a model, an analysis, or an engineering study. Nothing here reports a measurement from an operating breeder, because no operating breeder exists yet. This page states that once so the rest of the record can reference it."
+   ],
+   [
+    "ul",
+    [
+     "Design point: Q_sci 3.424, 88.7 MW, 9.86 MA, peak field 16.84 T (8 T on-axis), A 2.5, R0 1.2 m, delta -0.30 — all simulated.",
+     "Products: ~4 kg/yr tritium class, ~1.97 kg/yr helium-3, 14 MeV neutrons — all modeled yields.",
+     "TBR: studied as a lever at 1.1 / 1.5 / 1.8, with the local-vs-net gap open at the target.",
+     "Timeline: construction from Q2 2027; FOAK first tritium targeted near 2030; NOAK then BOAK."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Stage of the breeder\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Stage of the breeder</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">design point defined</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"396\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">solvers verified (in part)</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"242\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">reproducible now</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">validated against hardware</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"0\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">awaits FOAK ~2030</text></svg>"
+   ],
+   [
+    "h3",
+    "No net-gain claim before FOAK"
+   ],
+   [
+    "p",
+    "The record makes no claim of hardware net gain before FOAK, and the breeder is a foundry judged on fusion gain and product output, not net electricity. Where a page states a result, the honest reading is: this is what the design-and-simulation study predicts, subject to the validation still to come."
+   ],
+   [
+    "h3",
+    "Why lead with the limits"
+   ],
+   [
+    "p",
+    "A record that states its stage plainly is easier to trust than one that must be cross-examined to find it. The disclaimer is not a hedge; it is the frame that makes the specific claims meaningful."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "what-simulated-vs-demonstrated",
+    "Simulated vs Demonstrated"
+   ],
+   [
+    "the-honest-gates-overview",
+    "The Honest Gates"
+   ],
+   [
+    "reproducible-analysis-record",
+    "The Analysis Record"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "peer-review-and-venues",
+  "title": "Peer Review and Publication Venues",
+  "cat": "validation-open-science",
+  "lede": "Open deposit is the floor, not the ceiling; the breeder work is offered to external peer review, and the record distinguishes deposited-and-citable from peer-reviewed.",
+  "body": [
+   [
+    "h2",
+    "Two independent forms of scrutiny"
+   ],
+   [
+    "p",
+    "Depositing on Zenodo makes the breeder (Hyperion) record permanent and citable, but a DOI is not peer review. The two are separate and complementary: the deposit lets anyone reproduce the arithmetic; peer review has domain experts scrutinize the assumptions, methods, and conclusions. The record pursues both and labels the status of each work honestly."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"scrutiny paths\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">open deposit</text><text x=\"82\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">(DOI)</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">reproduction by</text><text x=\"227\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">anyone</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">expert peer</text><text x=\"372\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">review</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"79\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">published</text><text x=\"517\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">critique &</text><text x=\"517\" y=\"109\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">response</text></svg>"
+   ],
+   [
+    "h3",
+    "Where the work is directed"
+   ],
+   [
+    "ul",
+    [
+     "Preprint and open-repository deposit for immediate availability and citability.",
+     "Peer-reviewed fusion and nuclear-engineering venues for expert scrutiny.",
+     "Conference presentation for direct challenge from the field.",
+     "The reproduction record, so reviewers can check numbers, not just prose."
+    ]
+   ],
+   [
+    "h3",
+    "Honest labeling of status"
+   ],
+   [
+    "p",
+    "A work that is deposited but not yet peer-reviewed is described exactly that way; peer review, where completed, is noted. The record does not present a preprint as if it were a reviewed article. This distinction matters to a reader weighing how much external validation a given claim has received."
+   ],
+   [
+    "p",
+    "Peer review and reproduction catch different failures. A reproducer can confirm that the published numbers follow from the inputs and code yet miss a flawed assumption that a domain expert would challenge on sight; a reviewer can flag a questionable assumption yet never rerun a line. The breeder program treats the two as complementary filters and does not let passing one stand in for the other."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "published-papers-and-dois",
+    "Papers and DOIs"
+   ],
+   [
+    "open-science-principles",
+    "Open-Science Principles"
+   ],
+   [
+    "independent-reproduction-guide",
+    "Reproduction Guide"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "open-science-principles",
+  "title": "The Open-Science Principles",
+  "cat": "validation-open-science",
+  "lede": "The breeder record follows a small set of commitments — open data, open code, stated uncertainty, named gates, and permanent citability — that together define its posture.",
+  "body": [
+   [
+    "h2",
+    "The commitments, in one place"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) program's open-science posture is not a slogan; it is a set of concrete commitments that each map to a mechanism elsewhere in this record."
+   ],
+   [
+    "ul",
+    [
+     "Open data: inputs and outputs are deposited with checksums (<a href=./data-availability-statement.html>data availability</a>).",
+     "Open code: analysis code is released under an open license (<a href=./code-availability-and-licensing.html>code availability</a>).",
+     "Reproducibility: pinned environments and two-tier reproduction (<a href=./independent-reproduction-guide.html>reproduction guide</a>).",
+     "Stated uncertainty: results carry intervals, not just point values (<a href=./uncertainty-quantification-method.html>UQ method</a>).",
+     "Named gates: the open questions are published, not hidden (<a href=./the-honest-gates-overview.html>honest gates</a>).",
+     "Permanence: DOI-stamped, versioned deposits (<a href=./version-control-of-the-record.html>versioning</a>).",
+     "Pre-registration: falsifiers published before the data (<a href=./pre-registered-predictions-overview.html>pre-registration</a>).",
+     "No economics: the public record carries no prices, costs, or valuations."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 620 278\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Principle -> mechanism\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Principle -> mechanism</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">open data & code</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"396\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">deposit + license</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">reproducibility</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"374\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">pinned env, 2-tier</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">stated uncertainty</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"352\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">UQ + sensitivity</text><text x=\"20\" y=\"182\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">named gates</text><rect x=\"20\" y=\"187\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"187\" width=\"352\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"198\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">honest-gates pages</text><text x=\"20\" y=\"226\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">pre-registration</text><rect x=\"20\" y=\"231\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"231\" width=\"330\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"242\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">falsifiers, dated</text></svg>"
+   ],
+   [
+    "h3",
+    "Why these and not more"
+   ],
+   [
+    "p",
+    "The list is short on purpose: each item is enforceable and checkable, and each corresponds to a thing a skeptic can independently verify. Principles that cannot be checked are not principles; they are promises."
+   ],
+   [
+    "p",
+    "Each commitment also has a failure mode that would expose it: a broken checksum defeats open data, an unpinned dependency defeats reproducibility, a removed gate defeats honesty, and an overwritten deposit defeats permanence. Naming those failure modes is what turns the list from aspiration into something a skeptic can attempt to break — which is the only test a principle of this kind can meaningfully pass."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "reproducible-analysis-record",
+    "The Analysis Record"
+   ],
+   [
+    "the-verify-check",
+    "The verify() Firewall"
+   ],
+   [
+    "errata-and-corrections-policy",
+    "Errata & Corrections"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "errata-and-corrections-policy",
+  "title": "The Errata and Corrections Policy",
+  "cat": "validation-open-science",
+  "lede": "When the breeder record is found wrong, the correction is published as a new version with the change described; nothing is silently overwritten.",
+  "body": [
+   [
+    "h2",
+    "Being wrong in public, correctly"
+   ],
+   [
+    "p",
+    "A validation record earns trust by how it handles its own errors. The breeder (Hyperion) policy is that a discovered mistake is corrected in the open: a new Zenodo version, a stated reason, and a description of what changed — exactly the path taken from v1 (10.5281/zenodo.21746157) to v2 (10.5281/zenodo.21795620)."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"correction flow\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"68\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">error</text><text x=\"68\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">reported</text><line x1=\"119\" y1=\"95\" x2=\"133\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M133 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"136\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"184\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">assessed</text><line x1=\"235\" y1=\"95\" x2=\"249\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M249 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"252\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"300\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">new version</text><text x=\"300\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">(DOI)</text><line x1=\"351\" y1=\"95\" x2=\"365\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M365 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"368\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"416\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">change</text><text x=\"416\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">described</text><line x1=\"467\" y1=\"95\" x2=\"481\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M481 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"484\" y=\"60\" width=\"96\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"532\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">old version</text><text x=\"532\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">retained</text></svg>"
+   ],
+   [
+    "h3",
+    "How to report an error"
+   ],
+   [
+    "ul",
+    [
+     "Identify the analysis or figure and the specific number in question.",
+     "State the expected value and the value obtained on reproduction, with the tier used.",
+     "Include the environment, so an environment-specific difference can be separated from a genuine error.",
+     "Errors surface through reproduction, peer review, or internal review alike."
+    ]
+   ],
+   [
+    "h3",
+    "What a correction records"
+   ],
+   [
+    "p",
+    "Each correction states whether a headline number moved and by how much, which downstream claims are affected, and whether any open gate changed status. Old versions stay retrievable so a prior citation is never orphaned. This is the same discipline as the <a href=./version-control-of-the-record.html>versioning</a> and the <a href=./contradictions-register.html>contradictions register</a>: corrections are visible, dated, and reversible in the historical record."
+   ],
+   [
+    "p",
+    "The policy also sets an expectation for how corrections are communicated: a moved headline number is stated as such, not buried, and anyone who relied on the prior value can see at a glance whether their use is affected. Handling error this way turns a correction from an embarrassment into evidence that the record is being actively checked, which is exactly the signal a serious reader looks for."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "version-control-of-the-record",
+    "Versioning the Record"
+   ],
+   [
+    "contradictions-register",
+    "Contradictions Register"
+   ],
+   [
+    "independent-reproduction-guide",
+    "Reproduction Guide"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "how-to-cite-hyperion",
+  "title": "How to Cite the Breeder Record",
+  "cat": "validation-open-science",
+  "lede": "Cite the version DOI for a specific number and the concept DOI for the work in general; this page gives the exact identifiers and the rule for choosing between them.",
+  "body": [
+   [
+    "h2",
+    "Cite the right identifier"
+   ],
+   [
+    "p",
+    "A citation to the breeder (Hyperion) record should be unambiguous and durable. Zenodo provides two kinds of DOI, and the choice depends on whether a claim depends on a specific number."
+   ],
+   [
+    "ul",
+    [
+     "Version DOI, v1: <b>10.5281/zenodo.21746157</b> — cite when referencing exactly the first deposit.",
+     "Version DOI, v2: <b>10.5281/zenodo.21795620</b> — cite when a claim depends on the corrected numbers.",
+     "Concept DOI: resolves to the latest version — cite when referring to the breeder work in general."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"which DOI\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"173\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"106\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">specific number?</text><line x1=\"196\" y1=\"95\" x2=\"210\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M210 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"213\" y=\"60\" width=\"173\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"299\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">yes -> version DOI</text><line x1=\"389\" y1=\"95\" x2=\"403\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M403 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"406\" y=\"60\" width=\"173\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"492\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">no -> concept DOI</text></svg>"
+   ],
+   [
+    "h3",
+    "The rule"
+   ],
+   [
+    "p",
+    "If your statement would change should a number be corrected, cite the version DOI so your reference is pinned to the numbers you actually used. If you are pointing at the body of work, cite the concept DOI so the reader lands on the current version. When in doubt, cite the version DOI — precision is cheap and durability is the point."
+   ],
+   [
+    "h3",
+    "What a good citation includes"
+   ],
+   [
+    "p",
+    "Author, title, year, the deposit repository (Zenodo), and the DOI. Because the deposit is versioned and checksummed, a version-DOI citation identifies not just a document but an exact set of bytes a reader can fetch and verify — which is what makes the reference reproducible rather than merely locatable."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "published-papers-and-dois",
+    "Papers and DOIs"
+   ],
+   [
+    "version-control-of-the-record",
+    "Versioning the Record"
+   ],
+   [
+    "zenodo-deposit-structure",
+    "Inside the Deposit"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "glossary-of-validation-terms",
+  "title": "A Glossary of Validation Terms",
+  "cat": "validation-open-science",
+  "lede": "Plain definitions of the validation and open-science terms used across the breeder record, so a reader is never guessing what a word means.",
+  "body": [
+   [
+    "h2",
+    "Words used precisely"
+   ],
+   [
+    "p",
+    "The breeder (Hyperion) record uses several terms in specific technical senses. This glossary fixes them so the pages read the same way to everyone."
+   ],
+   [
+    "ul",
+    [
+     "Verification: confirming the code solves its equations correctly (no machine needed).",
+     "Validation: confirming the equations describe the real machine (needs hardware).",
+     "Reproducibility: a third party obtaining the same output from the same inputs and code.",
+     "Tier-1 reproduction: a byte-exact match in the reference environment.",
+     "Tier-2 reproduction: a within-tolerance match across environments.",
+     "TBR (tritium breeding ratio): tritium bred per tritium burned; local vs net distinguished.",
+     "Local TBR: idealized breeding for full-coverage blanket; optimistic.",
+     "Net TBR: breeding after real coverage, penetrations, and losses.",
+     "Pre-registration: publishing a prediction and its falsifier before the data exists.",
+     "Falsifier: the observation that would prove a prediction wrong.",
+     "UQ (uncertainty quantification): propagating input uncertainty to output intervals.",
+     "Sensitivity: how strongly an output responds to a given input.",
+     "Honest gate: a named open question the record has not closed.",
+     "FOAK / NOAK / BOAK: first-, next-, and best-of-a-kind machines in the build sequence.",
+     "Full-power-year (fpy): one year of operation at full power, the unit for damage lifetimes.",
+     "Concept DOI / version DOI: identifiers for the work in general vs a specific deposit."
+    ]
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"core terms\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"173\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"106\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">verify (code right)</text><line x1=\"196\" y1=\"95\" x2=\"210\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M210 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"213\" y=\"60\" width=\"173\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"299\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">validate (model right)</text><line x1=\"389\" y1=\"95\" x2=\"403\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M403 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"406\" y=\"60\" width=\"173\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"492\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">reproduce (T1/T2)</text></svg>"
+   ],
+   [
+    "h3",
+    "Why a glossary is a validation tool"
+   ],
+   [
+    "p",
+    "Ambiguous language hides disagreement. When 'reproduced' or 'validated' means one thing to the author and another to the reader, a claim can seem stronger than it is. Fixing the definitions is part of keeping the record honest. The distinctions that carry the most weight are verification versus validation and local versus net TBR: in each pair the two terms sound interchangeable and are not, and most over-claims in fusion communication come from sliding between them. The record uses the stricter member of each pair as its default."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "verification-vs-validation",
+    "Verification vs Validation"
+   ],
+   [
+    "two-tier-reproduction",
+    "Two-Tier Reproduction"
+   ],
+   [
+    "the-honest-gates-overview",
+    "The Honest Gates"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "contradictions-register",
+  "title": "The Contradictions Register",
+  "cat": "validation-open-science",
+  "lede": "Where the breeder record contains an unresolved tension or an open reconciliation, it is listed here rather than smoothed over, so a reader sees the seams.",
+  "body": [
+   [
+    "h2",
+    "A place for the unresolved"
+   ],
+   [
+    "p",
+    "No large design study is perfectly self-consistent while its physics is still maturing. The breeder (Hyperion) record keeps a register of the tensions it has not resolved, so they are visible in one place instead of being discovered by a careful reader as apparent inconsistencies."
+   ],
+   [
+    "truth",
+    [
+     [
+      "open item",
+      "status"
+     ],
+     [
+      [
+       "local vs net TBR at target 1.8",
+       "open reconciliation"
+      ],
+      [
+       "tritium self-sufficiency",
+       "design target, not proven"
+      ],
+      [
+       "center-post lifetime (~0.01 fpy)",
+       "engineering gate, uncertain"
+      ],
+      [
+       "low-A negative-triangularity confinement",
+       "thin validation data"
+      ],
+      [
+       "transport model behind Q_sci 3.424",
+       "softest link, FOAK-tested"
+      ]
+     ]
+    ]
+   ],
+   [
+    "h3",
+    "How an item enters and leaves"
+   ],
+   [
+    "ul",
+    [
+     "Enters when reproduction, review, or internal analysis finds an unresolved tension.",
+     "Carries a plain-language statement and a current status.",
+     "Leaves only when a specific analysis or FOAK measurement closes it — with the closing evidence cited.",
+     "A closed item is archived, not deleted, so the history is preserved."
+    ]
+   ],
+   [
+    "h3",
+    "Why publish this at all"
+   ],
+   [
+    "p",
+    "A register of contradictions is the opposite of a marketing document, and that is the point. It tells a reader precisely where the design is still soft, which is the information a serious reviewer most wants. Each item links to its own page — the <a href=./local-vs-net-tbr-reconciliation.html>TBR reconciliation</a> and the <a href=./centerpost-lifetime-gate.html>center-post gate</a> among them — where the tension is described in full."
+   ],
+   [
+    "p",
+    "The register is deliberately not a bug tracker of typos; it lists tensions that could change a conclusion. That threshold keeps it short and meaningful. A reader who wants the fastest honest read of where the breeder design is still soft can start here and follow the links, rather than reconstructing the open questions from scattered caveats across the rest of the record."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "the-honest-gates-overview",
+    "The Honest Gates"
+   ],
+   [
+    "local-vs-net-tbr-reconciliation",
+    "Local vs Net TBR"
+   ],
+   [
+    "errata-and-corrections-policy",
+    "Errata & Corrections"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ },
+ {
+  "slug": "digital-twin-as-validation-instrument",
+  "title": "The Digital Twin as a Validation Instrument",
+  "cat": "validation-open-science",
+  "lede": "The interactive model of the breeder is more than a visualization; it is the framework that will ingest FOAK data and test the pre-registered predictions in place.",
+  "body": [
+   [
+    "h2",
+    "From model to instrument"
+   ],
+   [
+    "p",
+    "Today the breeder (Hyperion) digital twin is a design-and-simulation model: it embodies the equilibrium, the neutron budget, and the product chain at the frozen design point. Its longer purpose is validation. As FOAK produces data near 2030, the same framework becomes the place where prediction meets measurement."
+   ],
+   [
+    "html",
+    "<svg viewBox=\"0 0 600 190\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"twin as instrument\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><rect x=\"20\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"82\" y=\"87\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">simulated design</text><text x=\"82\" y=\"102\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">point</text><line x1=\"148\" y1=\"95\" x2=\"162\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M162 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"165\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"227\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">FOAK measurement</text><line x1=\"293\" y1=\"95\" x2=\"307\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M307 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"310\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"372\" y=\"95\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">twin compares</text><line x1=\"438\" y1=\"95\" x2=\"452\" y2=\"95\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><path d=\"M452 95 l -6 -4 l 0 8 Z\" fill=\"#D4AD5C\"/><rect x=\"455\" y=\"60\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#2c3745\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"517\" y=\"79\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">prediction</text><text x=\"517\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">confirmed or</text><text x=\"517\" y=\"109\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">refuted</text></svg>"
+   ],
+   [
+    "h3",
+    "What it does for validation"
+   ],
+   [
+    "ul",
+    [
+     "Holds the pre-registered predictions and their falsifiers in executable form.",
+     "Ingests hardware measurements and compares them to prediction automatically.",
+     "Flags a refuted prediction rather than re-fitting to the new data.",
+     "Keeps the comparison reproducible: the same inputs give the same verdict."
+    ]
+   ],
+   [
+    "h3",
+    "The honest boundary"
+   ],
+   [
+    "p",
+    "A digital twin does not validate itself. Until FOAK supplies measurement, the twin is a consistent simulation, not a validated one — the same status as the rest of the record. Its value is that it makes the eventual validation systematic: every pre-registered prediction has a defined home where it will be confirmed or broken, and the verdict is computed, not asserted."
+   ],
+   [
+    "p",
+    "The twin also protects against a quiet failure mode of comparison: moving the goalposts after the data arrives. Because the predictions and their falsifiers are already encoded and DOI-stamped, the twin evaluates measurement against the commitment as written, and a refuted prediction is recorded as refuted. The instrument's discipline is precisely that it cannot be talked out of an unfavorable verdict."
+   ],
+   [
+    "p",
+    "This page describes a design-and-simulation study, not a built machine. Construction of the breeder (Hyperion) begins Q2 2027; first-of-a-kind first tritium is targeted near 2030. No hardware net-gain claim is made before FOAK."
+   ]
+  ],
+  "related": [
+   [
+    "pre-registered-predictions-overview",
+    "Pre-Registration Overview"
+   ],
+   [
+    "what-foak-first-tritium-will-test",
+    "What FOAK Will Test"
+   ],
+   [
+    "surrogate-model-validation",
+    "Surrogate Validation"
+   ]
+  ],
+  "seo_type": "TechArticle"
+ }
+]
