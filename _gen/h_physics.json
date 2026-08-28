@@ -3,7 +3,7 @@
   "slug": "physics-of-hyperion",
   "title": "The Physics of Hyperion",
   "cat": "the-physics",
-  "lede": "Hyperion is a compact D-T spherical tokamak studied to fusion gain Q_sci 3.424 at 88.7 MW fusion power, sized as an isotope foundry.",
+  "lede": "Hyperion is a compact D-T spherical tokamak studied to fusion gain Q_sci 3.076 at 85.0 MW fusion power, sized as an isotope foundry.",
   "body": [
    [
     "h2",
@@ -19,7 +19,7 @@
    ],
    [
     "p",
-    "The frozen design point is Q_sci 3.424 with 88.7 MW of fusion power, plasma current 9.86 MA, peak field 16.84 T (8 T on-axis), aspect ratio A 2.5, major radius R0 1.2 m, and negative triangularity delta -0.30. These are the numbers every page in this section refers back to; none of them are invented here."
+    "The frozen design point is Q_sci 3.076 with 85.0 MW of fusion power, plasma current 9.66 MA, peak field 16.84 T (8 T on-axis), aspect ratio A 2.5, major radius R0 1.2 m, and negative triangularity delta -0.30. These are the numbers every page in this section refers back to; none of them are invented here."
    ],
    [
     "h3",
@@ -27,7 +27,7 @@
    ],
    [
     "p",
-    "Net-electric output requires that recirculating power for magnets, heating, cryogenics, and plant balance stay below gross electrical output. Scientific gain is a lower bar and is sufficient for a foundry, because the product is the neutron economy. That framing is what makes a compact machine at Q 3.424 useful rather than a placeholder for a later, larger device."
+    "Net-electric output requires that recirculating power for magnets, heating, cryogenics, and plant balance stay below gross electrical output. Scientific gain is a lower bar and is sufficient for a foundry, because the product is the neutron economy. That framing is what makes a compact machine at Q 3.076 useful rather than a placeholder for a later, larger device."
    ],
    [
     "h3",
@@ -36,7 +36,7 @@
    [
     "ul",
     [
-     "Q_sci 3.424 is scientific gain, distinct from engineering or net-electric gain",
+     "Q_sci 3.076 is scientific gain, distinct from engineering or net-electric gain",
      "The tritium breeding ratio is treated as a design lever (1.1 / 1.5 / 1.8), not a settled value",
      "Net-versus-local breeding at target TBR 1.8 is an open reconciliation",
      "The center post has a limited lifetime (~0.01 fpy note)"
@@ -50,7 +50,7 @@
   "related": [
    [
     "fusion-gain-q-sci",
-    "Fusion Gain Q_sci 3.424"
+    "Fusion Gain Q_sci 3.076"
    ],
    [
     "spherical-tokamak-advantage",
@@ -65,9 +65,9 @@
  },
  {
   "slug": "fusion-gain-q-sci",
-  "title": "Fusion Gain Q_sci 3.424",
+  "title": "Fusion Gain Q_sci 3.076",
   "cat": "the-physics",
-  "lede": "Q_sci is the ratio of fusion power to injected heating power; the Hyperion design point is 3.424, a scientific gain sufficient for a neutron foundry.",
+  "lede": "Q_sci is the ratio of fusion power to injected heating power; the Hyperion design point is 3.076, a scientific gain sufficient for a neutron foundry.",
   "body": [
    [
     "h2",
@@ -75,19 +75,19 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">88.7 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.424</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
+    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">85.0 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.076</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
    ],
    [
     "p",
-    "Fusion gain Q_sci is defined as the fusion power produced divided by the external heating power delivered to the plasma. At the Hyperion design point this ratio is 3.424: 88.7 MW of fusion power for the heating that sustains the plasma. Q_sci above 1 means the plasma releases more fusion energy than the auxiliary systems put into it, but it says nothing yet about electricity delivered to a grid."
+    "Fusion gain Q_sci is defined as the fusion power produced divided by the external heating power delivered to the plasma. At the Hyperion design point this ratio is 3.076: 85.0 MW of fusion power for the heating that sustains the plasma. Q_sci above 1 means the plasma releases more fusion energy than the auxiliary systems put into it, but it says nothing yet about electricity delivered to a grid."
    ],
    [
     "h3",
-    "What Q_sci 3.424 buys"
+    "What Q_sci 3.076 buys"
    ],
    [
     "p",
-    "At Q above roughly 3 a significant fraction of the plasma heating comes from the fusion alpha particles themselves rather than from external injection. The plasma is partly self-heated. For a foundry this is enough: the 88.7 MW of fusion power corresponds to a neutron production rate that drives breeding and activation at the throughput the design targets. The neutrons are the product; the gain is the means."
+    "At Q above roughly 3 a significant fraction of the plasma heating comes from the fusion alpha particles themselves rather than from external injection. The plasma is partly self-heated. For a foundry this is enough: the 85.0 MW of fusion power corresponds to a neutron production rate that drives breeding and activation at the throughput the design targets. The neutrons are the product; the gain is the means."
    ],
    [
     "h3",
@@ -98,7 +98,7 @@
     [
      "Not engineering gain (Q_eng), which accounts for all plant recirculating power",
      "Not ignition, where alpha heating alone sustains the burn",
-     "Not a measured result — 3.424 is a design-and-simulation value"
+     "Not a measured result — 3.076 is a design-and-simulation value"
     ]
    ],
    [
@@ -117,7 +117,7 @@
    ],
    [
     "fusion-power-88-7",
-    "The 88.7 MW Fusion Power"
+    "The 85.0 MW Fusion Power"
    ],
    [
     "alpha-heating",
@@ -138,7 +138,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">88.7 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.424</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
+    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">85.0 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.076</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
    ],
    [
     "p",
@@ -146,7 +146,7 @@
    ],
    [
     "p",
-    "Hyperion is specified at Q_sci 3.424. It is not specified to any Q_eng target, because it is a foundry: it converts electrical input into neutron flux and isotopes, not into net electricity. Judging it by an engineering-gain yardstick misreads what the machine is for."
+    "Hyperion is specified at Q_sci 3.076. It is not specified to any Q_eng target, because it is a foundry: it converts electrical input into neutron flux and isotopes, not into net electricity. Judging it by an engineering-gain yardstick misreads what the machine is for."
    ],
    [
     "h3",
@@ -159,7 +159,7 @@
    [
     "ul",
     [
-     "Q_sci 3.424 — the Hyperion design point",
+     "Q_sci 3.076 — the Hyperion design point",
      "Q_eng — not targeted; foundry output is isotopes and neutrons",
      "Ignition — not claimed; the plasma is externally sustained"
     ]
@@ -172,7 +172,7 @@
   "related": [
    [
     "fusion-gain-q-sci",
-    "Fusion Gain Q_sci 3.424"
+    "Fusion Gain Q_sci 3.076"
    ],
    [
     "foundry-not-power-fleet",
@@ -187,9 +187,9 @@
  },
  {
   "slug": "fusion-power-88-7",
-  "title": "The 88.7 MW Fusion Power",
+  "title": "The 85.0 MW Fusion Power",
   "cat": "the-physics",
-  "lede": "The 88.7 MW fusion power sets the neutron production rate that drives breeding, activation, and the helium-3 coproduct.",
+  "lede": "The 85.0 MW fusion power sets the neutron production rate that drives breeding, activation, and the helium-3 coproduct.",
   "body": [
    [
     "h2",
@@ -197,11 +197,11 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 610 230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:610px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><path d=\"M 60 60 C 100 40 160 40 200 60 C 220 100 220 140 200 180 C 160 200 100 200 60 180 C 40 140 40 100 60 60 Z\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"130\" y=\"125\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">plasma</text><text x=\"130\" y=\"142\" font-size=\"10\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">88.7 MW</text><line x1=\"205\" y1=\"90\" x2=\"330\" y2=\"70\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"120\" x2=\"330\" y2=\"120\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"150\" x2=\"330\" y2=\"175\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><defs><marker id=\"ar2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"335\" y=\"52\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"75\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">tritium class  ~4 kg/yr</text><rect x=\"335\" y=\"102\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"125\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">helium-3  ~1.97 kg/yr</text><rect x=\"335\" y=\"157\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"180\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">14 MeV neutrons (services)</text></svg>"
+    "<svg viewBox=\"0 0 610 230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:610px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><path d=\"M 60 60 C 100 40 160 40 200 60 C 220 100 220 140 200 180 C 160 200 100 200 60 180 C 40 140 40 100 60 60 Z\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"130\" y=\"125\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">plasma</text><text x=\"130\" y=\"142\" font-size=\"10\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">85.0 MW</text><line x1=\"205\" y1=\"90\" x2=\"330\" y2=\"70\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"120\" x2=\"330\" y2=\"120\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"150\" x2=\"330\" y2=\"175\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><defs><marker id=\"ar2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"335\" y=\"52\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"75\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">tritium class  ~4 kg/yr</text><rect x=\"335\" y=\"102\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"125\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">helium-3  ~1.97 kg/yr</text><rect x=\"335\" y=\"157\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"180\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">14 MeV neutrons (services)</text></svg>"
    ],
    [
     "p",
-    "In a D-T plasma each fusion reaction releases 17.6 MeV, split roughly 14.1 MeV to the neutron and 3.5 MeV to the alpha particle. The 88.7 MW fusion power of Hyperion therefore corresponds to a fixed rate of 14 MeV neutron production — the currency the foundry spends. Roughly four-fifths of the fusion energy leaves as neutrons; those neutrons are the product stream."
+    "In a D-T plasma each fusion reaction releases 17.6 MeV, split roughly 14.1 MeV to the neutron and 3.5 MeV to the alpha particle. The 85.0 MW fusion power of Hyperion therefore corresponds to a fixed rate of 14 MeV neutron production — the currency the foundry spends. Roughly four-fifths of the fusion energy leaves as neutrons; those neutrons are the product stream."
    ],
    [
     "p",
@@ -213,7 +213,7 @@
    ],
    [
     "p",
-    "A larger machine would produce more neutrons but would also raise the physics and engineering bar of the first build. Hyperion is sized to a supply requirement, not to a megawatt headline. 88.7 MW is chosen because it delivers the target throughput at a compact scale that keeps the first-of-a-kind tractable. Because the neutron rate scales with fusion power, the product yields and the fusion power are locked together: the same figure that names the machine's output also fixes how fast it can breed tritium and generate its coproducts."
+    "A larger machine would produce more neutrons but would also raise the physics and engineering bar of the first build. Hyperion is sized to a supply requirement, not to a megawatt headline. 85.0 MW is chosen because it delivers the target throughput at a compact scale that keeps the first-of-a-kind tractable. Because the neutron rate scales with fusion power, the product yields and the fusion power are locked together: the same figure that names the machine's output also fixes how fast it can breed tritium and generate its coproducts."
    ],
    [
     "ul",
@@ -231,7 +231,7 @@
   "related": [
    [
     "fusion-gain-q-sci",
-    "Fusion Gain Q_sci 3.424"
+    "Fusion Gain Q_sci 3.076"
    ],
    [
     "dt-reaction",
@@ -290,7 +290,7 @@
   "related": [
    [
     "fusion-power-88-7",
-    "The 88.7 MW Fusion Power"
+    "The 85.0 MW Fusion Power"
    ],
    [
     "tritium-breeding-physics",
@@ -323,7 +323,7 @@
    ],
    [
     "p",
-    "The physics payoff is high beta: the ratio of plasma pressure to magnetic pressure that an ST can sustain is markedly higher than in a conventional tokamak of the same field. Higher achievable beta means more fusion power for a given magnet, which is what lets a machine this small reach 88.7 MW."
+    "The physics payoff is high beta: the ratio of plasma pressure to magnetic pressure that an ST can sustain is markedly higher than in a conventional tokamak of the same field. Higher achievable beta means more fusion power for a given magnet, which is what lets a machine this small reach 85.0 MW."
    ],
    [
     "h3",
@@ -437,7 +437,7 @@
    ],
    [
     "p",
-    "The major radius R0 is the distance from the central axis of the machine to the center of the plasma cross-section. At 1.2 m Hyperion is a compact device. Together with aspect ratio A 2.5 this sets the minor radius near 0.48 m and fixes the plasma volume that produces the 88.7 MW of fusion power."
+    "The major radius R0 is the distance from the central axis of the machine to the center of the plasma cross-section. At 1.2 m Hyperion is a compact device. Together with aspect ratio A 2.5 this sets the minor radius near 0.48 m and fixes the plasma volume that produces the 85.0 MW of fusion power."
    ],
    [
     "p",
@@ -610,7 +610,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
@@ -618,7 +618,7 @@
    ],
    [
     "p",
-    "For Hyperion this is the crux: the machine adopts delta -0.30 for its stability and heat-handling benefits and requires that confinement stay high enough to reach Q_sci 3.424. Whether the confinement holds at 8 T on-axis, R0 1.2 m, and this current is a design-and-simulation finding that the program treats as something to prove, not to assert."
+    "For Hyperion this is the crux: the machine adopts delta -0.30 for its stability and heat-handling benefits and requires that confinement stay high enough to reach Q_sci 3.076. Whether the confinement holds at 8 T on-axis, R0 1.2 m, and this current is a design-and-simulation finding that the program treats as something to prove, not to assert."
    ],
    [
     "h3",
@@ -718,9 +718,9 @@
  },
  {
   "slug": "plasma-current-physics",
-  "title": "Plasma Current 9.86 MA",
+  "title": "Plasma Current 9.66 MA",
   "cat": "the-physics",
-  "lede": "The 9.86 MA plasma current confines the plasma and sets the safety factor; sustaining it without a large transformer drive is a core design problem.",
+  "lede": "The 9.66 MA plasma current confines the plasma and sets the safety factor; sustaining it without a large transformer drive is a core design problem.",
   "body": [
    [
     "h2",
@@ -728,15 +728,15 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Plasma current 9.86 MA — composition</text><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#D4AD5C\"/><text x=\"210\" y=\"86\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">bootstrap (self-generated)</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"40\" fill=\"#232C39\"/><text x=\"460\" y=\"86\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">driven</text><rect x=\"520\" y=\"60\" width=\"90\" height=\"40\" fill=\"none\" stroke=\"#7d879a\" stroke-width=\"1.5\"/><text x=\"565\" y=\"86\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">ohmic</text><text x=\"20\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\" font-family=\"ui-monospace,Menlo,monospace\">Total I_p = 9.86 MA</text><text x=\"20\" y=\"155\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">High bootstrap fraction lowers external drive demand;</text><text x=\"20\" y=\"173\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">the exact split is a design-and-simulation result.</text></svg>"
+    "<svg viewBox=\"0 0 640 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Plasma current 9.66 MA — composition</text><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#D4AD5C\"/><text x=\"210\" y=\"86\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">bootstrap (self-generated)</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"40\" fill=\"#232C39\"/><text x=\"460\" y=\"86\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">driven</text><rect x=\"520\" y=\"60\" width=\"90\" height=\"40\" fill=\"none\" stroke=\"#7d879a\" stroke-width=\"1.5\"/><text x=\"565\" y=\"86\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">ohmic</text><text x=\"20\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\" font-family=\"ui-monospace,Menlo,monospace\">Total I_p = 9.66 MA</text><text x=\"20\" y=\"155\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">High bootstrap fraction lowers external drive demand;</text><text x=\"20\" y=\"173\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">the exact split is a design-and-simulation result.</text></svg>"
    ],
    [
     "p",
-    "The 9.86 MA plasma current generates the poloidal magnetic field that, combined with the toroidal field, twists field lines into the nested surfaces that confine the plasma. Current sets the edge safety factor, strongly influences confinement, and defines how much plasma pressure the configuration can hold. It is not incidental — 9.86 MA is a defining parameter of the operating point."
+    "The 9.66 MA plasma current generates the poloidal magnetic field that, combined with the toroidal field, twists field lines into the nested surfaces that confine the plasma. Current sets the edge safety factor, strongly influences confinement, and defines how much plasma pressure the configuration can hold. It is not incidental — 9.66 MA is a defining parameter of the operating point."
    ],
    [
     "p",
-    "A tokamak traditionally drives this current inductively, like the secondary of a transformer, but that is inherently pulsed. For steady foundry operation Hyperion leans on non-inductive sources — bootstrap current and external current drive — to sustain 9.86 MA without relying solely on a transformer that eventually runs out of flux."
+    "A tokamak traditionally drives this current inductively, like the secondary of a transformer, but that is inherently pulsed. For steady foundry operation Hyperion leans on non-inductive sources — bootstrap current and external current drive — to sustain 9.66 MA without relying solely on a transformer that eventually runs out of flux."
    ],
    [
     "h3",
@@ -744,12 +744,12 @@
    ],
    [
     "p",
-    "External current drive is power-hungry and counts against gain. The design therefore wants as much of the 9.86 MA as possible to come from the self-generated bootstrap current, minimizing the driven fraction. The exact split between bootstrap, driven, and ohmic current is a design-and-simulation result, and the achievable bootstrap fraction is a key sensitivity for the whole operating point."
+    "External current drive is power-hungry and counts against gain. The design therefore wants as much of the 9.66 MA as possible to come from the self-generated bootstrap current, minimizing the driven fraction. The exact split between bootstrap, driven, and ohmic current is a design-and-simulation result, and the achievable bootstrap fraction is a key sensitivity for the whole operating point."
    ],
    [
     "ul",
     [
-     "9.86 MA sets poloidal field, safety factor, and pressure limit",
+     "9.66 MA sets poloidal field, safety factor, and pressure limit",
      "Steady operation needs non-inductive sustainment",
      "Higher bootstrap fraction lowers the gain penalty from current drive"
     ]
@@ -787,7 +787,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Plasma current 9.86 MA — composition</text><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#D4AD5C\"/><text x=\"210\" y=\"86\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">bootstrap (self-generated)</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"40\" fill=\"#232C39\"/><text x=\"460\" y=\"86\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">driven</text><rect x=\"520\" y=\"60\" width=\"90\" height=\"40\" fill=\"none\" stroke=\"#7d879a\" stroke-width=\"1.5\"/><text x=\"565\" y=\"86\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">ohmic</text><text x=\"20\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\" font-family=\"ui-monospace,Menlo,monospace\">Total I_p = 9.86 MA</text><text x=\"20\" y=\"155\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">High bootstrap fraction lowers external drive demand;</text><text x=\"20\" y=\"173\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">the exact split is a design-and-simulation result.</text></svg>"
+    "<svg viewBox=\"0 0 640 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Plasma current 9.66 MA — composition</text><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#D4AD5C\"/><text x=\"210\" y=\"86\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">bootstrap (self-generated)</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"40\" fill=\"#232C39\"/><text x=\"460\" y=\"86\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">driven</text><rect x=\"520\" y=\"60\" width=\"90\" height=\"40\" fill=\"none\" stroke=\"#7d879a\" stroke-width=\"1.5\"/><text x=\"565\" y=\"86\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">ohmic</text><text x=\"20\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\" font-family=\"ui-monospace,Menlo,monospace\">Total I_p = 9.66 MA</text><text x=\"20\" y=\"155\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">High bootstrap fraction lowers external drive demand;</text><text x=\"20\" y=\"173\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">the exact split is a design-and-simulation result.</text></svg>"
    ],
    [
     "p",
@@ -795,7 +795,7 @@
    ],
    [
     "p",
-    "Spherical tokamaks running at high beta can produce a large bootstrap fraction, and Hyperion's design leans on this. The more of the 9.86 MA that bootstrap supplies, the less external current drive is needed, and the less power is subtracted from the gain budget. Bootstrap is the mechanism that makes steady, gain-positive operation plausible in a compact ST."
+    "Spherical tokamaks running at high beta can produce a large bootstrap fraction, and Hyperion's design leans on this. The more of the 9.66 MA that bootstrap supplies, the less external current drive is needed, and the less power is subtracted from the gain budget. Bootstrap is the mechanism that makes steady, gain-positive operation plausible in a compact ST."
    ],
    [
     "h3",
@@ -821,7 +821,7 @@
   "related": [
    [
     "plasma-current-physics",
-    "Plasma Current 9.86 MA"
+    "Plasma Current 9.66 MA"
    ],
    [
     "non-inductive-current-drive",
@@ -846,7 +846,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Plasma current 9.86 MA — composition</text><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#D4AD5C\"/><text x=\"210\" y=\"86\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">bootstrap (self-generated)</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"40\" fill=\"#232C39\"/><text x=\"460\" y=\"86\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">driven</text><rect x=\"520\" y=\"60\" width=\"90\" height=\"40\" fill=\"none\" stroke=\"#7d879a\" stroke-width=\"1.5\"/><text x=\"565\" y=\"86\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">ohmic</text><text x=\"20\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\" font-family=\"ui-monospace,Menlo,monospace\">Total I_p = 9.86 MA</text><text x=\"20\" y=\"155\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">High bootstrap fraction lowers external drive demand;</text><text x=\"20\" y=\"173\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">the exact split is a design-and-simulation result.</text></svg>"
+    "<svg viewBox=\"0 0 640 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Plasma current 9.66 MA — composition</text><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#D4AD5C\"/><text x=\"210\" y=\"86\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">bootstrap (self-generated)</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"40\" fill=\"#232C39\"/><text x=\"460\" y=\"86\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">driven</text><rect x=\"520\" y=\"60\" width=\"90\" height=\"40\" fill=\"none\" stroke=\"#7d879a\" stroke-width=\"1.5\"/><text x=\"565\" y=\"86\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">ohmic</text><text x=\"20\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\" font-family=\"ui-monospace,Menlo,monospace\">Total I_p = 9.66 MA</text><text x=\"20\" y=\"155\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">High bootstrap fraction lowers external drive demand;</text><text x=\"20\" y=\"173\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">the exact split is a design-and-simulation result.</text></svg>"
    ],
    [
     "p",
@@ -854,7 +854,7 @@
    ],
    [
     "p",
-    "For a steady-state foundry this is essential: inductive (transformer) drive is inherently pulsed and cannot sustain 9.86 MA indefinitely. Non-inductive drive lets the current continue as long as the machine runs. But every watt of drive power counts against the gain budget, so the design wants the driven fraction as small as possible on top of a large bootstrap fraction."
+    "For a steady-state foundry this is essential: inductive (transformer) drive is inherently pulsed and cannot sustain 9.66 MA indefinitely. Non-inductive drive lets the current continue as long as the machine runs. But every watt of drive power counts against the gain budget, so the design wants the driven fraction as small as possible on top of a large bootstrap fraction."
    ],
    [
     "h3",
@@ -862,7 +862,7 @@
    ],
    [
     "p",
-    "Current-drive efficiency — amps of plasma current per watt of injected power — depends on density, temperature, and where in the plasma the current is deposited. Achieving both a favorable efficiency and a current profile that stays MHD-stable is a coupled optimization. The specific drive mix and efficiency for Hyperion are design-and-simulation results, and their sensitivity feeds directly into the confinement gate. A less efficient drive, or a larger required driven fraction because bootstrap falls short, both raise the injected power that sits in the denominator of the gain — so current-drive performance is not a side detail but a direct lever on whether Q_sci 3.424 is reached."
+    "Current-drive efficiency — amps of plasma current per watt of injected power — depends on density, temperature, and where in the plasma the current is deposited. Achieving both a favorable efficiency and a current profile that stays MHD-stable is a coupled optimization. The specific drive mix and efficiency for Hyperion are design-and-simulation results, and their sensitivity feeds directly into the confinement gate. A less efficient drive, or a larger required driven fraction because bootstrap falls short, both raise the injected power that sits in the denominator of the gain — so current-drive performance is not a side detail but a direct lever on whether Q_sci 3.076 is reached."
    ],
    [
     "ul",
@@ -884,7 +884,7 @@
    ],
    [
     "plasma-current-physics",
-    "Plasma Current 9.86 MA"
+    "Plasma Current 9.66 MA"
    ],
    [
     "auxiliary-heating",
@@ -913,7 +913,7 @@
    ],
    [
     "p",
-    "Low-order rational surfaces — where q equals simple fractions like 1, 3/2, or 2 — are where tearing modes and other instabilities like to grow. A well-designed q-profile keeps these surfaces where they do the least harm and keeps the edge q high enough to avoid disruptive limits. Hyperion's 9.86 MA current and toroidal field are chosen with the resulting q-profile in mind."
+    "Low-order rational surfaces — where q equals simple fractions like 1, 3/2, or 2 — are where tearing modes and other instabilities like to grow. A well-designed q-profile keeps these surfaces where they do the least harm and keeps the edge q high enough to avoid disruptive limits. Hyperion's 9.66 MA current and toroidal field are chosen with the resulting q-profile in mind."
    ],
    [
     "h3",
@@ -939,7 +939,7 @@
   "related": [
    [
     "plasma-current-physics",
-    "Plasma Current 9.86 MA"
+    "Plasma Current 9.66 MA"
    ],
    [
     "mhd-stability-overview",
@@ -964,7 +964,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
@@ -980,7 +980,7 @@
    ],
    [
     "p",
-    "Hyperion's high on-axis field (8 T) combined with the ST's elevated beta limit is what allows 88.7 MW from R0 1.2 m. The design must hold beta high enough for the target fusion power yet below the stability ceiling with margin. That balance — high beta without crossing the Troyon-type limit — is a design-and-simulation constraint the operating point is built around."
+    "Hyperion's high on-axis field (8 T) combined with the ST's elevated beta limit is what allows 85.0 MW from R0 1.2 m. The design must hold beta high enough for the target fusion power yet below the stability ceiling with margin. That balance — high beta without crossing the Troyon-type limit — is a design-and-simulation constraint the operating point is built around."
    ],
    [
     "ul",
@@ -1006,7 +1006,7 @@
    ],
    [
     "fusion-power-88-7",
-    "The 88.7 MW Fusion Power"
+    "The 85.0 MW Fusion Power"
    ]
   ],
   "seo_type": "TechArticle"
@@ -1031,7 +1031,7 @@
    ],
    [
     "p",
-    "This is the core of the ST value proposition and the reason Hyperion can be compact. A higher beta ceiling means the same magnet holds more fusion-producing pressure, so a small machine at 8 T on-axis can reach 88.7 MW. Without the elevated beta limit, a device this size would fall well short of its power target."
+    "This is the core of the ST value proposition and the reason Hyperion can be compact. A higher beta ceiling means the same magnet holds more fusion-producing pressure, so a small machine at 8 T on-axis can reach 85.0 MW. Without the elevated beta limit, a device this size would fall well short of its power target."
    ],
    [
     "h3",
@@ -1082,7 +1082,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
@@ -1090,7 +1090,7 @@
    ],
    [
     "p",
-    "Hyperion's gain of Q_sci 3.424 depends directly on tau_E: longer confinement means more fusion power for the same heating. The design point assumes a confinement level, and the credibility of Q 3.424 rests on that assumption holding at the machine's actual parameters."
+    "Hyperion's gain of Q_sci 3.076 depends directly on tau_E: longer confinement means more fusion power for the same heating. The design point assumes a confinement level, and the credibility of Q 3.076 rests on that assumption holding at the machine's actual parameters."
    ],
    [
     "h3",
@@ -1098,7 +1098,7 @@
    ],
    [
     "p",
-    "The standard scaling databases are dominated by conventional tokamaks with positive triangularity. Hyperion sits at low aspect ratio, high field, and negative triangularity delta -0.30 — a corner of parameter space where the standard scalings are least tested. Predicting confinement there is a design-and-simulation extrapolation, and it is exactly the uncertainty the first confinement gate is meant to retire. Rather than lean on a single scaling, the design compares first-principles turbulence modeling against the empirical fits and treats the spread between them as the honest uncertainty band on tau_E — the band that ultimately sets how confidently Q_sci 3.424 can be quoted before hardware exists."
+    "The standard scaling databases are dominated by conventional tokamaks with positive triangularity. Hyperion sits at low aspect ratio, high field, and negative triangularity delta -0.30 — a corner of parameter space where the standard scalings are least tested. Predicting confinement there is a design-and-simulation extrapolation, and it is exactly the uncertainty the first confinement gate is meant to retire. Rather than lean on a single scaling, the design compares first-principles turbulence modeling against the empirical fits and treats the spread between them as the honest uncertainty band on tau_E — the band that ultimately sets how confidently Q_sci 3.076 can be quoted before hardware exists."
    ],
    [
     "ul",
@@ -1141,7 +1141,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
@@ -1149,7 +1149,7 @@
    ],
    [
     "p",
-    "Hyperion's Q_sci 3.424 corresponds to a specific triple-product target. Any one factor can be traded against the others: higher density can offset shorter confinement, hotter plasma can offset lower density, within limits set by stability and by the fusion cross-section's temperature dependence."
+    "Hyperion's Q_sci 3.076 corresponds to a specific triple-product target. Any one factor can be traded against the others: higher density can offset shorter confinement, hotter plasma can offset lower density, within limits set by stability and by the fusion cross-section's temperature dependence."
    ],
    [
     "h3",
@@ -1208,7 +1208,7 @@
    ],
    [
     "p",
-    "Q_sci 3.424 places Hyperion at a defined point above the break-even line but below ignition. It is producing several times more fusion power than the heating input, yet still relies on that external heating — it has not reached the self-sustaining regime where alpha heating alone carries the burn."
+    "Q_sci 3.076 places Hyperion at a defined point above the break-even line but below ignition. It is producing several times more fusion power than the heating input, yet still relies on that external heating — it has not reached the self-sustaining regime where alpha heating alone carries the burn."
    ],
    [
     "h3",
@@ -1222,7 +1222,7 @@
     "ul",
     [
      "Lawson: minimum n·tau_E (now triple product) for net fusion energy",
-     "Q 3.424 is above break-even, below ignition",
+     "Q 3.076 is above break-even, below ignition",
      "The plotted design point is a target to be demonstrated, not a result"
     ]
    ],
@@ -1238,7 +1238,7 @@
    ],
    [
     "fusion-gain-q-sci",
-    "Fusion Gain Q_sci 3.424"
+    "Fusion Gain Q_sci 3.076"
    ],
    [
     "alpha-heating",
@@ -1259,7 +1259,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
@@ -1275,7 +1275,7 @@
    ],
    [
     "p",
-    "The gain of Q_sci 3.424 assumes a confinement level that a particular transport state delivers. The design bets that a negative-triangularity plasma can suppress core turbulence enough to reach the target triple product without an edge pedestal. Whether the achieved transport state matches the assumed one at Hyperion's parameters is a design-and-simulation question the FOAK build is meant to answer. The distinction matters because two plasmas with identical density, temperature, and current can confine heat very differently depending on which turbulent modes are active; the design's confidence in Q_sci 3.424 is therefore only as strong as its confidence that the intended, low-transport state is the one the machine will actually settle into."
+    "The gain of Q_sci 3.076 assumes a confinement level that a particular transport state delivers. The design bets that a negative-triangularity plasma can suppress core turbulence enough to reach the target triple product without an edge pedestal. Whether the achieved transport state matches the assumed one at Hyperion's parameters is a design-and-simulation question the FOAK build is meant to answer. The distinction matters because two plasmas with identical density, temperature, and current can confine heat very differently depending on which turbulent modes are active; the design's confidence in Q_sci 3.076 is therefore only as strong as its confidence that the intended, low-transport state is the one the machine will actually settle into."
    ],
    [
     "ul",
@@ -1334,7 +1334,7 @@
    ],
    [
     "p",
-    "Fusion power density rises steeply with field, and confinement improves with field, so a high on-axis field lets a compact machine reach 88.7 MW. Achieving 8 T on-axis in a spherical tokamak demands 16.84 T at the center-post conductor — near the edge of what high-temperature superconductor can hold — which is why the magnet and center post are among the hardest engineering problems. The magnet gate exists to confront exactly this."
+    "Fusion power density rises steeply with field, and confinement improves with field, so a high on-axis field lets a compact machine reach 85.0 MW. Achieving 8 T on-axis in a spherical tokamak demands 16.84 T at the center-post conductor — near the edge of what high-temperature superconductor can hold — which is why the magnet and center post are among the hardest engineering problems. The magnet gate exists to confront exactly this."
    ],
    [
     "ul",
@@ -1393,7 +1393,7 @@
    ],
    [
     "p",
-    "The particles most sensitive to ripple are the energetic ones: fusion alphas and any beam-injected ions. Because alpha heating is part of what sustains Q_sci 3.424, ripple-induced alpha loss subtracts directly from the self-heating budget. Quantifying acceptable ripple for Hyperion is a design-and-simulation task tied to the confinement and heating gates. The design sets a ripple budget at the plasma edge and sizes the number and placement of toroidal-field coils to stay within it, trading coil count and geometry against the fast-particle loss the plasma can tolerate before its self-heating and wall loads are affected."
+    "The particles most sensitive to ripple are the energetic ones: fusion alphas and any beam-injected ions. Because alpha heating is part of what sustains Q_sci 3.076, ripple-induced alpha loss subtracts directly from the self-heating budget. Quantifying acceptable ripple for Hyperion is a design-and-simulation task tied to the confinement and heating gates. The design sets a ripple budget at the plasma edge and sizes the number and placement of toroidal-field coils to stay within it, trading coil count and geometry against the fast-particle loss the plasma can tolerate before its self-heating and wall loads are affected."
    ],
    [
     "ul",
@@ -1487,7 +1487,7 @@
   "slug": "neutron-source-14-mev",
   "title": "14 MeV Neutron Production",
   "cat": "the-physics",
-  "lede": "Each D-T reaction emits a 14.1 MeV neutron; at 88.7 MW this fixes the neutron production rate that the entire foundry depends on.",
+  "lede": "Each D-T reaction emits a 14.1 MeV neutron; at 85.0 MW this fixes the neutron production rate that the entire foundry depends on.",
   "body": [
    [
     "h2",
@@ -1495,11 +1495,11 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 610 230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:610px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><path d=\"M 60 60 C 100 40 160 40 200 60 C 220 100 220 140 200 180 C 160 200 100 200 60 180 C 40 140 40 100 60 60 Z\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"130\" y=\"125\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">plasma</text><text x=\"130\" y=\"142\" font-size=\"10\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">88.7 MW</text><line x1=\"205\" y1=\"90\" x2=\"330\" y2=\"70\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"120\" x2=\"330\" y2=\"120\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"150\" x2=\"330\" y2=\"175\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><defs><marker id=\"ar2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"335\" y=\"52\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"75\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">tritium class  ~4 kg/yr</text><rect x=\"335\" y=\"102\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"125\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">helium-3  ~1.97 kg/yr</text><rect x=\"335\" y=\"157\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"180\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">14 MeV neutrons (services)</text></svg>"
+    "<svg viewBox=\"0 0 610 230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:610px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><path d=\"M 60 60 C 100 40 160 40 200 60 C 220 100 220 140 200 180 C 160 200 100 200 60 180 C 40 140 40 100 60 60 Z\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"130\" y=\"125\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">plasma</text><text x=\"130\" y=\"142\" font-size=\"10\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">85.0 MW</text><line x1=\"205\" y1=\"90\" x2=\"330\" y2=\"70\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"120\" x2=\"330\" y2=\"120\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"150\" x2=\"330\" y2=\"175\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><defs><marker id=\"ar2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"335\" y=\"52\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"75\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">tritium class  ~4 kg/yr</text><rect x=\"335\" y=\"102\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"125\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">helium-3  ~1.97 kg/yr</text><rect x=\"335\" y=\"157\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"180\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">14 MeV neutrons (services)</text></svg>"
    ],
    [
     "p",
-    "The 14.1 MeV neutron from the D-T reaction is the product of the breeder. Uncharged, it is unaffected by the magnetic field and streams out of the plasma into the surrounding structure, carrying about four-fifths of the fusion energy. At 88.7 MW fusion power the neutron production rate is fixed, and every downstream product is metered against it."
+    "The 14.1 MeV neutron from the D-T reaction is the product of the breeder. Uncharged, it is unaffected by the magnetic field and streams out of the plasma into the surrounding structure, carrying about four-fifths of the fusion energy. At 85.0 MW fusion power the neutron production rate is fixed, and every downstream product is metered against it."
    ],
    [
     "p",
@@ -1529,7 +1529,7 @@
   "related": [
    [
     "fusion-power-88-7",
-    "The 88.7 MW Fusion Power"
+    "The 85.0 MW Fusion Power"
    ],
    [
     "neutron-wall-loading-physics",
@@ -1967,7 +1967,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 610 230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:610px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><path d=\"M 60 60 C 100 40 160 40 200 60 C 220 100 220 140 200 180 C 160 200 100 200 60 180 C 40 140 40 100 60 60 Z\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"130\" y=\"125\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">plasma</text><text x=\"130\" y=\"142\" font-size=\"10\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">88.7 MW</text><line x1=\"205\" y1=\"90\" x2=\"330\" y2=\"70\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"120\" x2=\"330\" y2=\"120\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"150\" x2=\"330\" y2=\"175\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><defs><marker id=\"ar2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"335\" y=\"52\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"75\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">tritium class  ~4 kg/yr</text><rect x=\"335\" y=\"102\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"125\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">helium-3  ~1.97 kg/yr</text><rect x=\"335\" y=\"157\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"180\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">14 MeV neutrons (services)</text></svg>"
+    "<svg viewBox=\"0 0 610 230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:610px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><path d=\"M 60 60 C 100 40 160 40 200 60 C 220 100 220 140 200 180 C 160 200 100 200 60 180 C 40 140 40 100 60 60 Z\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"130\" y=\"125\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">plasma</text><text x=\"130\" y=\"142\" font-size=\"10\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">85.0 MW</text><line x1=\"205\" y1=\"90\" x2=\"330\" y2=\"70\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"120\" x2=\"330\" y2=\"120\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><line x1=\"205\" y1=\"150\" x2=\"330\" y2=\"175\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar2)\"/><defs><marker id=\"ar2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"335\" y=\"52\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"75\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">tritium class  ~4 kg/yr</text><rect x=\"335\" y=\"102\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"125\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">helium-3  ~1.97 kg/yr</text><rect x=\"335\" y=\"157\" width=\"255\" height=\"36\" fill=\"#E8CE93\" opacity=\"0.3\"/><text x=\"345\" y=\"180\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">14 MeV neutrons (services)</text></svg>"
    ],
    [
     "p",
@@ -2085,7 +2085,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">88.7 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.424</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
+    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">85.0 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.076</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
    ],
    [
     "p",
@@ -2093,7 +2093,7 @@
    ],
    [
     "p",
-    "The heating power is exactly the denominator of the gain: Q_sci 3.424 is 88.7 MW of fusion power divided by this input. Every megawatt of heating that could be avoided — through better confinement or more self-heating — raises the gain. Heating systems also do double duty, driving non-inductive current and helping shape the current profile."
+    "The heating power is exactly the denominator of the gain: Q_sci 3.076 is 85.0 MW of fusion power divided by this input. Every megawatt of heating that could be avoided — through better confinement or more self-heating — raises the gain. Heating systems also do double duty, driving non-inductive current and helping shape the current profile."
    ],
    [
     "h3",
@@ -2107,7 +2107,7 @@
     "ul",
     [
      "Neutral beams and RF supplement ohmic heating",
-     "Heating power is the denominator of Q_sci 3.424",
+     "Heating power is the denominator of Q_sci 3.076",
      "Heating also drives current and shapes the profile"
     ]
    ],
@@ -2119,7 +2119,7 @@
   "related": [
    [
     "fusion-gain-q-sci",
-    "Fusion Gain Q_sci 3.424"
+    "Fusion Gain Q_sci 3.076"
    ],
    [
     "non-inductive-current-drive",
@@ -2144,7 +2144,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
@@ -2321,7 +2321,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
@@ -2380,7 +2380,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
@@ -2388,7 +2388,7 @@
    ],
    [
     "p",
-    "For a foundry the stakes are direct. Fusion power depends on the square of the fuel-ion density, so a rise in Z_eff that displaces fuel ions cuts power more than proportionally. Holding Z_eff low protects the fusion rate that gives Q_sci 3.424, while a modest, edge-localized impurity contribution can still be tolerated or even wanted for exhaust."
+    "For a foundry the stakes are direct. Fusion power depends on the square of the fuel-ion density, so a rise in Z_eff that displaces fuel ions cuts power more than proportionally. Holding Z_eff low protects the fusion rate that gives Q_sci 3.076, while a modest, edge-localized impurity contribution can still be tolerated or even wanted for exhaust."
    ],
    [
     "h3",
@@ -2422,7 +2422,7 @@
    ],
    [
     "fusion-power-88-7",
-    "The 88.7 MW Fusion Power"
+    "The 85.0 MW Fusion Power"
    ]
   ],
   "seo_type": "TechArticle"
@@ -2490,7 +2490,7 @@
   "slug": "alpha-heating",
   "title": "Alpha Heating and Self-Heating",
   "cat": "the-physics",
-  "lede": "The 3.5 MeV alpha from each D-T reaction stays confined and heats the plasma; at Q_sci 3.424 alpha heating is a meaningful part of the power balance.",
+  "lede": "The 3.5 MeV alpha from each D-T reaction stays confined and heats the plasma; at Q_sci 3.076 alpha heating is a meaningful part of the power balance.",
   "body": [
    [
     "h2",
@@ -2498,7 +2498,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">88.7 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.424</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
+    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">85.0 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.076</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
    ],
    [
     "p",
@@ -2506,7 +2506,7 @@
    ],
    [
     "p",
-    "At Q_sci 3.424 the alpha heating is a significant fraction of the total plasma heating — the plasma is partly self-heated, though not self-sustaining. Higher gain means a larger self-heated fraction; ignition is the limit where alpha heating alone sustains the burn with no external input. Hyperion sits below that limit, relying on external heating on top of alpha self-heating."
+    "At Q_sci 3.076 the alpha heating is a significant fraction of the total plasma heating — the plasma is partly self-heated, though not self-sustaining. Higher gain means a larger self-heated fraction; ignition is the limit where alpha heating alone sustains the burn with no external input. Hyperion sits below that limit, relying on external heating on top of alpha self-heating."
    ],
    [
     "h3",
@@ -2520,7 +2520,7 @@
     "ul",
     [
      "3.5 MeV alpha per reaction, confined and thermalizing in the plasma",
-     "At Q 3.424 a meaningful part of heating is internal",
+     "At Q 3.076 a meaningful part of heating is internal",
      "Alpha loss (ripple, MHD) subtracts from the self-heating budget"
     ]
    ],
@@ -2532,7 +2532,7 @@
   "related": [
    [
     "self-heating-fraction",
-    "Self-Heating Fraction at Q 3.424"
+    "Self-Heating Fraction at Q 3.076"
    ],
    [
     "toroidal-field-and-ripple",
@@ -2547,21 +2547,21 @@
  },
  {
   "slug": "self-heating-fraction",
-  "title": "Self-Heating Fraction at Q 3.424",
+  "title": "Self-Heating Fraction at Q 3.076",
   "cat": "the-physics",
-  "lede": "The fraction of plasma heating supplied by fusion alphas rises with gain; at Q_sci 3.424 it is substantial but the plasma still needs external heating.",
+  "lede": "The fraction of plasma heating supplied by fusion alphas rises with gain; at Q_sci 3.076 it is substantial but the plasma still needs external heating.",
   "body": [
    [
     "h2",
-    "How self-heated is Q 3.424"
+    "How self-heated is Q 3.076"
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">88.7 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.424</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
+    "<svg viewBox=\"0 0 640 280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Power balance (design point)</text><rect x=\"20\" y=\"55\" width=\"120\" height=\"34\" fill=\"#232C39\"/><text x=\"80\" y=\"77\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">heating</text><text x=\"20\" y=\"110\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_heat (auxiliary + ohmic)</text><rect x=\"20\" y=\"140\" width=\"500\" height=\"34\" fill=\"#D4AD5C\"/><text x=\"270\" y=\"162\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">85.0 MW fusion power</text><text x=\"20\" y=\"195\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">P_fus</text><rect x=\"540\" y=\"140\" width=\"70\" height=\"34\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"575\" y=\"162\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text><text x=\"20\" y=\"240\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"400\" font-family=\"ui-monospace,Menlo,monospace\">Q_sci = P_fus / P_heat = 3.076</text><text x=\"20\" y=\"262\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">scientific gain, not net-electric gain</text></svg>"
    ],
    [
     "p",
-    "The self-heating fraction is the share of total plasma heating that comes from confined fusion alphas rather than from external systems. It rises directly with gain: as Q_sci increases, more of the heating is internal. At Q_sci 3.424 the alpha contribution is a substantial fraction of the heating, which is what distinguishes a genuine burning-plasma regime from a purely externally heated one."
+    "The self-heating fraction is the share of total plasma heating that comes from confined fusion alphas rather than from external systems. It rises directly with gain: as Q_sci increases, more of the heating is internal. At Q_sci 3.076 the alpha contribution is a substantial fraction of the heating, which is what distinguishes a genuine burning-plasma regime from a purely externally heated one."
    ],
    [
     "p",
@@ -2573,13 +2573,13 @@
    ],
    [
     "p",
-    "Hyperion is not designed to ignite. External heating remains part of the power balance at Q 3.424, which keeps the plasma controllable and the operating point robust. Ignition would remove the external handle used to steer the burn. For a foundry that must run steadily and safely, a strongly self-heated but externally controlled plasma is the intended regime, and the exact self-heating fraction is a design-and-simulation output."
+    "Hyperion is not designed to ignite. External heating remains part of the power balance at Q 3.076, which keeps the plasma controllable and the operating point robust. Ignition would remove the external handle used to steer the burn. For a foundry that must run steadily and safely, a strongly self-heated but externally controlled plasma is the intended regime, and the exact self-heating fraction is a design-and-simulation output."
    ],
    [
     "ul",
     [
      "Self-heating fraction rises with Q_sci",
-     "At Q 3.424 the plasma is substantially, not fully, self-heated",
+     "At Q 3.076 the plasma is substantially, not fully, self-heated",
      "Staying below ignition preserves external control of the burn"
     ]
    ],
@@ -2595,7 +2595,7 @@
    ],
    [
     "fusion-gain-q-sci",
-    "Fusion Gain Q_sci 3.424"
+    "Fusion Gain Q_sci 3.076"
    ],
    [
     "lawson-criterion",
@@ -2683,7 +2683,7 @@
    ],
    [
     "p",
-    "On a compact, high-current, high-field machine the loads are concentrated onto small areas and short times, making disruptions relatively more severe per unit area than on a large device. Hyperion's 9.86 MA and 88.7 MW are exactly the quantities a disruption would dump, so the machine cannot rely on merely surviving disruptions — it must avoid and mitigate them."
+    "On a compact, high-current, high-field machine the loads are concentrated onto small areas and short times, making disruptions relatively more severe per unit area than on a large device. Hyperion's 9.66 MA and 85.0 MW are exactly the quantities a disruption would dump, so the machine cannot rely on merely surviving disruptions — it must avoid and mitigate them."
    ],
    [
     "h3",
@@ -2785,7 +2785,7 @@
   "slug": "plasma-startup-and-rampup",
   "title": "Plasma Startup and Ramp-Up",
   "cat": "the-physics",
-  "lede": "Bringing the plasma from breakdown to the 9.86 MA operating point, and back down, is a controlled trajectory through stability limits — not a single state.",
+  "lede": "Bringing the plasma from breakdown to the 9.66 MA operating point, and back down, is a controlled trajectory through stability limits — not a single state.",
   "body": [
    [
     "h2",
@@ -2793,11 +2793,11 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Plasma current 9.86 MA — composition</text><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#D4AD5C\"/><text x=\"210\" y=\"86\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">bootstrap (self-generated)</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"40\" fill=\"#232C39\"/><text x=\"460\" y=\"86\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">driven</text><rect x=\"520\" y=\"60\" width=\"90\" height=\"40\" fill=\"none\" stroke=\"#7d879a\" stroke-width=\"1.5\"/><text x=\"565\" y=\"86\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">ohmic</text><text x=\"20\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\" font-family=\"ui-monospace,Menlo,monospace\">Total I_p = 9.86 MA</text><text x=\"20\" y=\"155\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">High bootstrap fraction lowers external drive demand;</text><text x=\"20\" y=\"173\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">the exact split is a design-and-simulation result.</text></svg>"
+    "<svg viewBox=\"0 0 640 195\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Plasma current 9.66 MA — composition</text><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#D4AD5C\"/><text x=\"210\" y=\"86\" font-size=\"12\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"600\">bootstrap (self-generated)</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"40\" fill=\"#232C39\"/><text x=\"460\" y=\"86\" font-size=\"12\" fill=\"#fff\" text-anchor=\"middle\" font-weight=\"400\">driven</text><rect x=\"520\" y=\"60\" width=\"90\" height=\"40\" fill=\"none\" stroke=\"#7d879a\" stroke-width=\"1.5\"/><text x=\"565\" y=\"86\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">ohmic</text><text x=\"20\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\" font-family=\"ui-monospace,Menlo,monospace\">Total I_p = 9.66 MA</text><text x=\"20\" y=\"155\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">High bootstrap fraction lowers external drive demand;</text><text x=\"20\" y=\"173\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"start\" font-weight=\"400\">the exact split is a design-and-simulation result.</text></svg>"
    ],
    [
     "p",
-    "The design point — 9.86 MA, the target pressure, Q_sci 3.424 — is a destination, not a starting condition. The plasma must be created from gas breakdown, its current ramped up, its density and heating raised, and its shape and profiles established, all along a trajectory that stays inside the stability limits at every intermediate state. The same is true in reverse for a controlled ramp-down."
+    "The design point — 9.66 MA, the target pressure, Q_sci 3.076 — is a destination, not a starting condition. The plasma must be created from gas breakdown, its current ramped up, its density and heating raised, and its shape and profiles established, all along a trajectory that stays inside the stability limits at every intermediate state. The same is true in reverse for a controlled ramp-down."
    ],
    [
     "p",
@@ -2827,7 +2827,7 @@
   "related": [
    [
     "plasma-current-physics",
-    "Plasma Current 9.86 MA"
+    "Plasma Current 9.66 MA"
    ],
    [
     "operating-point-and-margins",
@@ -2852,11 +2852,11 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.424</text></svg>"
+    "<svg viewBox=\"0 0 640 250\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0\" font-family=\"ui-sans-serif,system-ui,sans-serif\"><text x=\"20\" y=\"30\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"start\" font-weight=\"600\">Fusion triple product  n·T·τ_E</text><rect x=\"30\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"75\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">density n</text><text x=\"75\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"160\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"205\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">temp. T</text><text x=\"205\" y=\"140\" font-size=\"16\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"400\">×</text><rect x=\"290\" y=\"60\" width=\"90\" height=\"150\" fill=\"#E8CE93\" opacity=\"0.4\" stroke=\"#D4AD5C\" stroke-width=\"1.5\"/><text x=\"335\" y=\"230\" font-size=\"11\" fill=\"#9aa3b2\" text-anchor=\"middle\" font-weight=\"400\">time τ_E</text><line x1=\"395\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#232C39\" stroke-width=\"2\" marker-end=\"url(#ar3)\"/><defs><marker id=\"ar3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0 0 L6 3 L0 6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"445\" y=\"95\" width=\"165\" height=\"80\" fill=\"#D4AD5C\" opacity=\"0.18\" stroke=\"#D4AD5C\" stroke-width=\"2\"/><text x=\"527\" y=\"130\" font-size=\"13\" fill=\"#232C39\" text-anchor=\"middle\" font-weight=\"700\">gain</text><text x=\"527\" y=\"152\" font-size=\"12\" fill=\"#D4AD5C\" text-anchor=\"middle\" font-weight=\"700\" font-family=\"ui-monospace,Menlo,monospace\">Q 3.076</text></svg>"
    ],
    [
     "p",
-    "The frozen numbers — Q_sci 3.424, 88.7 MW, 9.86 MA, 8 T on-axis (16.84 T peak), A 2.5, R0 1.2 m, delta -0.30 — are not independent choices. They form a single self-consistent operating point: the confinement, pressure, current, and shape must all be compatible with each other and with the stability limits simultaneously. Change one meaningfully and the others must move to stay consistent."
+    "The frozen numbers — Q_sci 3.076, 85.0 MW, 9.66 MA, 8 T on-axis (16.84 T peak), A 2.5, R0 1.2 m, delta -0.30 — are not independent choices. They form a single self-consistent operating point: the confinement, pressure, current, and shape must all be compatible with each other and with the stability limits simultaneously. Change one meaningfully and the others must move to stay consistent."
    ],
    [
     "p",
@@ -2919,7 +2919,7 @@
    ],
    [
     "p",
-    "The first is confinement: whether a compact, high-field, negative-triangularity plasma actually confines heat well enough to reach Q_sci 3.424, given that the standard scalings are under-sampled in this corner of parameter space. The second is the magnet and center post: whether 16.84 T peak field can be produced and the center post survive its electromagnetic, thermal, and neutron loads at a limited but usable lifetime (~0.01 fpy). The third is the fuel cycle: whether tritium breeding reaches self-sufficiency, with the TBR 1.8 target's local-versus-net reconciliation still open."
+    "The first is confinement: whether a compact, high-field, negative-triangularity plasma actually confines heat well enough to reach Q_sci 3.076, given that the standard scalings are under-sampled in this corner of parameter space. The second is the magnet and center post: whether 16.84 T peak field can be produced and the center post survive its electromagnetic, thermal, and neutron loads at a limited but usable lifetime (~0.01 fpy). The third is the fuel cycle: whether tritium breeding reaches self-sufficiency, with the TBR 1.8 target's local-versus-net reconciliation still open."
    ],
    [
     "h3",
@@ -2932,7 +2932,7 @@
    [
     "ul",
     [
-     "Confinement gate — Q 3.424 at an under-sampled parameter point",
+     "Confinement gate — Q 3.076 at an under-sampled parameter point",
      "Magnet/center-post gate — 16.84 T and ~0.01 fpy life",
      "Fuel-cycle gate — self-sufficiency and the TBR 1.8 reconciliation"
     ]
@@ -2974,7 +2974,7 @@
    ],
    [
     "p",
-    "Hyperion exists today as a design and a set of simulations. Q_sci 3.424, 88.7 MW, 9.86 MA, the field values, the breeding numbers, and the product yields are all outputs of physics and engineering models at a chosen operating point. They are specific and internally consistent, but they are predictions, not experimental results. The machine has not been built."
+    "Hyperion exists today as a design and a set of simulations. Q_sci 3.076, 85.0 MW, 9.66 MA, the field values, the breeding numbers, and the product yields are all outputs of physics and engineering models at a chosen operating point. They are specific and internally consistent, but they are predictions, not experimental results. The machine has not been built."
    ],
    [
     "p",

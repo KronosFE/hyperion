@@ -3,7 +3,7 @@
   "slug": "hyperion-machine-overview",
   "title": "The Hyperion Machine at a Glance",
   "cat": "the-machine",
-  "lede": "Hyperion is a compact D-T spherical tokamak: aspect ratio 2.5, major radius 1.2 m, 9.86 MA of plasma current, and a 16.84 T peak field.",
+  "lede": "Hyperion is a compact D-T spherical tokamak: aspect ratio 2.5, major radius 1.2 m, 9.66 MA of plasma current, and a 16.84 T peak field.",
   "body": [
    [
     "h2",
@@ -23,14 +23,14 @@
    ],
    [
     "p",
-    "The frozen design point is a scientific gain Q_sci of 3.424 at 88.7 MW of fusion power, carried by a plasma current of 9.86 MA. The magnet system reaches a peak field of 16.84 T on the conductor and roughly 8 T on the plasma axis. The geometry is deliberately low aspect ratio: aspect ratio A of 2.5 with a major radius R0 of 1.2 m, and the plasma is shaped to negative triangularity, delta of -0.30."
+    "The frozen design point is a scientific gain Q_sci of 3.076 at 85.0 MW of fusion power, carried by a plasma current of 9.66 MA. The magnet system reaches a peak field of 16.84 T on the conductor and roughly 8 T on the plasma axis. The geometry is deliberately low aspect ratio: aspect ratio A of 2.5 with a major radius R0 of 1.2 m, and the plasma is shaped to negative triangularity, delta of -0.30."
    ],
    [
     "ul",
     [
      "Configuration: compact D-T spherical tokamak (breeder)",
-     "Q_sci 3.424 at 88.7 MW fusion power",
-     "Plasma current 9.86 MA; peak field 16.84 T, ~8 T on axis",
+     "Q_sci 3.076 at 85.0 MW fusion power",
+     "Plasma current 9.66 MA; peak field 16.84 T, ~8 T on axis",
      "A 2.5, R0 1.2 m, negative triangularity delta -0.30",
      "Products: ~4 kg/yr tritium class, ~1.97 kg/yr helium-3, 14 MeV neutrons"
     ]
@@ -151,7 +151,7 @@
    ],
    [
     "p",
-    "Beta, the ratio of plasma pressure to magnetic pressure, scales favorably as aspect ratio falls. A machine at A of 2.5 can confine a higher relative pressure for the same field than one at A of 3.5. Because fusion power density grows with pressure squared, that leverage is why an ST can produce 88.7 MW from a machine only 1.2 m in major radius."
+    "Beta, the ratio of plasma pressure to magnetic pressure, scales favorably as aspect ratio falls. A machine at A of 2.5 can confine a higher relative pressure for the same field than one at A of 3.5. Because fusion power density grows with pressure squared, that leverage is why an ST can produce 85.0 MW from a machine only 1.2 m in major radius."
    ],
    [
     "h3",
@@ -277,7 +277,7 @@
    ],
    [
     "p",
-    "Vertical elongation (kappa) increases the plasma volume and current-carrying capacity for a given minor radius, which raises confinement and the achievable current. Spherical tokamaks naturally run at high elongation because the field geometry supports it. Hyperion's tall cross-section is part of how it sustains 9.86 MA in so compact a footprint."
+    "Vertical elongation (kappa) increases the plasma volume and current-carrying capacity for a given minor radius, which raises confinement and the achievable current. Spherical tokamaks naturally run at high elongation because the field geometry supports it. Hyperion's tall cross-section is part of how it sustains 9.66 MA in so compact a footprint."
    ],
    [
     "h3",
@@ -293,14 +293,14 @@
    ],
    [
     "p",
-    "The cross-section is not incidental; it is produced deliberately by the poloidal-field coils and the plasma current working together, and it must be held actively throughout a discharge. Elongation and negative triangularity together determine how much current the plasma can carry, how stable its edge is, and where heat is exhausted. Getting the shape right is therefore a prerequisite for reaching 9.86 MA and Q_sci 3.424, not a cosmetic detail, and holding it at Hyperion's compact scale is one of the tasks the shaping and control systems are designed for."
+    "The cross-section is not incidental; it is produced deliberately by the poloidal-field coils and the plasma current working together, and it must be held actively throughout a discharge. Elongation and negative triangularity together determine how much current the plasma can carry, how stable its edge is, and where heat is exhausted. Getting the shape right is therefore a prerequisite for reaching 9.66 MA and Q_sci 3.076, not a cosmetic detail, and holding it at Hyperion's compact scale is one of the tasks the shaping and control systems are designed for."
    ],
    [
     "ul",
     [
      "Tall (high-elongation) poloidal cross-section",
      "Negative triangularity delta -0.30 (reversed-D)",
-     "Shape set by 9.86 MA current and edge-stability goals"
+     "Shape set by 9.66 MA current and edge-stability goals"
     ]
    ],
    [
@@ -356,7 +356,7 @@
    ],
    [
     "p",
-    "Negative triangularity is harder to hold at high current and pressure: the shaping coils must work against the plasma's tendency toward positive delta, and the stable operating window can be narrower. Hyperion's design carries delta -0.30 as a canonical choice, and the shaping requirement feeds directly into the poloidal-field coil currents and the center-stack loads. Whether the predicted edge benefits hold at 9.86 MA is one of the confinement questions the first-of-a-kind machine is meant to test."
+    "Negative triangularity is harder to hold at high current and pressure: the shaping coils must work against the plasma's tendency toward positive delta, and the stable operating window can be narrower. Hyperion's design carries delta -0.30 as a canonical choice, and the shaping requirement feeds directly into the poloidal-field coil currents and the center-stack loads. Whether the predicted edge benefits hold at 9.66 MA is one of the confinement questions the first-of-a-kind machine is meant to test."
    ],
    [
     "ul",
@@ -466,7 +466,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 360 360\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"TF return current through the center post\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><circle cx=\"180.0\" cy=\"174.0\" r=\"120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M 90.0 174.0 A 90 90 0 1 1 90.0 174.1\" fill=\"#D4AD5C\" opacity=\"0.16\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"34\" fill=\"#232C39\" opacity=\"0.9\"/><text x=\"180.0\" y=\"178.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">center post</text><line x1=\"214.0\" y1=\"174.0\" x2=\"330.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"191.0\" x2=\"309.9\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"203.4\" x2=\"255.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"208.0\" x2=\"180.0\" y2=\"324.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"203.4\" x2=\"105.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"191.0\" x2=\"50.1\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"146.0\" y1=\"174.0\" x2=\"30.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"157.0\" x2=\"50.1\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"144.6\" x2=\"105.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"140.0\" x2=\"180.0\" y2=\"24.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"144.6\" x2=\"255.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"157.0\" x2=\"309.9\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><path d=\"M 270.0 174.0 A 90 90 0 0 1 180.0 264.0\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"2.5\" marker-end=\"url(#ar)\"/><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><text x=\"276.0\" y=\"244.0\" fill=\"#232C39\" font-size=\"10\">I&#8330; 9.86 MA</text><text x=\"310.0\" y=\"78.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"end\">TF coils</text><text x=\"180.0\" y=\"354\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">TF return current through the center post</text></svg>"
+    "<svg viewBox=\"0 0 360 360\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"TF return current through the center post\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><circle cx=\"180.0\" cy=\"174.0\" r=\"120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M 90.0 174.0 A 90 90 0 1 1 90.0 174.1\" fill=\"#D4AD5C\" opacity=\"0.16\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"34\" fill=\"#232C39\" opacity=\"0.9\"/><text x=\"180.0\" y=\"178.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">center post</text><line x1=\"214.0\" y1=\"174.0\" x2=\"330.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"191.0\" x2=\"309.9\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"203.4\" x2=\"255.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"208.0\" x2=\"180.0\" y2=\"324.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"203.4\" x2=\"105.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"191.0\" x2=\"50.1\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"146.0\" y1=\"174.0\" x2=\"30.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"157.0\" x2=\"50.1\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"144.6\" x2=\"105.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"140.0\" x2=\"180.0\" y2=\"24.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"144.6\" x2=\"255.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"157.0\" x2=\"309.9\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><path d=\"M 270.0 174.0 A 90 90 0 0 1 180.0 264.0\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"2.5\" marker-end=\"url(#ar)\"/><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><text x=\"276.0\" y=\"244.0\" fill=\"#232C39\" font-size=\"10\">I&#8330; 9.66 MA</text><text x=\"310.0\" y=\"78.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"end\">TF coils</text><text x=\"180.0\" y=\"354\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">TF return current through the center post</text></svg>"
    ],
    [
     "h3",
@@ -655,7 +655,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 360 360\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Toroidal-field coils around the torus\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><circle cx=\"180.0\" cy=\"174.0\" r=\"120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M 90.0 174.0 A 90 90 0 1 1 90.0 174.1\" fill=\"#D4AD5C\" opacity=\"0.16\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"34\" fill=\"#232C39\" opacity=\"0.9\"/><text x=\"180.0\" y=\"178.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">center post</text><line x1=\"214.0\" y1=\"174.0\" x2=\"330.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"191.0\" x2=\"309.9\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"203.4\" x2=\"255.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"208.0\" x2=\"180.0\" y2=\"324.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"203.4\" x2=\"105.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"191.0\" x2=\"50.1\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"146.0\" y1=\"174.0\" x2=\"30.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"157.0\" x2=\"50.1\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"144.6\" x2=\"105.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"140.0\" x2=\"180.0\" y2=\"24.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"144.6\" x2=\"255.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"157.0\" x2=\"309.9\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><path d=\"M 270.0 174.0 A 90 90 0 0 1 180.0 264.0\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"2.5\" marker-end=\"url(#ar)\"/><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><text x=\"276.0\" y=\"244.0\" fill=\"#232C39\" font-size=\"10\">I&#8330; 9.86 MA</text><text x=\"310.0\" y=\"78.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"end\">TF coils</text><text x=\"180.0\" y=\"354\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Toroidal-field coils around the torus</text></svg>"
+    "<svg viewBox=\"0 0 360 360\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Toroidal-field coils around the torus\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><circle cx=\"180.0\" cy=\"174.0\" r=\"120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M 90.0 174.0 A 90 90 0 1 1 90.0 174.1\" fill=\"#D4AD5C\" opacity=\"0.16\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"34\" fill=\"#232C39\" opacity=\"0.9\"/><text x=\"180.0\" y=\"178.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">center post</text><line x1=\"214.0\" y1=\"174.0\" x2=\"330.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"191.0\" x2=\"309.9\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"203.4\" x2=\"255.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"208.0\" x2=\"180.0\" y2=\"324.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"203.4\" x2=\"105.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"191.0\" x2=\"50.1\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"146.0\" y1=\"174.0\" x2=\"30.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"157.0\" x2=\"50.1\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"144.6\" x2=\"105.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"140.0\" x2=\"180.0\" y2=\"24.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"144.6\" x2=\"255.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"157.0\" x2=\"309.9\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><path d=\"M 270.0 174.0 A 90 90 0 0 1 180.0 264.0\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"2.5\" marker-end=\"url(#ar)\"/><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><text x=\"276.0\" y=\"244.0\" fill=\"#232C39\" font-size=\"10\">I&#8330; 9.66 MA</text><text x=\"310.0\" y=\"78.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"end\">TF coils</text><text x=\"180.0\" y=\"354\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Toroidal-field coils around the torus</text></svg>"
    ],
    [
     "h3",
@@ -671,7 +671,7 @@
    ],
    [
     "p",
-    "Field strength trades directly against machine size: high TF is what lets Hyperion confine an 88.7 MW plasma at R0 1.2 m. The TF magnet therefore sets the compactness of the whole design, and its conductor, structure, and cooling are among the pacing engineering items. Its behavior under neutron irradiation near the center post is an open materials question tracked through the design phase."
+    "Field strength trades directly against machine size: high TF is what lets Hyperion confine an 85.0 MW plasma at R0 1.2 m. The TF magnet therefore sets the compactness of the whole design, and its conductor, structure, and cooling are among the pacing engineering items. Its behavior under neutron irradiation near the center post is an open materials question tracked through the design phase."
    ],
    [
     "ul",
@@ -777,7 +777,7 @@
    ],
    [
     "p",
-    "A tokamak drives its plasma current inductively: a changing current in a central solenoid acts as the primary winding of a transformer, and the plasma ring is the single-turn secondary. Ramping the solenoid induces the toroidal electric field that breaks down the gas and drives Hyperion's plasma current toward its 9.86 MA target."
+    "A tokamak drives its plasma current inductively: a changing current in a central solenoid acts as the primary winding of a transformer, and the plasma ring is the single-turn secondary. Ramping the solenoid induces the toroidal electric field that breaks down the gas and drives Hyperion's plasma current toward its 9.66 MA target."
    ],
    [
     "html",
@@ -797,7 +797,7 @@
    ],
    [
     "p",
-    "In a typical discharge the solenoid provides the flux to initiate and ramp the current, then neutral-beam and RF current drive, together with self-generated bootstrap current, carry the plasma through flat-top. Designing the hand-off so that 9.86 MA is reached and sustained without exhausting the limited solenoid flux is a core operating problem for the compact machine, and it is exercised extensively in simulation before first plasma."
+    "In a typical discharge the solenoid provides the flux to initiate and ramp the current, then neutral-beam and RF current drive, together with self-generated bootstrap current, carry the plasma through flat-top. Designing the hand-off so that 9.66 MA is reached and sustained without exhausting the limited solenoid flux is a core operating problem for the compact machine, and it is exercised extensively in simulation before first plasma."
    ],
    [
     "ul",
@@ -852,7 +852,7 @@
    ],
    [
     "p",
-    "The toroidal field alone would not confine a plasma; it must be twisted by the poloidal field from the 9.86 MA plasma current and shaped by the poloidal-field coils. The combined helical field defines nested magnetic surfaces that hold the plasma pressure. The field map, toroidal plus poloidal, is what the equilibrium and stability calculations solve for."
+    "The toroidal field alone would not confine a plasma; it must be twisted by the poloidal field from the 9.66 MA plasma current and shaped by the poloidal-field coils. The combined helical field defines nested magnetic surfaces that hold the plasma pressure. The field map, toroidal plus poloidal, is what the equilibrium and stability calculations solve for."
    ],
    [
     "h3",
@@ -867,7 +867,7 @@
     [
      "16.84 T peak on the conductor at the center stack",
      "~8 T on the plasma axis (field ~ 1/R)",
-     "Total confining field = toroidal plus poloidal (9.86 MA)"
+     "Total confining field = toroidal plus poloidal (9.66 MA)"
     ]
    ],
    [
@@ -907,7 +907,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 360 360\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Centering forces pull TF coils toward the axis\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><circle cx=\"180.0\" cy=\"174.0\" r=\"120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M 90.0 174.0 A 90 90 0 1 1 90.0 174.1\" fill=\"#D4AD5C\" opacity=\"0.16\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"34\" fill=\"#232C39\" opacity=\"0.9\"/><text x=\"180.0\" y=\"178.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">center post</text><line x1=\"214.0\" y1=\"174.0\" x2=\"330.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"191.0\" x2=\"309.9\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"203.4\" x2=\"255.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"208.0\" x2=\"180.0\" y2=\"324.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"203.4\" x2=\"105.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"191.0\" x2=\"50.1\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"146.0\" y1=\"174.0\" x2=\"30.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"157.0\" x2=\"50.1\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"144.6\" x2=\"105.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"140.0\" x2=\"180.0\" y2=\"24.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"144.6\" x2=\"255.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"157.0\" x2=\"309.9\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><path d=\"M 270.0 174.0 A 90 90 0 0 1 180.0 264.0\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"2.5\" marker-end=\"url(#ar)\"/><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><text x=\"276.0\" y=\"244.0\" fill=\"#232C39\" font-size=\"10\">I&#8330; 9.86 MA</text><text x=\"310.0\" y=\"78.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"end\">TF coils</text><text x=\"180.0\" y=\"354\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Centering forces pull TF coils toward the axis</text></svg>"
+    "<svg viewBox=\"0 0 360 360\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Centering forces pull TF coils toward the axis\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><circle cx=\"180.0\" cy=\"174.0\" r=\"120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M 90.0 174.0 A 90 90 0 1 1 90.0 174.1\" fill=\"#D4AD5C\" opacity=\"0.16\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"34\" fill=\"#232C39\" opacity=\"0.9\"/><text x=\"180.0\" y=\"178.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">center post</text><line x1=\"214.0\" y1=\"174.0\" x2=\"330.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"191.0\" x2=\"309.9\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"203.4\" x2=\"255.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"208.0\" x2=\"180.0\" y2=\"324.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"203.4\" x2=\"105.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"191.0\" x2=\"50.1\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"146.0\" y1=\"174.0\" x2=\"30.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"157.0\" x2=\"50.1\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"144.6\" x2=\"105.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"140.0\" x2=\"180.0\" y2=\"24.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"144.6\" x2=\"255.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"157.0\" x2=\"309.9\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><path d=\"M 270.0 174.0 A 90 90 0 0 1 180.0 264.0\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"2.5\" marker-end=\"url(#ar)\"/><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><text x=\"276.0\" y=\"244.0\" fill=\"#232C39\" font-size=\"10\">I&#8330; 9.66 MA</text><text x=\"310.0\" y=\"78.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"end\">TF coils</text><text x=\"180.0\" y=\"354\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Centering forces pull TF coils toward the axis</text></svg>"
    ],
    [
     "h3",
@@ -958,7 +958,7 @@
   "slug": "plasma-current-formation",
   "title": "Plasma Current Formation",
   "cat": "the-machine",
-  "lede": "Hyperion sustains 9.86 MA of plasma current, the source of the poloidal field that, with the toroidal field, confines the plasma.",
+  "lede": "Hyperion sustains 9.66 MA of plasma current, the source of the poloidal field that, with the toroidal field, confines the plasma.",
   "body": [
    [
     "h2",
@@ -966,19 +966,19 @@
    ],
    [
     "p",
-    "A tokamak plasma is itself a conductor, and the 9.86 MA it carries generates the poloidal component of the magnetic field. Without that current there is no confining twist to the field lines. Plasma current also heats the plasma ohmically during startup and sets the pressure and stability limits the machine can reach."
+    "A tokamak plasma is itself a conductor, and the 9.66 MA it carries generates the poloidal component of the magnetic field. Without that current there is no confining twist to the field lines. Plasma current also heats the plasma ohmically during startup and sets the pressure and stability limits the machine can reach."
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 360 360\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Plasma current 9.86 MA around the torus\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><circle cx=\"180.0\" cy=\"174.0\" r=\"120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M 90.0 174.0 A 90 90 0 1 1 90.0 174.1\" fill=\"#D4AD5C\" opacity=\"0.16\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"34\" fill=\"#232C39\" opacity=\"0.9\"/><text x=\"180.0\" y=\"178.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">center post</text><line x1=\"214.0\" y1=\"174.0\" x2=\"330.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"191.0\" x2=\"309.9\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"203.4\" x2=\"255.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"208.0\" x2=\"180.0\" y2=\"324.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"203.4\" x2=\"105.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"191.0\" x2=\"50.1\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"146.0\" y1=\"174.0\" x2=\"30.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"157.0\" x2=\"50.1\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"144.6\" x2=\"105.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"140.0\" x2=\"180.0\" y2=\"24.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"144.6\" x2=\"255.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"157.0\" x2=\"309.9\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><path d=\"M 270.0 174.0 A 90 90 0 0 1 180.0 264.0\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"2.5\" marker-end=\"url(#ar)\"/><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><text x=\"276.0\" y=\"244.0\" fill=\"#232C39\" font-size=\"10\">I&#8330; 9.86 MA</text><text x=\"310.0\" y=\"78.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"end\">TF coils</text><text x=\"180.0\" y=\"354\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Plasma current 9.86 MA around the torus</text></svg>"
+    "<svg viewBox=\"0 0 360 360\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Plasma current 9.66 MA around the torus\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><circle cx=\"180.0\" cy=\"174.0\" r=\"120\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"60\" fill=\"none\" stroke=\"#D4AD5C\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M 90.0 174.0 A 90 90 0 1 1 90.0 174.1\" fill=\"#D4AD5C\" opacity=\"0.16\"/><circle cx=\"180.0\" cy=\"174.0\" r=\"34\" fill=\"#232C39\" opacity=\"0.9\"/><text x=\"180.0\" y=\"178.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">center post</text><line x1=\"214.0\" y1=\"174.0\" x2=\"330.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"191.0\" x2=\"309.9\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"203.4\" x2=\"255.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"208.0\" x2=\"180.0\" y2=\"324.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"203.4\" x2=\"105.0\" y2=\"303.9\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"191.0\" x2=\"50.1\" y2=\"249.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"146.0\" y1=\"174.0\" x2=\"30.0\" y2=\"174.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"150.6\" y1=\"157.0\" x2=\"50.1\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"163.0\" y1=\"144.6\" x2=\"105.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"180.0\" y1=\"140.0\" x2=\"180.0\" y2=\"24.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"197.0\" y1=\"144.6\" x2=\"255.0\" y2=\"44.1\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"209.4\" y1=\"157.0\" x2=\"309.9\" y2=\"99.0\" stroke=\"#232C39\" stroke-width=\"2\" opacity=\"0.7\"/><path d=\"M 270.0 174.0 A 90 90 0 0 1 180.0 264.0\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"2.5\" marker-end=\"url(#ar)\"/><defs><marker id=\"ar\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><text x=\"276.0\" y=\"244.0\" fill=\"#232C39\" font-size=\"10\">I&#8330; 9.66 MA</text><text x=\"310.0\" y=\"78.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"end\">TF coils</text><text x=\"180.0\" y=\"354\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Plasma current 9.66 MA around the torus</text></svg>"
    ],
    [
     "h3",
-    "Getting to 9.86 MA"
+    "Getting to 9.66 MA"
    ],
    [
     "p",
-    "Current is initiated inductively by the central solenoid, which breaks down the gas and ramps the current. As the plasma heats, its resistance falls and inductive drive becomes less efficient, so non-inductive sources, neutral-beam and RF current drive, plus the self-generated bootstrap current, take over to reach and hold 9.86 MA on flat-top. A spherical tokamak's limited solenoid flux makes this hand-off essential rather than optional."
+    "Current is initiated inductively by the central solenoid, which breaks down the gas and ramps the current. As the plasma heats, its resistance falls and inductive drive becomes less efficient, so non-inductive sources, neutral-beam and RF current drive, plus the self-generated bootstrap current, take over to reach and hold 9.66 MA on flat-top. A spherical tokamak's limited solenoid flux makes this hand-off essential rather than optional."
    ],
    [
     "h3",
@@ -986,12 +986,12 @@
    ],
    [
     "p",
-    "Higher plasma current improves energy confinement and raises the density and pressure the plasma can hold, which is why 9.86 MA is central to reaching Q_sci 3.424 at 88.7 MW in so small a machine. But high current also raises the stakes of a disruption, a sudden loss of confinement, because the stored magnetic and thermal energy must go somewhere. Sustaining the current cleanly and terminating it safely are both design requirements."
+    "Higher plasma current improves energy confinement and raises the density and pressure the plasma can hold, which is why 9.66 MA is central to reaching Q_sci 3.076 at 85.0 MW in so small a machine. But high current also raises the stakes of a disruption, a sudden loss of confinement, because the stored magnetic and thermal energy must go somewhere. Sustaining the current cleanly and terminating it safely are both design requirements."
    ],
    [
     "ul",
     [
-     "9.86 MA sustained plasma current",
+     "9.66 MA sustained plasma current",
      "Source of the confining poloidal field; heats plasma at startup",
      "Started inductively, sustained non-inductively plus bootstrap"
     ]
@@ -1029,11 +1029,11 @@
    ],
    [
     "p",
-    "When a plasma has a strong pressure gradient, kinetic theory predicts a self-generated toroidal current called the bootstrap current. It arises from trapped-particle orbits and grows with plasma pressure. Because it needs no external power, a large bootstrap fraction is highly valued: it lets the plasma carry part of its own current toward the 9.86 MA target."
+    "When a plasma has a strong pressure gradient, kinetic theory predicts a self-generated toroidal current called the bootstrap current. It arises from trapped-particle orbits and grows with plasma pressure. Because it needs no external power, a large bootstrap fraction is highly valued: it lets the plasma carry part of its own current toward the 9.66 MA target."
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 360 120\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Current sources\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><defs><marker id=\"fa\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"20.0\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"53.2\" y=\"38.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Central</text><text x=\"53.2\" y=\"50.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">solenoid</text><text x=\"53.2\" y=\"62.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">startup</text><line x1=\"86.5\" y1=\"46\" x2=\"104.5\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"104.5\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"137.8\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">NBI and RF</text><text x=\"137.8\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">drive</text><line x1=\"171.0\" y1=\"46\" x2=\"189.0\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"189.0\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"222.2\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Bootstrap</text><text x=\"222.2\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">current</text><line x1=\"255.5\" y1=\"46\" x2=\"273.5\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"273.5\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#D4AD5C\" fill-opacity=\"0.3\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"306.8\" y=\"44.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">9.86 MA</text><text x=\"306.8\" y=\"56.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">sustained</text><text x=\"180.0\" y=\"114\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Current sources</text></svg>"
+    "<svg viewBox=\"0 0 360 120\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Current sources\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><defs><marker id=\"fa\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"20.0\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"53.2\" y=\"38.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Central</text><text x=\"53.2\" y=\"50.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">solenoid</text><text x=\"53.2\" y=\"62.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">startup</text><line x1=\"86.5\" y1=\"46\" x2=\"104.5\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"104.5\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"137.8\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">NBI and RF</text><text x=\"137.8\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">drive</text><line x1=\"171.0\" y1=\"46\" x2=\"189.0\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"189.0\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"222.2\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Bootstrap</text><text x=\"222.2\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">current</text><line x1=\"255.5\" y1=\"46\" x2=\"273.5\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"273.5\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#D4AD5C\" fill-opacity=\"0.3\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"306.8\" y=\"44.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">9.66 MA</text><text x=\"306.8\" y=\"56.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">sustained</text><text x=\"180.0\" y=\"114\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Current sources</text></svg>"
    ],
    [
     "h3",
@@ -1049,7 +1049,7 @@
    ],
    [
     "p",
-    "Bootstrap current is tied to the pressure profile, so it cannot be dialed independently: shaping the current profile means shaping the pressure profile, which also affects stability. The design must find an operating point where bootstrap, beam, and RF drive together give a stable 9.86 MA profile. Predicting the bootstrap fraction accurately at Hyperion's parameters is part of the confinement modeling the first-of-a-kind campaign will test."
+    "Bootstrap current is tied to the pressure profile, so it cannot be dialed independently: shaping the current profile means shaping the pressure profile, which also affects stability. The design must find an operating point where bootstrap, beam, and RF drive together give a stable 9.66 MA profile. Predicting the bootstrap fraction accurately at Hyperion's parameters is part of the confinement modeling the first-of-a-kind campaign will test."
    ],
    [
     "ul",
@@ -1553,7 +1553,7 @@
    ],
    [
     "p",
-    "Exhaust cannot be optimized in isolation: radiating too hard or detaching too far can cool the plasma edge enough to hurt core confinement, while too little cooling overloads the targets. The divertor operating point must sit in the window that protects the surfaces without spoiling the confinement that sustains Q_sci 3.424. Finding and holding that window at Hyperion's compact scale is exercised in simulation and is a target of the first-of-a-kind tests."
+    "Exhaust cannot be optimized in isolation: radiating too hard or detaching too far can cool the plasma edge enough to hurt core confinement, while too little cooling overloads the targets. The divertor operating point must sit in the window that protects the surfaces without spoiling the confinement that sustains Q_sci 3.076. Finding and holding that window at Hyperion's compact scale is exercised in simulation and is a target of the first-of-a-kind tests."
    ],
    [
     "ul",
@@ -1608,7 +1608,7 @@
    ],
    [
     "p",
-    "A neutral beam does more than heat. Injected at an angle, it drives plasma current, contributing to the non-inductive drive that sustains 9.86 MA after the solenoid flux is spent. It also fuels the core by delivering fresh deuterium or tritium atoms deep inside the plasma. And the fast ions it creates can influence stability. Beam geometry and energy are chosen to balance these roles."
+    "A neutral beam does more than heat. Injected at an angle, it drives plasma current, contributing to the non-inductive drive that sustains 9.66 MA after the solenoid flux is spent. It also fuels the core by delivering fresh deuterium or tritium atoms deep inside the plasma. And the fast ions it creates can influence stability. Beam geometry and energy are chosen to balance these roles."
    ],
    [
     "h3",
@@ -1714,7 +1714,7 @@
   "slug": "heating-and-current-drive-mix",
   "title": "Heating and Current-Drive Mix",
   "cat": "the-machine",
-  "lede": "Hyperion combines neutral beams, RF, and self-generated bootstrap current so the plasma reaches Q_sci 3.424 and sustains 9.86 MA efficiently.",
+  "lede": "Hyperion combines neutral beams, RF, and self-generated bootstrap current so the plasma reaches Q_sci 3.076 and sustains 9.66 MA efficiently.",
   "body": [
    [
     "h2",
@@ -1722,11 +1722,11 @@
    ],
    [
     "p",
-    "No single actuator can both heat the plasma to fusion conditions and hold its current efficiently in a compact spherical tokamak. Hyperion blends neutral-beam injection, RF heating, and the plasma's own bootstrap current. The mix is chosen so that together they deliver the heating for Q_sci 3.424 at 88.7 MW and the non-inductive drive to sustain 9.86 MA."
+    "No single actuator can both heat the plasma to fusion conditions and hold its current efficiently in a compact spherical tokamak. Hyperion blends neutral-beam injection, RF heating, and the plasma's own bootstrap current. The mix is chosen so that together they deliver the heating for Q_sci 3.076 at 85.0 MW and the non-inductive drive to sustain 9.66 MA."
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 360 120\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Reaching and holding the operating point\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><defs><marker id=\"fa\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"20.0\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"44.8\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Solenoid</text><text x=\"44.8\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">startup</text><line x1=\"69.6\" y1=\"46\" x2=\"87.6\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"87.6\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"112.4\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">NBI heating</text><text x=\"112.4\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">+ drive</text><line x1=\"137.2\" y1=\"46\" x2=\"155.2\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"155.2\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">RF profile</text><text x=\"180.0\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">control</text><line x1=\"204.8\" y1=\"46\" x2=\"222.8\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"222.8\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"247.6\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Bootstrap</text><text x=\"247.6\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">current</text><line x1=\"272.4\" y1=\"46\" x2=\"290.4\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"290.4\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#D4AD5C\" fill-opacity=\"0.3\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"315.2\" y=\"44.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">Q_sci 3.424</text><text x=\"315.2\" y=\"56.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">sustained</text><text x=\"180.0\" y=\"114\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Reaching and holding the operating point</text></svg>"
+    "<svg viewBox=\"0 0 360 120\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Reaching and holding the operating point\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><defs><marker id=\"fa\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"20.0\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"44.8\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Solenoid</text><text x=\"44.8\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">startup</text><line x1=\"69.6\" y1=\"46\" x2=\"87.6\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"87.6\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"112.4\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">NBI heating</text><text x=\"112.4\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">+ drive</text><line x1=\"137.2\" y1=\"46\" x2=\"155.2\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"155.2\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">RF profile</text><text x=\"180.0\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">control</text><line x1=\"204.8\" y1=\"46\" x2=\"222.8\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"222.8\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"247.6\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Bootstrap</text><text x=\"247.6\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">current</text><line x1=\"272.4\" y1=\"46\" x2=\"290.4\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"290.4\" y=\"22\" width=\"49.6\" height=\"48\" rx=\"5\" fill=\"#D4AD5C\" fill-opacity=\"0.3\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"315.2\" y=\"44.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">Q_sci 3.076</text><text x=\"315.2\" y=\"56.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">sustained</text><text x=\"180.0\" y=\"114\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Reaching and holding the operating point</text></svg>"
    ],
    [
     "h3",
@@ -1797,7 +1797,7 @@
    ],
    [
     "p",
-    "Fueling is also the primary lever on plasma density, which sets the fusion power together with temperature. The design must maintain the density profile that supports 88.7 MW without exceeding density limits that would degrade confinement or trigger instabilities. Pellet timing, size, and speed are tuned to hold the core density while gas puffing manages the edge and the divertor."
+    "Fueling is also the primary lever on plasma density, which sets the fusion power together with temperature. The design must maintain the density profile that supports 85.0 MW without exceeding density limits that would degrade confinement or trigger instabilities. Pellet timing, size, and speed are tuned to hold the core density while gas puffing manages the edge and the divertor."
    ],
    [
     "h3",
@@ -2218,7 +2218,7 @@
   "slug": "confinement-and-h-mode",
   "title": "Confinement and H-Mode",
   "cat": "the-machine",
-  "lede": "Good energy confinement is what lets a compact plasma reach Q_sci 3.424; high-confinement regimes and shaping are how Hyperion aims to hold it.",
+  "lede": "Good energy confinement is what lets a compact plasma reach Q_sci 3.076; high-confinement regimes and shaping are how Hyperion aims to hold it.",
   "body": [
    [
     "h2",
@@ -2226,11 +2226,11 @@
    ],
    [
     "p",
-    "Fusion gain depends on how well the plasma retains its energy: the longer heat stays in, the hotter and denser the plasma runs for a given input, and the higher the fusion output. Energy confinement time captures this. Reaching Q_sci 3.424 at 88.7 MW in a machine only 1.2 m in major radius depends on confinement being good enough to sustain fusion conditions at that scale."
+    "Fusion gain depends on how well the plasma retains its energy: the longer heat stays in, the hotter and denser the plasma runs for a given input, and the higher the fusion output. Energy confinement time captures this. Reaching Q_sci 3.076 at 85.0 MW in a machine only 1.2 m in major radius depends on confinement being good enough to sustain fusion conditions at that scale."
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 360 142\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"What raises confinement\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><text x=\"112\" y=\"27\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"end\">plasma current 9.86 MA</text><rect x=\"120\" y=\"14\" width=\"180\" height=\"18\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"0.8\" opacity=\"0.4\"/><rect x=\"120\" y=\"14\" width=\"180.0\" height=\"18\" fill=\"#D4AD5C\" opacity=\"0.6\"/><text x=\"306.0\" y=\"27\" fill=\"#232C39\" font-size=\"10\">80</text><text x=\"112\" y=\"61\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"end\">high-confinement regime</text><rect x=\"120\" y=\"48\" width=\"180\" height=\"18\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"0.8\" opacity=\"0.4\"/><rect x=\"120\" y=\"48\" width=\"157.5\" height=\"18\" fill=\"#D4AD5C\" opacity=\"0.6\"/><text x=\"283.5\" y=\"61\" fill=\"#232C39\" font-size=\"10\">70</text><text x=\"112\" y=\"95\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"end\">shaping / elongation</text><rect x=\"120\" y=\"82\" width=\"180\" height=\"18\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"0.8\" opacity=\"0.4\"/><rect x=\"120\" y=\"82\" width=\"123.8\" height=\"18\" fill=\"#D4AD5C\" opacity=\"0.6\"/><text x=\"249.8\" y=\"95\" fill=\"#232C39\" font-size=\"10\">55</text><text x=\"180.0\" y=\"136\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">What raises confinement</text></svg>"
+    "<svg viewBox=\"0 0 360 142\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"What raises confinement\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><text x=\"112\" y=\"27\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"end\">plasma current 9.66 MA</text><rect x=\"120\" y=\"14\" width=\"180\" height=\"18\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"0.8\" opacity=\"0.4\"/><rect x=\"120\" y=\"14\" width=\"180.0\" height=\"18\" fill=\"#D4AD5C\" opacity=\"0.6\"/><text x=\"306.0\" y=\"27\" fill=\"#232C39\" font-size=\"10\">80</text><text x=\"112\" y=\"61\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"end\">high-confinement regime</text><rect x=\"120\" y=\"48\" width=\"180\" height=\"18\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"0.8\" opacity=\"0.4\"/><rect x=\"120\" y=\"48\" width=\"157.5\" height=\"18\" fill=\"#D4AD5C\" opacity=\"0.6\"/><text x=\"283.5\" y=\"61\" fill=\"#232C39\" font-size=\"10\">70</text><text x=\"112\" y=\"95\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"end\">shaping / elongation</text><rect x=\"120\" y=\"82\" width=\"180\" height=\"18\" fill=\"none\" stroke=\"#232C39\" stroke-width=\"0.8\" opacity=\"0.4\"/><rect x=\"120\" y=\"82\" width=\"123.8\" height=\"18\" fill=\"#D4AD5C\" opacity=\"0.6\"/><text x=\"249.8\" y=\"95\" fill=\"#232C39\" font-size=\"10\">55</text><text x=\"180.0\" y=\"136\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">What raises confinement</text></svg>"
    ],
    [
     "h3",
@@ -2246,7 +2246,7 @@
    ],
    [
     "p",
-    "Confinement in the spherical-tokamak regime does not follow the same scaling as conventional tokamaks, and extrapolating it to Hyperion's exact parameters carries uncertainty. Whether the plasma confines as well as the design assumes, at 9.86 MA, with negative triangularity, in this compact geometry, is a first-order question the design-and-simulation program models and that the first-of-a-kind machine is built to verify."
+    "Confinement in the spherical-tokamak regime does not follow the same scaling as conventional tokamaks, and extrapolating it to Hyperion's exact parameters carries uncertainty. Whether the plasma confines as well as the design assumes, at 9.66 MA, with negative triangularity, in this compact geometry, is a first-order question the design-and-simulation program models and that the first-of-a-kind machine is built to verify."
    ],
    [
     "ul",
@@ -2289,7 +2289,7 @@
    ],
    [
     "p",
-    "Energy confinement is summarized by empirical scaling laws fitted to data from many machines, relating confinement time to current, field, size, density, and heating power. These scalings let designers estimate performance before a machine exists. Hyperion's design point, Q_sci 3.424 at 88.7 MW, rests on confinement assumptions drawn from such scalings and from physics modeling."
+    "Energy confinement is summarized by empirical scaling laws fitted to data from many machines, relating confinement time to current, field, size, density, and heating power. These scalings let designers estimate performance before a machine exists. Hyperion's design point, Q_sci 3.076 at 85.0 MW, rests on confinement assumptions drawn from such scalings and from physics modeling."
    ],
    [
     "html",
@@ -2364,7 +2364,7 @@
    ],
    [
     "p",
-    "Low aspect ratio raises the beta limit. At aspect ratio 2.5 Hyperion can confine a higher relative pressure than a conventional tokamak at the same field, which is precisely why it produces 88.7 MW from a 1.2 m machine at about 8 T on axis. High beta is the physics payoff that justifies the demanding center-stack engineering of the ST line."
+    "Low aspect ratio raises the beta limit. At aspect ratio 2.5 Hyperion can confine a higher relative pressure than a conventional tokamak at the same field, which is precisely why it produces 85.0 MW from a 1.2 m machine at about 8 T on axis. High beta is the physics payoff that justifies the demanding center-stack engineering of the ST line."
    ],
    [
     "h3",
@@ -2407,7 +2407,7 @@
   "slug": "mhd-stability",
   "title": "MHD Stability",
   "cat": "the-machine",
-  "lede": "Magnetohydrodynamic stability sets the boundaries of safe operation; staying within them is what keeps the 9.86 MA plasma confined and disruption-free.",
+  "lede": "Magnetohydrodynamic stability sets the boundaries of safe operation; staying within them is what keeps the 9.66 MA plasma confined and disruption-free.",
   "body": [
    [
     "h2",
@@ -2435,7 +2435,7 @@
    ],
    [
     "p",
-    "Plasma shape strongly affects stability, and Hyperion's elongation and negative triangularity are chosen partly for their MHD behavior, including softer edge modes. Active control of the vertical position and, where needed, of specific instabilities keeps the plasma inside its limits during a discharge. Validating the predicted stable operating window at 9.86 MA and the design beta is a core objective of the simulation program and the first-of-a-kind campaign."
+    "Plasma shape strongly affects stability, and Hyperion's elongation and negative triangularity are chosen partly for their MHD behavior, including softer edge modes. Active control of the vertical position and, where needed, of specific instabilities keeps the plasma inside its limits during a discharge. Validating the predicted stable operating window at 9.66 MA and the design beta is a core objective of the simulation program and the first-of-a-kind campaign."
    ],
    [
     "ul",
@@ -2498,7 +2498,7 @@
    ],
    [
     "p",
-    "The benefit is not free: negative triangularity is harder to hold at high current and pressure and can narrow the operating window. Whether the edge behaves as favorably at Hyperion's 9.86 MA and compact geometry as it has in smaller experiments is an open confinement question. It is one of the specific reasons the shaping was chosen, and one of the specific things the first-of-a-kind machine is meant to confirm."
+    "The benefit is not free: negative triangularity is harder to hold at high current and pressure and can narrow the operating window. Whether the edge behaves as favorably at Hyperion's 9.66 MA and compact geometry as it has in smaller experiments is an open confinement question. It is one of the specific reasons the shaping was chosen, and one of the specific things the first-of-a-kind machine is meant to confirm."
    ],
    [
     "ul",
@@ -2533,7 +2533,7 @@
   "slug": "disruption-mitigation",
   "title": "Disruption Mitigation",
   "cat": "the-machine",
-  "lede": "A disruption dumps the plasma's stored energy suddenly; at 9.86 MA the machine must detect and soften these events to protect its structure.",
+  "lede": "A disruption dumps the plasma's stored energy suddenly; at 9.66 MA the machine must detect and soften these events to protect its structure.",
   "body": [
    [
     "h2",
@@ -2541,7 +2541,7 @@
    ],
    [
     "p",
-    "A disruption is a rapid, unplanned loss of plasma confinement. The stored thermal and magnetic energy is released in milliseconds, driving large heat loads onto surfaces, mechanical forces on the vessel and coils from induced currents, and potentially beams of runaway electrons. At 9.86 MA the energy involved is substantial, so disruptions are a design load the machine must survive."
+    "A disruption is a rapid, unplanned loss of plasma confinement. The stored thermal and magnetic energy is released in milliseconds, driving large heat loads onto surfaces, mechanical forces on the vessel and coils from induced currents, and potentially beams of runaway electrons. At 9.66 MA the energy involved is substantial, so disruptions are a design load the machine must survive."
    ],
    [
     "html",
@@ -2659,7 +2659,7 @@
   "slug": "power-balance-in-the-machine",
   "title": "Power Balance in the Machine",
   "cat": "the-machine",
-  "lede": "Q_sci 3.424 means the plasma produces 88.7 MW of fusion power for the heating put into it, a gain figure, not a net-electric claim.",
+  "lede": "Q_sci 3.076 means the plasma produces 85.0 MW of fusion power for the heating put into it, a gain figure, not a net-electric claim.",
   "body": [
    [
     "h2",
@@ -2667,11 +2667,11 @@
    ],
    [
     "p",
-    "Scientific gain Q_sci is the ratio of fusion power produced to the heating power delivered into the plasma. Hyperion's design point is Q_sci 3.424 at 88.7 MW of fusion power, meaning the plasma generates several times the power injected to heat it. This is the figure that matters for a foundry: it is the gain that produces the neutron flux driving breeding and irradiation."
+    "Scientific gain Q_sci is the ratio of fusion power produced to the heating power delivered into the plasma. Hyperion's design point is Q_sci 3.076 at 85.0 MW of fusion power, meaning the plasma generates several times the power injected to heat it. This is the figure that matters for a foundry: it is the gain that produces the neutron flux driving breeding and irradiation."
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 360 120\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Scientific power balance\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><defs><marker id=\"fa\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"20.0\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"53.2\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Heating</text><text x=\"53.2\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">power in</text><line x1=\"86.5\" y1=\"46\" x2=\"104.5\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"104.5\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"137.8\" y=\"50.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Plasma</text><line x1=\"171.0\" y1=\"46\" x2=\"189.0\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"189.0\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"222.2\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">88.7 MW</text><text x=\"222.2\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">fusion</text><line x1=\"255.5\" y1=\"46\" x2=\"273.5\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"273.5\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#D4AD5C\" fill-opacity=\"0.3\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"306.8\" y=\"44.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">Q_sci =</text><text x=\"306.8\" y=\"56.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">3.424</text><text x=\"180.0\" y=\"114\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Scientific power balance</text></svg>"
+    "<svg viewBox=\"0 0 360 120\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Scientific power balance\" style=\"max-width:100%;height:auto;font-family:Georgia,serif\"><defs><marker id=\"fa\" markerWidth=\"9\" markerHeight=\"9\" refX=\"7\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L7,3 L0,6 Z\" fill=\"#232C39\"/></marker></defs><rect x=\"20.0\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"53.2\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Heating</text><text x=\"53.2\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">power in</text><line x1=\"86.5\" y1=\"46\" x2=\"104.5\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"104.5\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"137.8\" y=\"50.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">Plasma</text><line x1=\"171.0\" y1=\"46\" x2=\"189.0\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"189.0\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#232C39\" fill-opacity=\"0.9\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"222.2\" y=\"44.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">85.0 MW</text><text x=\"222.2\" y=\"56.0\" fill=\"#D4AD5C\" font-size=\"10\" text-anchor=\"middle\">fusion</text><line x1=\"255.5\" y1=\"46\" x2=\"273.5\" y2=\"46\" stroke=\"#232C39\" stroke-width=\"1.6\" marker-end=\"url(#fa)\"/><rect x=\"273.5\" y=\"22\" width=\"66.5\" height=\"48\" rx=\"5\" fill=\"#D4AD5C\" fill-opacity=\"0.3\" stroke=\"#232C39\" stroke-width=\"1.2\"/><text x=\"306.8\" y=\"44.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">Q_sci =</text><text x=\"306.8\" y=\"56.0\" fill=\"#232C39\" font-size=\"10\" text-anchor=\"middle\">3.076</text><text x=\"180.0\" y=\"114\" fill=\"#232C39\" font-size=\"11\" text-anchor=\"middle\" opacity=\"0.8\">Scientific power balance</text></svg>"
    ],
    [
     "h3",
@@ -2679,7 +2679,7 @@
    ],
    [
     "p",
-    "Q_sci counts only the heating delivered to the plasma. It does not subtract the power drawn by magnets, cryogenics, pumps, and the rest of the plant, nor does it involve converting fusion power to electricity. Net electrical output is a harder, separate threshold. Hyperion is a breeder judged on gain and neutron production, not on net electricity, which is why the foundry logic works at Q_sci 3.424 without a net-electric claim."
+    "Q_sci counts only the heating delivered to the plasma. It does not subtract the power drawn by magnets, cryogenics, pumps, and the rest of the plant, nor does it involve converting fusion power to electricity. Net electrical output is a harder, separate threshold. Hyperion is a breeder judged on gain and neutron production, not on net electricity, which is why the foundry logic works at Q_sci 3.076 without a net-electric claim."
    ],
    [
     "h3",
@@ -2687,12 +2687,12 @@
    ],
    [
     "p",
-    "The breeder's product is material, tritium, helium-3, and 14 MeV neutrons, all driven by fusion power, not by exported electricity. A Q_sci of 3.424 producing 88.7 MW delivers the neutron economy the blanket needs. Importantly, this remains a design-and-simulation target: no hardware net-gain claim is made before the first-of-a-kind machine reaches first tritium near 2030, and the machines described here are studies, not yet built."
+    "The breeder's product is material, tritium, helium-3, and 14 MeV neutrons, all driven by fusion power, not by exported electricity. A Q_sci of 3.076 producing 85.0 MW delivers the neutron economy the blanket needs. Importantly, this remains a design-and-simulation target: no hardware net-gain claim is made before the first-of-a-kind machine reaches first tritium near 2030, and the machines described here are studies, not yet built."
    ],
    [
     "ul",
     [
-     "Q_sci 3.424 = 88.7 MW fusion per unit of plasma heating",
+     "Q_sci 3.076 = 85.0 MW fusion per unit of plasma heating",
      "Gain is not net electric and makes no such claim",
      "The neutron flux from that gain is the breeder's product"
     ]
@@ -2722,7 +2722,7 @@
   "slug": "fusion-power-density",
   "title": "Fusion Power Density",
   "cat": "the-machine",
-  "lede": "Compact size and high field concentrate 88.7 MW of fusion power into a small volume, giving Hyperion an intense neutron source for its footprint.",
+  "lede": "Compact size and high field concentrate 85.0 MW of fusion power into a small volume, giving Hyperion an intense neutron source for its footprint.",
   "body": [
    [
     "h2",
@@ -2730,7 +2730,7 @@
    ],
    [
     "p",
-    "Fusion power density is how much fusion power a plasma produces per unit of its volume. It rises steeply with plasma pressure, roughly as pressure squared, so a high-beta, high-field, high-current machine packs a great deal of power into a small volume. Hyperion's 88.7 MW comes from a plasma only about 1.2 m in major radius, which is a high power density."
+    "Fusion power density is how much fusion power a plasma produces per unit of its volume. It rises steeply with plasma pressure, roughly as pressure squared, so a high-beta, high-field, high-current machine packs a great deal of power into a small volume. Hyperion's 85.0 MW comes from a plasma only about 1.2 m in major radius, which is a high power density."
    ],
    [
     "html",
@@ -3010,7 +3010,7 @@
    ],
    [
     "p",
-    "The diagnostics are also how the design point stops being a projection and becomes a measured result. Neutron yield tests the 88.7 MW and Q_sci 3.424 figures; profile measurements test the confinement and bootstrap assumptions; magnetic reconstruction tests that the plasma holds its negative-triangularity shape at 9.86 MA. Because these measurements feed both live control and the scientific record, the diagnostic system is designed for accuracy and calibration, not only for the fast response that stabilization demands, and its data will drive the updates to the frozen canon after first plasma."
+    "The diagnostics are also how the design point stops being a projection and becomes a measured result. Neutron yield tests the 85.0 MW and Q_sci 3.076 figures; profile measurements test the confinement and bootstrap assumptions; magnetic reconstruction tests that the plasma holds its negative-triangularity shape at 9.66 MA. Because these measurements feed both live control and the scientific record, the diagnostic system is designed for accuracy and calibration, not only for the fast response that stabilization demands, and its data will drive the updates to the frozen canon after first plasma."
    ],
    [
     "ul",
@@ -3116,7 +3116,7 @@
    ],
    [
     "p",
-    "Everything described in this section is the specification and modeling of a machine that has not yet been built. The numbers, Q_sci 3.424, 88.7 MW, 9.86 MA, 16.84 T peak, aspect ratio 2.5, negative triangularity delta -0.30, are the frozen design point and the results of physics and engineering simulation, not measurements from operating hardware."
+    "Everything described in this section is the specification and modeling of a machine that has not yet been built. The numbers, Q_sci 3.076, 85.0 MW, 9.66 MA, 16.84 T peak, aspect ratio 2.5, negative triangularity delta -0.30, are the frozen design point and the results of physics and engineering simulation, not measurements from operating hardware."
    ],
    [
     "html",

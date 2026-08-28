@@ -11,7 +11,7 @@
    ],
    [
     "p",
-    "The breeder (Hyperion) is a compact D-T spherical tokamak studied in simulation. Its design point is not a slide deck of round numbers; it is a set of <b>81 analyses</b> that each take fixed inputs, run defined code, and emit a defined output. The headline figures — scientific gain Q_sci of 3.424, fusion power of 88.7 MW, plasma current of 9.86 MA, peak field of 16.84 T with 8 T on-axis — are outputs of those analyses, not assertions layered on top of them."
+    "The breeder (Hyperion) is a compact D-T spherical tokamak studied in simulation. Its design point is not a slide deck of round numbers; it is a set of <b>81 analyses</b> that each take fixed inputs, run defined code, and emit a defined output. The headline figures — scientific gain Q_sci of 3.076, fusion power of 85.0 MW, plasma current of 9.66 MA, peak field of 16.84 T with 8 T on-axis — are outputs of those analyses, not assertions layered on top of them."
    ],
    [
     "html",
@@ -70,7 +70,7 @@
    ],
    [
     "html",
-    "<svg viewBox=\"0 0 620 278\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Status of the breeder claims\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Status of the breeder claims</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">Q_sci 3.424 / 88.7 MW</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">plasma current 9.86 MA</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">peak field 16.84 T</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"182\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">tritium ~4 kg/yr class</text><rect x=\"20\" y=\"187\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"187\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"198\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"226\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">first tritium (hardware)</text><rect x=\"20\" y=\"231\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"231\" width=\"0\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"242\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">targeted ~2030</text></svg>"
+    "<svg viewBox=\"0 0 620 278\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Status of the breeder claims\" style=\"width:100%;height:auto;max-width:640px;display:block;margin:14px 0;background:#232C39;border:1px solid #D4AD5C;border-radius:8px\"><text x=\"20\" y=\"26\" fill=\"#D4AD5C\" font-family=\"monospace\" font-size=\"13\">Status of the breeder claims</text><text x=\"20\" y=\"50\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">Q_sci 3.076 / 85.0 MW</text><rect x=\"20\" y=\"55\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"55\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"66\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"94\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">plasma current 9.66 MA</text><rect x=\"20\" y=\"99\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"99\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"110\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"138\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">peak field 16.84 T</text><rect x=\"20\" y=\"143\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"143\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"154\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"182\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">tritium ~4 kg/yr class</text><rect x=\"20\" y=\"187\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"187\" width=\"220\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"198\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">simulated</text><text x=\"20\" y=\"226\" fill=\"#e6e9ee\" font-family=\"monospace\" font-size=\"11\">first tritium (hardware)</text><rect x=\"20\" y=\"231\" width=\"440\" height=\"14\" fill=\"#2c3745\" stroke=\"#3a4656\"/><rect x=\"20\" y=\"231\" width=\"0\" height=\"14\" fill=\"#D4AD5C\"/><text x=\"470\" y=\"242\" fill=\"#9aa3b0\" font-family=\"monospace\" font-size=\"10\">targeted ~2030</text></svg>"
    ],
    [
     "h3",
@@ -439,7 +439,7 @@
    ],
    [
     "p",
-    "The scientific gain of the breeder (Hyperion), Q_sci 3.424, rests on how well the plasma retains energy — the energy confinement time. The community's standard empirical reference is the ITER-basis H-mode scaling, commonly written IPB98(y,2), fitted to a multi-machine database. The breeder analysis compares its predicted confinement time to that scaling as one of the 81 analyses."
+    "The scientific gain of the breeder (Hyperion), Q_sci 3.076, rests on how well the plasma retains energy — the energy confinement time. The community's standard empirical reference is the ITER-basis H-mode scaling, commonly written IPB98(y,2), fitted to a multi-machine database. The breeder analysis compares its predicted confinement time to that scaling as one of the 81 analyses."
    ],
    [
     "code",
@@ -454,7 +454,7 @@
    ],
    [
     "p",
-    "At plasma current 9.86 MA and 8 T on-axis, the design point is evaluated against the scaling. The comparison is reported as a ratio of predicted to scaling-implied confinement, with the confidence interval of the scaling propagated through."
+    "At plasma current 9.66 MA and 8 T on-axis, the design point is evaluated against the scaling. The comparison is reported as a ratio of predicted to scaling-implied confinement, with the confidence interval of the scaling propagated through."
    ],
    [
     "h3",
@@ -571,7 +571,7 @@
     "code",
     [
      "python",
-     "# Troyon normalized-beta limit\n# beta[%] <= beta_N * Ip[MA] / (a[m] * B[T])\n# beta_N ~ 2.8-4 (conventional); STs access higher values.\n# Design inputs: Ip = 9.86 MA, B_axis = 8 T, low aspect ratio.\n# The benchmark reports the design beta_N and its margin to the limit."
+     "# Troyon normalized-beta limit\n# beta[%] <= beta_N * Ip[MA] / (a[m] * B[T])\n# beta_N ~ 2.8-4 (conventional); STs access higher values.\n# Design inputs: Ip = 9.66 MA, B_axis = 8 T, low aspect ratio.\n# The benchmark reports the design beta_N and its margin to the limit."
     ]
    ],
    [
@@ -629,7 +629,7 @@
     "code",
     [
      "python",
-     "# Greenwald density limit\n# n_GW[1e20 m^-3] = Ip[MA] / (pi * a[m]^2)\n# Operating at a fraction f_GW = n / n_GW, typically <= ~1.\n# Design input: Ip = 9.86 MA. The benchmark reports f_GW for the\n# design density and flags any point approaching unity."
+     "# Greenwald density limit\n# n_GW[1e20 m^-3] = Ip[MA] / (pi * a[m]^2)\n# Operating at a fraction f_GW = n / n_GW, typically <= ~1.\n# Design input: Ip = 9.66 MA. The benchmark reports f_GW for the\n# design density and flags any point approaching unity."
     ]
    ],
    [
@@ -638,7 +638,7 @@
    ],
    [
     "p",
-    "Because the Greenwald limit rises with plasma current, the breeder's 9.86 MA supports a higher absolute density before the limit bites. The benchmark reports the Greenwald fraction f_GW at the design point; a value comfortably below one indicates headroom, while a value near one is recorded as an operating risk."
+    "Because the Greenwald limit rises with plasma current, the breeder's 9.66 MA supports a higher absolute density before the limit bites. The benchmark reports the Greenwald fraction f_GW at the design point; a value comfortably below one indicates headroom, while a value near one is recorded as an operating risk."
    ],
    [
     "h3",
@@ -705,7 +705,7 @@
    ],
    [
     "p",
-    "The bootstrap fraction feeds directly into whether the plasma current of 9.86 MA can be sustained without excessive recirculating power, which in turn affects the whole gain picture. The record reports the fraction with its uncertainty rather than assuming an optimistic value, and treats confirmation of the profile as a FOAK objective."
+    "The bootstrap fraction feeds directly into whether the plasma current of 9.66 MA can be sustained without excessive recirculating power, which in turn affects the whole gain picture. The record reports the fraction with its uncertainty rather than assuming an optimistic value, and treats confirmation of the profile as a FOAK objective."
    ],
    [
     "p",
@@ -727,7 +727,7 @@
    ],
    [
     "plasma-current-9-86-ma",
-    "Plasma Current 9.86 MA"
+    "Plasma Current 9.66 MA"
    ]
   ],
   "seo_type": "TechArticle"
@@ -736,7 +736,7 @@
   "slug": "neutron-yield-benchmark",
   "title": "The Neutron-Yield Benchmark",
   "cat": "validation-open-science",
-  "lede": "The 14 MeV neutron source rate implied by 88.7 MW of D-T fusion power is cross-checked against first-principles reaction kinematics before any breeding or activation is computed.",
+  "lede": "The 14 MeV neutron source rate implied by 85.0 MW of D-T fusion power is cross-checked against first-principles reaction kinematics before any breeding or activation is computed.",
   "body": [
    [
     "h2",
@@ -750,7 +750,7 @@
     "code",
     [
      "python",
-     "# Neutron source rate from D-T fusion power\nE_dt_MeV = 17.6          # energy per D-T reaction\nE_n_MeV  = 14.1          # carried by the neutron\nP_fus_MW = 88.7          # frozen design fusion power\nMeV_to_J = 1.602e-13\nreactions_per_s = (P_fus_MW*1e6) / (E_dt_MeV*MeV_to_J)\nneutrons_per_s  = reactions_per_s   # one 14.1 MeV n per reaction\n# ~3.1e19 neutrons/s -> feeds the breeding and activation analyses"
+     "# Neutron source rate from D-T fusion power\nE_dt_MeV = 17.6          # energy per D-T reaction\nE_n_MeV  = 14.1          # carried by the neutron\nP_fus_MW = 85.0          # frozen design fusion power\nMeV_to_J = 1.602e-13\nreactions_per_s = (P_fus_MW*1e6) / (E_dt_MeV*MeV_to_J)\nneutrons_per_s  = reactions_per_s   # one 14.1 MeV n per reaction\n# ~3.1e19 neutrons/s -> feeds the breeding and activation analyses"
     ]
    ],
    [
@@ -1164,7 +1164,7 @@
   "slug": "falsifiable-prediction-confinement",
   "title": "Pre-Registered Prediction: Confinement",
   "cat": "validation-open-science",
-  "lede": "The breeder commits to a confinement-time prediction and states the threshold below which the Q_sci 3.424 gain case is refuted.",
+  "lede": "The breeder commits to a confinement-time prediction and states the threshold below which the Q_sci 3.076 gain case is refuted.",
   "body": [
    [
     "h2",
@@ -1172,7 +1172,7 @@
    ],
    [
     "p",
-    "The breeder (Hyperion) gain figure, Q_sci 3.424 at 88.7 MW of fusion power, depends on the energy confinement time. The record pre-registers a predicted confinement time at the design point, derived from the transport model and cross-checked against the <a href=./spherical-tokamak-database.html>ST database</a> and the <a href=./h-mode-confinement-scaling-benchmark.html>ITER-basis scaling</a>."
+    "The breeder (Hyperion) gain figure, Q_sci 3.076 at 85.0 MW of fusion power, depends on the energy confinement time. The record pre-registers a predicted confinement time at the design point, derived from the transport model and cross-checked against the <a href=./spherical-tokamak-database.html>ST database</a> and the <a href=./h-mode-confinement-scaling-benchmark.html>ITER-basis scaling</a>."
    ],
    [
     "h3",
@@ -1180,7 +1180,7 @@
    ],
    [
     "p",
-    "The commitment includes an explicit threshold: a measured confinement time below a stated fraction of the prediction refutes the gain case as designed. If FOAK confines that poorly, Q_sci 3.424 is not reachable at the design inputs, and the record will say the prediction failed rather than re-fitting the model to the disappointing number."
+    "The commitment includes an explicit threshold: a measured confinement time below a stated fraction of the prediction refutes the gain case as designed. If FOAK confines that poorly, Q_sci 3.076 is not reachable at the design inputs, and the record will say the prediction failed rather than re-fitting the model to the disappointing number."
    ],
    [
     "code",
@@ -1209,7 +1209,7 @@
    ],
    [
     "q-sci-3-424-basis",
-    "Q_sci 3.424 Basis"
+    "Q_sci 3.076 Basis"
    ],
    [
     "transport-model-validation",
@@ -1347,7 +1347,7 @@
    ],
    [
     "p",
-    "The breeder (Hyperion) relies on high-temperature-superconducting magnets to produce a peak field of <b>16.84 T</b> at the conductor and <b>8 T on-axis</b> at the plasma. These fields are prerequisites for the plasma current of 9.86 MA and the confinement behind Q_sci 3.424. The record pre-registers the predicted field values and profile."
+    "The breeder (Hyperion) relies on high-temperature-superconducting magnets to produce a peak field of <b>16.84 T</b> at the conductor and <b>8 T on-axis</b> at the plasma. These fields are prerequisites for the plasma current of 9.66 MA and the confinement behind Q_sci 3.076. The record pre-registers the predicted field values and profile."
    ],
    [
     "h3",
@@ -1743,7 +1743,7 @@
    ],
    [
     "p",
-    "The breeder (Hyperion) headline figures — Q_sci 3.424, 88.7 MW, and the product yields — are the central estimates of distributions, not exact truths. Each rests on inputs that carry uncertainty: confinement scaling coefficients, profile assumptions, cross-sections, and geometry. Uncertainty quantification (UQ) propagates those input uncertainties through the analyses to bracket the outputs."
+    "The breeder (Hyperion) headline figures — Q_sci 3.076, 85.0 MW, and the product yields — are the central estimates of distributions, not exact truths. Each rests on inputs that carry uncertainty: confinement scaling coefficients, profile assumptions, cross-sections, and geometry. Uncertainty quantification (UQ) propagates those input uncertainties through the analyses to bracket the outputs."
    ],
    [
     "code",
@@ -1933,7 +1933,7 @@
    ],
    [
     "p",
-    "A large public record drifts if humans retype numbers. The breeder (Hyperion) site is generated from the frozen record and passes an automated verify() check before publishing. If a page states a fusion power other than 88.7 MW, a gain other than 3.424, or a DOI that does not resolve, the check fails and the build stops."
+    "A large public record drifts if humans retype numbers. The breeder (Hyperion) site is generated from the frozen record and passes an automated verify() check before publishing. If a page states a fusion power other than 85.0 MW, a gain other than 3.076, or a DOI that does not resolve, the check fails and the build stops."
    ],
    [
     "code",
@@ -1949,7 +1949,7 @@
    [
     "ul",
     [
-     "Frozen canon numbers: Q_sci 3.424, 88.7 MW, 9.86 MA, 16.84 T / 8 T on-axis, delta -0.30.",
+     "Frozen canon numbers: Q_sci 3.076, 85.0 MW, 9.66 MA, 16.84 T / 8 T on-axis, delta -0.30.",
      "The DOIs (10.5281/zenodo.21746157 and 10.5281/zenodo.21795620).",
      "The economics firewall: no prices, costs, or valuations anywhere.",
      "The honest gates: the TBR reconciliation and center-post note are not silently removed."
@@ -2054,7 +2054,7 @@
   "slug": "equilibrium-reconstruction-validation",
   "title": "Validating the Equilibrium Reconstruction",
   "cat": "validation-open-science",
-  "lede": "The breeder's magnetic equilibrium — its negative-triangularity shape at 9.86 MA — is solved and cross-checked, with the caveat that low-aspect-ratio validation data is limited.",
+  "lede": "The breeder's magnetic equilibrium — its negative-triangularity shape at 9.66 MA — is solved and cross-checked, with the caveat that low-aspect-ratio validation data is limited.",
   "body": [
    [
     "h2",
@@ -2062,7 +2062,7 @@
    ],
    [
     "p",
-    "Everything downstream depends on the plasma's magnetic equilibrium: the shape, the current distribution, and the field. The breeder (Hyperion) equilibrium is a strongly shaped, negative-triangularity (delta -0.30) configuration at 9.86 MA and 8 T on-axis. The reconstruction is solved by a Grad-Shafranov solver and checked for self-consistency."
+    "Everything downstream depends on the plasma's magnetic equilibrium: the shape, the current distribution, and the field. The breeder (Hyperion) equilibrium is a strongly shaped, negative-triangularity (delta -0.30) configuration at 9.66 MA and 8 T on-axis. The reconstruction is solved by a Grad-Shafranov solver and checked for self-consistency."
    ],
    [
     "html",
@@ -2126,7 +2126,7 @@
    ],
    [
     "p",
-    "Turbulent transport sets the energy confinement time, and confinement sets the gain. Transport is also the hardest fusion physics to predict from first principles, so it is the breeder (Hyperion) model most in need of validation. The record treats it accordingly: it does not overstate confidence in the confinement prediction behind Q_sci 3.424."
+    "Turbulent transport sets the energy confinement time, and confinement sets the gain. Transport is also the hardest fusion physics to predict from first principles, so it is the breeder (Hyperion) model most in need of validation. The record treats it accordingly: it does not overstate confidence in the confinement prediction behind Q_sci 3.076."
    ],
    [
     "html",
@@ -2155,7 +2155,7 @@
    ],
    [
     "p",
-    "It is worth being precise about what a transport disagreement would and would not overturn. A confinement shortfall would erode or break the Q_sci 3.424 case, but it would not touch the neutron kinematics or the measured field; those rest on firmer ground. Isolating the soft link keeps a possible surprise contained to the claims that actually depend on it, rather than casting doubt across the whole record."
+    "It is worth being precise about what a transport disagreement would and would not overturn. A confinement shortfall would erode or break the Q_sci 3.076 case, but it would not touch the neutron kinematics or the measured field; those rest on firmer ground. Isolating the soft link keeps a possible surprise contained to the claims that actually depend on it, rather than casting doubt across the whole record."
    ],
    [
     "p",
@@ -2327,9 +2327,9 @@
     "ul",
     [
      "Magnet field: measurable before plasma; tests the 16.84 T / 8 T on-axis prediction directly.",
-     "Plasma current and equilibrium: tests whether 9.86 MA and the negative-triangularity shape hold in hardware.",
+     "Plasma current and equilibrium: tests whether 9.66 MA and the negative-triangularity shape hold in hardware.",
      "Neutron spectrum: an early, sharp test of the 14.1 MeV D-T signature.",
-     "Confinement: tests the transport model behind Q_sci 3.424 against the pre-registered falsifier.",
+     "Confinement: tests the transport model behind Q_sci 3.076 against the pre-registered falsifier.",
      "First tritium: confirms the breeding chain functions, beginning the tritium accounting."
     ]
    ],
@@ -2448,7 +2448,7 @@
    [
     "ul",
     [
-     "Design point: Q_sci 3.424, 88.7 MW, 9.86 MA, peak field 16.84 T (8 T on-axis), A 2.5, R0 1.2 m, delta -0.30 — all simulated.",
+     "Design point: Q_sci 3.076, 85.0 MW, 9.66 MA, peak field 16.84 T (8 T on-axis), A 2.5, R0 1.2 m, delta -0.30 — all simulated.",
      "Products: ~4 kg/yr tritium class, ~1.97 kg/yr helium-3, 14 MeV neutrons — all modeled yields.",
      "TBR: studied as a lever at 1.1 / 1.5 / 1.8, with the local-vs-net gap open at the target.",
      "Timeline: construction from Q2 2027; FOAK first tritium targeted near 2030; NOAK then BOAK."
@@ -2857,7 +2857,7 @@
        "thin validation data"
       ],
       [
-       "transport model behind Q_sci 3.424",
+       "transport model behind Q_sci 3.076",
        "softest link, FOAK-tested"
       ]
      ]

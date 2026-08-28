@@ -411,11 +411,11 @@ table.tt td{padding:5px 16px 5px 0;border-bottom:1px solid var(--line);color:#cd
 <div class="lang">python</div><pre><code># Greenwald density limit
 # n_GW[1e20 m^-3] = Ip[MA] / (pi * a[m]^2)
 # Operating at a fraction f_GW = n / n_GW, typically &lt;= ~1.
-# Design input: Ip = 9.86 MA. The benchmark reports f_GW for the
+# Design input: Ip = 9.66 MA. The benchmark reports f_GW for the
 # design density and flags any point approaching unity.</code></pre>
 
 <h3>The current advantage</h3>
-<p>Because the Greenwald limit rises with plasma current, the breeder's 9.86 MA supports a higher absolute density before the limit bites. The benchmark reports the Greenwald fraction f_GW at the design point; a value comfortably below one indicates headroom, while a value near one is recorded as an operating risk.</p>
+<p>Because the Greenwald limit rises with plasma current, the breeder's 9.66 MA supports a higher absolute density before the limit bites. The benchmark reports the Greenwald fraction f_GW at the design point; a value comfortably below one indicates headroom, while a value near one is recorded as an operating risk.</p>
 <h3>Coupled, not isolated</h3>
 <p>Density, confinement, and beta are not independent knobs. The record evaluates them together so that a design point does not satisfy each limit in isolation while violating a joint operating boundary. Cross-checking the coupled constraints is part of the <a href=./sensitivity-analysis-record.html>sensitivity analysis</a>.</p>
 <p>The Greenwald limit is empirical, not a hard law of nature, and some machines exceed it under particular conditions. The breeder record does not lean on such exceptions: it targets a defensible fraction below one and treats any operating point that would rely on beating the empirical limit as a risk to retire at FOAK rather than a capability to assume in design.</p>

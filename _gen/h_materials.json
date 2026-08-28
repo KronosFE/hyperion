@@ -15,7 +15,7 @@
    ],
    [
     "p",
-    "The design point is a <b>16.84 T peak field on the conductor</b> and roughly <b>8 T on axis</b>, supporting a plasma current of 9.86 MA. The gap between the two numbers is geometric: field falls roughly as 1/R from the center stack outward, so the conductor sees far more than the plasma does."
+    "The design point is a <b>16.84 T peak field on the conductor</b> and roughly <b>8 T on axis</b>, supporting a plasma current of 9.66 MA. The gap between the two numbers is geometric: field falls roughly as 1/R from the center stack outward, so the conductor sees far more than the plasma does."
    ],
    [
     "html",
@@ -257,7 +257,7 @@
    ],
    [
     "p",
-    "The toroidal-field (TF) coil set produces the field that, with the plasma current of 9.86 MA, confines the plasma. It is designed for 8 T on axis, which requires 16.84 T on the inboard conductor because field rises toward the center stack. In a spherical tokamak the TF system is dominated by its inboard leg, packed into the narrow center column."
+    "The toroidal-field (TF) coil set produces the field that, with the plasma current of 9.66 MA, confines the plasma. It is designed for 8 T on axis, which requires 16.84 T on the inboard conductor because field rises toward the center stack. In a spherical tokamak the TF system is dominated by its inboard leg, packed into the narrow center column."
    ],
    [
     "html",
@@ -329,7 +329,7 @@
    ],
    [
     "p",
-    "Beyond the toroidal field, the breeder needs a central solenoid to induce and ramp the 9.86 MA plasma current, and a set of poloidal-field (PF) coils to position and shape the plasma. The chosen shape is a negative-triangularity D with triangularity -0.30, which the PF set must hold against the plasma's tendency toward other equilibria."
+    "Beyond the toroidal field, the breeder needs a central solenoid to induce and ramp the 9.66 MA plasma current, and a set of poloidal-field (PF) coils to position and shape the plasma. The chosen shape is a negative-triangularity D with triangularity -0.30, which the PF set must hold against the plasma's tendency toward other equilibria."
    ],
    [
     "html",
@@ -849,7 +849,7 @@
    [
     "ul",
     [
-     "8 T on axis sets confinement with the 9.86 MA current.",
+     "8 T on axis sets confinement with the 9.66 MA current.",
      "16.84 T peak on the inboard conductor sets the structural problem.",
      "Field angle across the tape sets local critical-current margin.",
      "Poloidal and screening-current fields add error to the map."
@@ -1119,7 +1119,7 @@
    ],
    [
     "p",
-    "The first wall sees a steady heat flux from plasma radiation and particle bombardment, punctuated by transients during off-normal events. The material and its cooling must keep surface temperature and thermal stress within limits at both. With 88.7 MW of fusion power in a compact machine, power density on plasma-facing surfaces is significant."
+    "The first wall sees a steady heat flux from plasma radiation and particle bombardment, punctuated by transients during off-normal events. The material and its cooling must keep surface temperature and thermal stress within limits at both. With 85.0 MW of fusion power in a compact machine, power density on plasma-facing surfaces is significant."
    ],
    [
     "html",

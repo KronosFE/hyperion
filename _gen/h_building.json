@@ -15,7 +15,7 @@
    ],
    [
     "p",
-    "The breeder is an isotope and neutron foundry. Its product is material: a tritium class output near 4 kg/yr, a helium-3 coproduct near 1.97 kg/yr, and 14 MeV neutrons for irradiation services. To deliver those products the machine needs <b>fusion gain</b>, not net electrical output. A device with Q_sci of 3.424 producing 88.7 MW of fusion power generates the neutron flux that drives breeding and activation. That flux is the product."
+    "The breeder is an isotope and neutron foundry. Its product is material: a tritium class output near 4 kg/yr, a helium-3 coproduct near 1.97 kg/yr, and 14 MeV neutrons for irradiation services. To deliver those products the machine needs <b>fusion gain</b>, not net electrical output. A device with Q_sci of 3.076 producing 85.0 MW of fusion power generates the neutron flux that drives breeding and activation. That flux is the product."
    ],
    [
     "h3",
@@ -82,7 +82,7 @@
    ],
    [
     "p",
-    "Because the product is material, the machine only needs fusion gain (Q_sci 3.424, 88.7 MW fusion power) to be useful. It does not need to clear the net-electric threshold. That removes the largest single physics-and-engineering dependency from the first build and lets the program deliver value from the neutron economy while the burner matures separately."
+    "Because the product is material, the machine only needs fusion gain (Q_sci 3.076, 85.0 MW fusion power) to be useful. It does not need to clear the net-electric threshold. That removes the largest single physics-and-engineering dependency from the first build and lets the program deliver value from the neutron economy while the burner matures separately."
    ],
    [
     "h3",
@@ -133,7 +133,7 @@
    ],
    [
     "p",
-    "Hyperion targets Q_sci of 3.424 with 88.7 MW of fusion power. At that operating point the 14 MeV neutron flux is sufficient to breed tritium and activate materials, which is the product. No conversion of fusion energy to net electricity is required for the foundry to function. The machine needs gain; it does not need net power."
+    "Hyperion targets Q_sci of 3.076 with 85.0 MW of fusion power. At that operating point the 14 MeV neutron flux is sufficient to breed tritium and activate materials, which is the product. No conversion of fusion energy to net electricity is required for the foundry to function. The machine needs gain; it does not need net power."
    ],
    [
     "h3",
@@ -163,7 +163,7 @@
    ],
    [
     "q-sci-3-424-basis",
-    "The Basis for Q_sci 3.424"
+    "The Basis for Q_sci 3.076"
    ],
    [
     "what-foak-does-not-prove",
@@ -193,7 +193,7 @@
    [
     "ul",
     [
-     "A frozen design point: Q_sci 3.424, 88.7 MW, 9.86 MA plasma current, 16.84 T peak field",
+     "A frozen design point: Q_sci 3.076, 85.0 MW, 9.66 MA plasma current, 16.84 T peak field",
      "A licensing pathway under a byproduct-material framework in pre-application engagement",
      "Committed magnet conductor supply and a qualified fabrication route",
      "A site selected against neutron-handling, utility, and logistics criteria"
@@ -311,7 +311,7 @@
     "ul",
     [
      "Sustained D-T plasma at or near the design gain point",
-     "A neutron flux consistent with 88.7 MW-class fusion power",
+     "A neutron flux consistent with 85.0 MW-class fusion power",
      "A breeding blanket that converts neutrons to tritium at a measured breeding ratio",
      "A fuel loop that recovers, measures, and accounts for bred tritium"
     ]
@@ -487,7 +487,7 @@
   "slug": "g1-confinement-gate",
   "title": "G1: The Confinement Gate",
   "cat": "building-it-first",
-  "lede": "The first gate proves the plasma confines energy well enough to reach the design gain point of Q_sci 3.424.",
+  "lede": "The first gate proves the plasma confines energy well enough to reach the design gain point of Q_sci 3.076.",
   "body": [
    [
     "h2",
@@ -503,7 +503,7 @@
    ],
    [
     "p",
-    "The design point is Q_sci 3.424 at 88.7 MW fusion power, with 9.86 MA of plasma current in a negative-triangularity (delta -0.30) spherical configuration. G1 is passed when the plasma sustains the confinement required to hold that operating point long enough to produce the neutron flux the foundry needs."
+    "The design point is Q_sci 3.076 at 85.0 MW fusion power, with 9.66 MA of plasma current in a negative-triangularity (delta -0.30) spherical configuration. G1 is passed when the plasma sustains the confinement required to hold that operating point long enough to produce the neutron flux the foundry needs."
    ],
    [
     "h3",
@@ -517,7 +517,7 @@
     "ul",
     [
      "Measured quantity: energy confinement time at design current and field",
-     "Pass criterion: confinement sufficient to reach the Q_sci 3.424 operating point",
+     "Pass criterion: confinement sufficient to reach the Q_sci 3.076 operating point",
      "Registered prediction: confinement time and its uncertainty band, filed before the test"
     ]
    ],
@@ -527,7 +527,7 @@
    ],
    [
     "p",
-    "Confinement scaling is the least certain part of any tokamak design. G1 is placed first because it carries the most physics risk. Until G1 is passed on the built machine, Q_sci 3.424 is a design and simulation value, and the program says so."
+    "Confinement scaling is the least certain part of any tokamak design. G1 is placed first because it carries the most physics risk. Until G1 is passed on the built machine, Q_sci 3.076 is a design and simulation value, and the program says so."
    ]
   ],
   "related": [
@@ -537,7 +537,7 @@
    ],
    [
     "q-sci-3-424-basis",
-    "The Basis for Q_sci 3.424"
+    "The Basis for Q_sci 3.076"
    ],
    [
     "negative-triangularity-choice",
@@ -724,7 +724,7 @@
    ],
    [
     "p",
-    "All current numbers, Q_sci 3.424, 16.84 T, TBR across 1.1/1.5/1.8, are predictions in this sense. They are simulation-based design values, registered as the targets the built machine will be measured against."
+    "All current numbers, Q_sci 3.076, 16.84 T, TBR across 1.1/1.5/1.8, are predictions in this sense. They are simulation-based design values, registered as the targets the built machine will be measured against."
    ]
   ],
   "related": [
@@ -763,7 +763,7 @@
      "Gate / Proves / Retires",
      [
       [
-       "G1 Confinement / Plasma holds energy to reach Q_sci 3.424 / Confinement-scaling risk"
+       "G1 Confinement / Plasma holds energy to reach Q_sci 3.076 / Confinement-scaling risk"
       ],
       [
        "G2 Magnet / 16.84 T peak, 8 T on axis, held under load / High-field magnet and structural risk"
@@ -1380,7 +1380,7 @@
    ],
    [
     "p",
-    "First plasma is not gain, not the design current of 9.86 MA, and not neutron production at scale. It is the beginning of a ramp: from first plasma the program builds current, field, and heating toward the Q_sci 3.424 operating point, which is where the confinement gate G1 is judged."
+    "First plasma is not gain, not the design current of 9.66 MA, and not neutron production at scale. It is the beginning of a ramp: from first plasma the program builds current, field, and heating toward the Q_sci 3.076 operating point, which is where the confinement gate G1 is judged."
    ],
    [
     "h3",
@@ -1406,7 +1406,7 @@
    ],
    [
     "plasma-current-9-86-ma",
-    "Plasma Current 9.86 MA"
+    "Plasma Current 9.66 MA"
    ]
   ],
   "seo_type": "TechArticle"
@@ -1431,7 +1431,7 @@
    ],
    [
     "p",
-    "First tritium requires the entire foundry chain to work at once: sustained D-T plasma near the design gain, a neutron flux consistent with 88.7 MW-class fusion power, a blanket that breeds tritium at a measured ratio, and a fuel loop that recovers and accounts for it. It is the integration test of the whole concept."
+    "First tritium requires the entire foundry chain to work at once: sustained D-T plasma near the design gain, a neutron flux consistent with 85.0 MW-class fusion power, a blanket that breeds tritium at a measured ratio, and a fuel loop that recovers and accounts for it. It is the integration test of the whole concept."
    ],
    [
     "ul",
@@ -1615,7 +1615,7 @@
    [
     "ul",
     [
-     "Confinement scaling: will the plasma reach Q_sci 3.424? (retired at G1)",
+     "Confinement scaling: will the plasma reach Q_sci 3.076? (retired at G1)",
      "High-field magnets: is 16.84 T real at scale under load? (retired at G2)",
      "Breeding: does the blanket net-breed tritium in real 3-D geometry? (retired at G3)",
      "Integration: do the subsystems work together? (retired in commissioning)",
@@ -1680,8 +1680,8 @@
    [
     "ul",
     [
-     "Q_sci 3.424 and 88.7 MW fusion power are design-point targets",
-     "16.84 T peak field and 9.86 MA plasma current are design values",
+     "Q_sci 3.076 and 85.0 MW fusion power are design-point targets",
+     "16.84 T peak field and 9.66 MA plasma current are design values",
      "TBR across 1.1/1.5/1.8 is a design lever, not a measured result",
      "Products near 4 kg/yr tritium class and 1.97 kg/yr helium-3 are projected outputs"
     ]
@@ -1763,7 +1763,7 @@
    ],
    [
     "p",
-    "The spherical choice drives the centerpost engineering, the high 16.84 T peak field, the 9.86 MA plasma current, and the negative triangularity of -0.30. These are not independent choices; they are a coherent set that follows from deciding to reach gain in a compact machine."
+    "The spherical choice drives the centerpost engineering, the high 16.84 T peak field, the 9.66 MA plasma current, and the negative triangularity of -0.30. These are not independent choices; they are a coherent set that follows from deciding to reach gain in a compact machine."
    ],
    [
     "p",
@@ -1819,7 +1819,7 @@
    ],
    [
     "p",
-    "High field does the work that size would otherwise do. A peak field of 16.84 T, enabled by REBCO superconductor, lets a small spherical tokamak reach the confinement and pressure needed for gain. The spherical geometry raises achievable plasma pressure for that field. Together they make a compact machine capable of Q_sci 3.424."
+    "High field does the work that size would otherwise do. A peak field of 16.84 T, enabled by REBCO superconductor, lets a small spherical tokamak reach the confinement and pressure needed for gain. The spherical geometry raises achievable plasma pressure for that field. Together they make a compact machine capable of Q_sci 3.076."
    ],
    [
     "h3",
@@ -1925,7 +1925,7 @@
    ],
    [
     "p",
-    "In a breeder, the fusion neutrons are the product, not a byproduct. Each D-T fusion produces a 14 MeV neutron, and the machine's output at 88.7 MW fusion power is fundamentally a neutron flux that is then allocated to different uses."
+    "In a breeder, the fusion neutrons are the product, not a byproduct. Each D-T fusion produces a 14 MeV neutron, and the machine's output at 85.0 MW fusion power is fundamentally a neutron flux that is then allocated to different uses."
    ],
    [
     "h3",
@@ -1953,7 +1953,7 @@
    ],
    [
     "p",
-    "The tritium class output near 4 kg/yr is the bankable base product; helium-3 near 1.97 kg/yr is a strategically valuable coproduct; neutron-hours are a service. All three flow from the same 88.7 MW neutron source, which is why gain, not net power, is the requirement."
+    "The tritium class output near 4 kg/yr is the bankable base product; helium-3 near 1.97 kg/yr is a strategically valuable coproduct; neutron-hours are a service. All three flow from the same 85.0 MW neutron source, which is why gain, not net power, is the requirement."
    ],
    [
     "p",
@@ -2079,7 +2079,7 @@
    ],
    [
     "p",
-    "The shape does not stand alone. It is chosen together with the 9.86 MA plasma current, the 8 T on-axis field, and the compact spherical geometry so that core confinement and edge exhaust are balanced at the design gain point. The divertor design in particular is coupled to the triangularity, because the exhaust the divertor must handle depends on how the plasma edge is shaped."
+    "The shape does not stand alone. It is chosen together with the 9.66 MA plasma current, the 8 T on-axis field, and the compact spherical geometry so that core confinement and edge exhaust are balanced at the design gain point. The divertor design in particular is coupled to the triangularity, because the exhaust the divertor must handle depends on how the plasma edge is shaped."
    ],
    [
     "h3",
@@ -2190,7 +2190,7 @@
    ],
    [
     "p",
-    "The breeder's magnet system is designed for a peak field of 16.84 T at the conductor and 8 T on the plasma axis. Field is what confines the plasma and enables fusion; high field is what lets a compact machine reach the design gain of Q_sci 3.424."
+    "The breeder's magnet system is designed for a peak field of 16.84 T at the conductor and 8 T on the plasma axis. Field is what confines the plasma and enables fusion; high field is what lets a compact machine reach the design gain of Q_sci 3.076."
    ],
    [
     "h3",
@@ -2243,9 +2243,9 @@
  },
  {
   "slug": "plasma-current-9-86-ma",
-  "title": "Plasma Current 9.86 MA",
+  "title": "Plasma Current 9.66 MA",
   "cat": "building-it-first",
-  "lede": "The design plasma current of 9.86 MA sets the confinement and stability the breeder needs to reach its gain point.",
+  "lede": "The design plasma current of 9.66 MA sets the confinement and stability the breeder needs to reach its gain point.",
   "body": [
    [
     "h2",
@@ -2253,7 +2253,7 @@
    ],
    [
     "p",
-    "Plasma current is one of the primary levers on tokamak performance. It sets much of the confinement and helps hold the plasma stable. The breeder is designed for a plasma current of 9.86 MA, chosen together with the field and shape to reach Q_sci 3.424."
+    "Plasma current is one of the primary levers on tokamak performance. It sets much of the confinement and helps hold the plasma stable. The breeder is designed for a plasma current of 9.66 MA, chosen together with the field and shape to reach Q_sci 3.076."
    ],
    [
     "h3",
@@ -2261,7 +2261,7 @@
    ],
    [
     "p",
-    "Energy confinement in a tokamak scales strongly with plasma current, so 9.86 MA is a large part of why the compact machine can hold enough energy to reach gain. The confinement gate G1 tests whether the real machine, at 9.86 MA and full field, achieves the predicted confinement."
+    "Energy confinement in a tokamak scales strongly with plasma current, so 9.66 MA is a large part of why the compact machine can hold enough energy to reach gain. The confinement gate G1 tests whether the real machine, at 9.66 MA and full field, achieves the predicted confinement."
    ],
    [
     "h3",
@@ -2270,7 +2270,7 @@
    [
     "ul",
     [
-     "A central solenoid and current-drive capability to establish and sustain 9.86 MA",
+     "A central solenoid and current-drive capability to establish and sustain 9.66 MA",
      "Stability control to manage a high-current compact plasma",
      "Structural design to handle the forces a large current implies"
     ]
@@ -2281,11 +2281,11 @@
    ],
    [
     "p",
-    "9.86 MA does not stand alone. It works with the 8 T on-axis field, the negative triangularity of -0.30, and the compact spherical geometry as one coherent operating point. Change one and the others must move. This is why the design point is quoted as a set, not as isolated numbers."
+    "9.66 MA does not stand alone. It works with the 8 T on-axis field, the negative triangularity of -0.30, and the compact spherical geometry as one coherent operating point. Change one and the others must move. This is why the design point is quoted as a set, not as isolated numbers."
    ],
    [
     "p",
-    "9.86 MA is a design value for a machine not yet built. First plasma will begin at far lower current, and the ramp to 9.86 MA is where confinement is measured against prediction at G1."
+    "9.66 MA is a design value for a machine not yet built. First plasma will begin at far lower current, and the ramp to 9.66 MA is where confinement is measured against prediction at G1."
    ]
   ],
   "related": [
@@ -2299,24 +2299,24 @@
    ],
    [
     "q-sci-3-424-basis",
-    "The Basis for Q_sci 3.424"
+    "The Basis for Q_sci 3.076"
    ]
   ],
   "seo_type": "TechArticle"
  },
  {
   "slug": "q-sci-3-424-basis",
-  "title": "The Basis for Q_sci 3.424",
+  "title": "The Basis for Q_sci 3.076",
   "cat": "building-it-first",
-  "lede": "The breeder's design gain of Q_sci 3.424 is the ratio of fusion power to plasma heating power that yields the neutron flux the foundry needs.",
+  "lede": "The breeder's design gain of Q_sci 3.076 is the ratio of fusion power to plasma heating power that yields the neutron flux the foundry needs.",
   "body": [
    [
     "h2",
-    "What Q_sci 3.424 means"
+    "What Q_sci 3.076 means"
    ],
    [
     "p",
-    "Q_sci is scientific gain: fusion power produced divided by heating power delivered to the plasma. The breeder's design point is Q_sci 3.424, meaning it produces roughly three and a half times the power injected to heat the plasma. This is the gain the foundry needs, and it is a plasma-physics ratio, not a whole-plant one."
+    "Q_sci is scientific gain: fusion power produced divided by heating power delivered to the plasma. The breeder's design point is Q_sci 3.076, meaning it produces roughly three and a half times the power injected to heat the plasma. This is the gain the foundry needs, and it is a plasma-physics ratio, not a whole-plant one."
    ],
    [
     "h3",
@@ -2324,7 +2324,7 @@
    ],
    [
     "p",
-    "The breeder is sized to a supply requirement. Q_sci 3.424 at 88.7 MW fusion power produces the neutron flux needed to breed the target tritium class output and the helium-3 coproduct. A higher gain is not required for the foundry mission, and pursuing it would make the machine larger or harder without serving the product."
+    "The breeder is sized to a supply requirement. Q_sci 3.076 at 85.0 MW fusion power produces the neutron flux needed to breed the target tritium class output and the helium-3 coproduct. A higher gain is not required for the foundry mission, and pursuing it would make the machine larger or harder without serving the product."
    ],
    [
     "h3",
@@ -2334,7 +2334,7 @@
     "ul",
     [
      "8 T on-axis field from the high-field magnet system",
-     "9.86 MA plasma current for strong confinement",
+     "9.66 MA plasma current for strong confinement",
      "Negative triangularity of -0.30 for edge and exhaust behavior",
      "Compact spherical geometry for high plasma pressure"
     ]
@@ -2345,11 +2345,11 @@
    ],
    [
     "p",
-    "Q_sci 3.424 is scientific gain. It is not net electricity and does not imply it, the breeder does not target net electric output. This distinction is central to the whole program: the foundry needs gain, and gain is a lower bar than the net-electric threshold."
+    "Q_sci 3.076 is scientific gain. It is not net electricity and does not imply it, the breeder does not target net electric output. This distinction is central to the whole program: the foundry needs gain, and gain is a lower bar than the net-electric threshold."
    ],
    [
     "p",
-    "Q_sci 3.424 is a design and simulation value for a machine not yet built. It is the headline quantity the confinement gate G1 is built to verify, reported measured-versus-predicted."
+    "Q_sci 3.076 is a design and simulation value for a machine not yet built. It is the headline quantity the confinement gate G1 is built to verify, reported measured-versus-predicted."
    ]
   ],
   "related": [
@@ -2363,16 +2363,16 @@
    ],
    [
     "fusion-power-88-7-mw",
-    "Fusion Power 88.7 MW"
+    "Fusion Power 85.0 MW"
    ]
   ],
   "seo_type": "TechArticle"
  },
  {
   "slug": "fusion-power-88-7-mw",
-  "title": "Fusion Power 88.7 MW",
+  "title": "Fusion Power 85.0 MW",
   "cat": "building-it-first",
-  "lede": "The breeder is designed to produce 88.7 MW of fusion power, the neutron source strength that drives its isotope and irradiation products.",
+  "lede": "The breeder is designed to produce 85.0 MW of fusion power, the neutron source strength that drives its isotope and irradiation products.",
   "body": [
    [
     "h2",
@@ -2380,7 +2380,7 @@
    ],
    [
     "p",
-    "The breeder is designed for 88.7 MW of fusion power. In a foundry this figure matters as a measure of neutron source strength, not as an amount of electricity to sell. 88.7 MW of D-T fusion means a specific rate of 14 MeV neutron production, and that rate is what breeds tritium and serves irradiation."
+    "The breeder is designed for 85.0 MW of fusion power. In a foundry this figure matters as a measure of neutron source strength, not as an amount of electricity to sell. 85.0 MW of D-T fusion means a specific rate of 14 MeV neutron production, and that rate is what breeds tritium and serves irradiation."
    ],
    [
     "h3",
@@ -2388,7 +2388,7 @@
    ],
    [
     "p",
-    "Fusion power sets the neutron flux; the neutron flux, allocated across the neutron budget, sets the products: the tritium class output near 4 kg/yr, the helium-3 coproduct near 1.97 kg/yr, and neutron-hours for irradiation. 88.7 MW is chosen to supply these, not to reach a power rating."
+    "Fusion power sets the neutron flux; the neutron flux, allocated across the neutron budget, sets the products: the tritium class output near 4 kg/yr, the helium-3 coproduct near 1.97 kg/yr, and neutron-hours for irradiation. 85.0 MW is chosen to supply these, not to reach a power rating."
    ],
    [
     "h3",
@@ -2397,7 +2397,7 @@
    [
     "ul",
     [
-     "88.7 MW is fusion power, thermal in origin, not net electrical output",
+     "85.0 MW is fusion power, thermal in origin, not net electrical output",
      "The breeder converts none of it to net grid power by design",
      "The value delivered is the neutron flux and the material it produces"
     ]
@@ -2408,17 +2408,17 @@
    ],
    [
     "p",
-    "88.7 MW at Q_sci 3.424 follows from the operating point: 8 T on axis, 9.86 MA plasma current, negative triangularity -0.30, in the compact spherical geometry. It is the fusion output of that specific design, not a target set independently."
+    "85.0 MW at Q_sci 3.076 follows from the operating point: 8 T on axis, 9.66 MA plasma current, negative triangularity -0.30, in the compact spherical geometry. It is the fusion output of that specific design, not a target set independently."
    ],
    [
     "p",
-    "88.7 MW is a design and simulation value for a machine not yet built. The corresponding neutron yield is what the fuel-loop gate measures against its pre-registered prediction."
+    "85.0 MW is a design and simulation value for a machine not yet built. The corresponding neutron yield is what the fuel-loop gate measures against its pre-registered prediction."
    ]
   ],
   "related": [
    [
     "q-sci-3-424-basis",
-    "The Basis for Q_sci 3.424"
+    "The Basis for Q_sci 3.076"
    ],
    [
     "neutron-budget-and-products",
@@ -2608,7 +2608,7 @@
    ],
    [
     "p",
-    "Concentrating 88.7 MW of fusion power in a compact machine concentrates the exhaust load. Less surface area is available to spread the heat, which raises the demand on divertor materials and geometry. This is a genuine engineering challenge the design must meet, not assume away."
+    "Concentrating 85.0 MW of fusion power in a compact machine concentrates the exhaust load. Less surface area is available to spread the heat, which raises the demand on divertor materials and geometry. This is a genuine engineering challenge the design must meet, not assume away."
    ],
    [
     "p",
@@ -2707,7 +2707,7 @@
    ],
    [
     "p",
-    "The breeder's power and magnet systems energize the superconducting coils, protect them against quench, drive the 9.86 MA plasma current, and supply plasma heating. This is the electrical backbone that turns supplied power into confining field and hot plasma."
+    "The breeder's power and magnet systems energize the superconducting coils, protect them against quench, drive the 9.66 MA plasma current, and supply plasma heating. This is the electrical backbone that turns supplied power into confining field and hot plasma."
    ],
    [
     "h3",
@@ -2750,7 +2750,7 @@
    ],
    [
     "plasma-current-9-86-ma",
-    "Plasma Current 9.86 MA"
+    "Plasma Current 9.66 MA"
    ],
    [
     "gain-only-requirement",
@@ -3155,7 +3155,7 @@
    ],
    [
     "p",
-    "A digital twin is a detailed computational model of the machine that runs alongside the physical program. In the design phase it embodies the frozen physics, Q_sci 3.424, 88.7 MW, 9.86 MA, 16.84 T, negative triangularity -0.30, so the design can be explored and interrogated. Once hardware exists, the twin is updated against measured behavior."
+    "A digital twin is a detailed computational model of the machine that runs alongside the physical program. In the design phase it embodies the frozen physics, Q_sci 3.076, 85.0 MW, 9.66 MA, 16.84 T, negative triangularity -0.30, so the design can be explored and interrogated. Once hardware exists, the twin is updated against measured behavior."
    ],
    [
     "h3",
@@ -3305,7 +3305,7 @@
    [
     "ul",
     [
-     "G1: confinement sufficient to reach Q_sci 3.424",
+     "G1: confinement sufficient to reach Q_sci 3.076",
      "G2: 16.84 T peak field held under load",
      "G3: neutrons breed and are accounted as tritium"
     ]
@@ -3359,7 +3359,7 @@
    ],
    [
     "p",
-    "The nth-of-a-kind (NOAK) units are where the program applies what the first machine taught. The physics design point, Q_sci 3.424, 88.7 MW, 16.84 T, 9.86 MA, stays essentially fixed once validated. What changes is how the machine is built and operated: faster, more reliably, and with less unnecessary instrumentation."
+    "The nth-of-a-kind (NOAK) units are where the program applies what the first machine taught. The physics design point, Q_sci 3.076, 85.0 MW, 16.84 T, 9.66 MA, stays essentially fixed once validated. What changes is how the machine is built and operated: faster, more reliably, and with less unnecessary instrumentation."
    ],
    [
     "h3",
@@ -3637,7 +3637,7 @@
      "Breeding ratio: design-level TBR of 1.8 versus net three-dimensional breeding in a real blanket, settled by measurement at G3",
      "Centerpost lifetime: neutron fluence on the conductors over the machine's operating life",
      "Magnet materials: some REBCO material and author-attribution details under reconciliation",
-     "Confinement scaling: whether the plasma reaches Q_sci 3.424 at delta -0.30, settled at G1"
+     "Confinement scaling: whether the plasma reaches Q_sci 3.076 at delta -0.30, settled at G1"
     ]
    ],
    [
